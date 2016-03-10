@@ -1,0 +1,24 @@
+{
+  "name": "happily-hangul",
+  "version": "0.0.1",
+  "description": "Interactive lessons to learn Hangul in 30 minutes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nwah/happily-hangul.git"
+  },
+  "keywords": [
+    "hangul",
+    "korean",
+    "learn"
+  ],
+  "author": "Noah Burney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nwah/happily-hangul/issues"
+  },
+  "homepage": "https://github.com/nwah/happily-hangul#readme"
+}
