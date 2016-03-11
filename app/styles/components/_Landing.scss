@@ -1,0 +1,14 @@
+.landing {
+  @extend .radial;
+
+  &__brush-title {
+    transform: translateX(-100%) translateY(-66%);
+  }
+
+  &__circle {
+    width: 420px;
+    height: 420px;
+    background: $white;
+    border-radius: 600px;
+  }
+}
