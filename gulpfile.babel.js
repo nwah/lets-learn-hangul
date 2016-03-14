@@ -8,7 +8,7 @@ gulp.task('js', () =>
   gulp.src('app/index.js')
     .pipe(bro({
       transform: ['babelify'],
-      debug: true
+      debug: false
     }))
     .pipe(rename('app.js'))
     .pipe(gulp.dest('public/js'))

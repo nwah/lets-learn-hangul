@@ -1,11 +1,15 @@
 import React from 'react';
-import {Link} from 'react-router';
+import { connect } from 'react-redux';
+import { Link } from 'react-router';
+import BigWord from './BigWord';
 
-const RoundLearn = ({children}) => (
+const mapStateToProps = ({session}) => ({session});
+
+const RoundLearn = ({params, session}) => (
   <div className="round__learn">
     <p>Learnin learnin learnin</p>
-    <Link to="/level/1/round/1/complete">I've learned it</Link>
+    <BigWord word={session.word} />
   </div>
 );
 
-export default RoundLearn;
+export default connect(mapStateToProps)(RoundLearn);
