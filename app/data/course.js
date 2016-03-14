@@ -6,7 +6,6 @@ module.exports = [
       intro: `
         Let's learn to read Korean!
         ---
-        The Korean alphabet is called “Hangul”.
         Hangul is a simple alphabet in a complex, Chinese-character-like disguise.
         ---
         The only big difference between Hangul and the other alphabets (like the one you're reading now)
@@ -157,7 +156,7 @@ module.exports = [
   {
     level: 2,
     name: "Level 2: World Tour",
-    intro: "Here we go y'allllll"
+    intro: "Here we go y'allllll",
     rounds: [
       {
         round: 1,
