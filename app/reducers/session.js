@@ -1,10 +1,15 @@
 const initialState = {
+  active: false,
+  paused: true,
+  complete: false,
   level: null,
   round: null,
-  word: null,
-  misses: 0,
+  words: [],
+  current: 0,
+  response: '',
+  responseError: null,
+  currentMisses: 0,
   peeks: [],
-  paused: true,
   started: 0,
   elapsed: 0
 };
@@ -12,13 +17,35 @@ const initialState = {
 export default function session(state = initialState, action) {
   switch (action.type) {
     case 'START_SESSION':
+      let {level, round} = action;
+      let {headword, words} = round;
+
       return Object.assign({}, initialState, {
-        level: action.level,
-        round: action.round,
-        word: '떡볶이',
+        level: level,
+        round: round,
+        active: true,
         paused: false,
-        started: Date.now()
+        started: Date.now(),
+        words: [headword].concat(words),
       });
+
+    case 'UPDATE_RESPONSE':
+      let {response} = action;
+      return Object.assign({}, state, {response});
+
+    case 'SUBMIT_RESPONSE':
+      if (state.response === 'correct') {
+        let next = state.current + 1;
+        return Object.assign({}, state, {
+          response: '',
+          currentMisses: 0,
+          current: next
+        });
+      }
+      else {
+        return Object.assign({}, state, {response});
+      }
+
     default:
       return state;
   }

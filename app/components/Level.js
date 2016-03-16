@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Level = ({children, params, level}) => {
+  if (!level) return <noscript />;
+
   return (
     <div className="level">
-      <h3>Level {params.level}</h3>
-      {React.cloneElement(children, {level: {level: 1,name: "Level 1: Whet Your Appetite"}})}
+      <h3>{level.name}</h3>
+      {React.cloneElement(children, {level})}
     </div>
   );
 }

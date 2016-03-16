@@ -1,11 +1,22 @@
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
+import { browserHistory } from 'react-router';
+import { startSession } from '../actions';
 
-const RoundReady = ({children}) => (
-  <div className="round__ready">
-    <p>R U READY!?!?</p>
-    <Link to="/level/1/round/1/learn/blah">YEAH!</Link>
-  </div>
-);
+const RoundReady = ({params, dispatch, round, level}) => {
+  function startClicked() {
+    dispatch(startSession(level, round));
+    browserHistory.push(`/level/${params.level}/round/${params.round}/learn`);
+  }
+
+  return (
+    <div className="round__ready">
+      <p>R U READY!?!?</p>
+      <button onClick={startClicked}>
+        YEAH!
+      </button>
+    </div>
+  );
+};
 
 export default RoundReady;

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Level from './Level';
+import Level from '../components/Level';
 
 const mapStateToProps = (state, {params}) => ({
   level: state.levels[params.level]

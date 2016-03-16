@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Round = ({children, params}) => (
+const Round = ({children, dispatch, level, round, shapes}) => (
+  !round ? <noscript /> :
   <div className="round">
-    <h3>Round {params.round}</h3>
-    {children}
+    <h3>{round.name}</h3>
+    {React.cloneElement(children, {dispatch, level, round, shapes})}
   </div>
 );
 

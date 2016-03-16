@@ -1,5 +1,5 @@
+import { map } from 'lodash';
 import { decompose } from './hangul';
-import shapes from '../data/shapes';
 
 export const mapping = {
   "ㄱ": "g",
@@ -148,14 +148,31 @@ export function getShapeIDs(syllable) {
   });
 }
 
-export function getShapes(syllable) {
-  if (syllable.length > 1) {
-    return syllable.split('').map(getShapes);
-  }
-
-  let shapeIDs = getShapeIDs(syllable);
-  return shapeIDs.map(id => shapes[id]);
+// TODO: Make more elegant
+export function getHintIDs(syllable) {
+  let type = getSyllableType(syllable);
+  let ids = {
+    'C-V': ['Cv', 'cV'],
+    'C-H': ['Ch', 'cH'],
+    'C-W': ['Cw', 'cW'],
+    'C-V-C': ['Cvc', 'cVc', 'cvC'],
+    'C-W-C': ['Cwc', 'cWc', 'cwC'],
+    'C-H-C': ['Chc', 'cHc', 'chC'],
+    'C-V-CC': ['Cvc', 'cVc', 'cvCC'],
+    'C-W-CC': ['Cwc', 'cWc', 'cvCC'],
+    'C-H-CC': ['Chc', 'cHc', 'cvCC'],
+  };
+  return ids[type].map(id => `hint_${id}`);
 }
+
+// export function getShapes(syllable) {
+//   if (syllable.length > 1) {
+//     return syllable.split('').map(getShapes);
+//   }
+
+//   let shapeIDs = getShapeIDs(syllable);
+//   return shapeIDs.map(id => shapes[id]);
+// }
 
 export function getJamoHint(jamo, isInitial = false) {
   let main = mapping[jamo];
