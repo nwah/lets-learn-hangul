@@ -1,4 +1,5 @@
 import React from 'react';
+import { branch } from 'baobab-react/higher-order';
 
 const Level = ({children, params, level}) => {
   if (!level) return <noscript />;
@@ -11,4 +12,8 @@ const Level = ({children, params, level}) => {
   );
 }
 
-export default Level;
+export default branch(Level, {
+  cursors: {
+    level: ['levels', '1']
+  }
+});

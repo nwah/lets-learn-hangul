@@ -1,10 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router';
+import { branch } from 'baobab-react/higher-order';
 import BigWord from './BigWord';
-import LearnResponseForm from '../containers/LearnResponseForm';
-
-const mapStateToProps = ({session}) => ({session});
+import LearnResponseForm from './LearnResponseForm';
 
 const RoundLearn = ({params, session, shapes}) => {
   let {words, current, response} = session;
@@ -18,4 +15,8 @@ const RoundLearn = ({params, session, shapes}) => {
   );
 }
 
-export default connect(mapStateToProps)(RoundLearn);
+export default branch(RoundLearn, {
+  cursors: {
+    session: ['session']
+  }
+});

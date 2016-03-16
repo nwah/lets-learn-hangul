@@ -3,35 +3,22 @@ require('isomorphic-fetch');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
-import { Router, Route, DefaultRoute, browserHistory } from 'react-router';
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
+import { Router, browserHistory } from 'react-router';
+import { Root } from 'baobab-react/wrappers';
 
-import reducers from './reducers';
-import { createRoutes } from './routes';
+import { createRoutes } from './config/routes';
+import tree from './config/state';
 
-const store = createStore(
-  combineReducers({
-    ...reducers,
-    routing: routerReducer
-  }),
-  compose(
-    applyMiddleware(thunk),
-    global.devToolsExtension ? global.devToolsExtension() : f => f
-  )
-);
+const routes = createRoutes(tree);
 
-// TODO: this is kinda dumb
-const routes = createRoutes(store);
-const history = syncHistoryWithStore(browserHistory, store);
+// For debugging
+global.tree = tree;
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={history}>
+  <Root tree={tree}>
+    <Router history={browserHistory}>
       {routes}
     </Router>
-  </Provider>,
+  </Root>,
   document.getElementById('mount')
 );

@@ -1,24 +1,27 @@
 import React from 'react';
-import { updateResponse, submitResponse } from '../actions';
+import { branch } from 'baobab-react/higher-order';
+import { updateResponse, submitResponse } from '../actions/session';
 
-class LearnResponseForm extends React.Component {
-  onInput(e) {
-    this.props.dispatch(updateResponse(e.target.value));
+const LearnResponseForm = ({actions, response, responseError}) => (
+  <form action="#"
+    onSubmit={e => {
+      e.preventDefault();
+      actions.submitResponse(response);
+    }}
+  >
+    <input type="text"
+      value={response}
+      onChange={e => actions.updateResponse(e.target.value)}
+    />
+
+    {responseError ? responseError : null}
+  </form>
+);
+
+export default branch(LearnResponseForm, {
+  actions: { updateResponse, submitResponse },
+  cursors: {
+    response: ['session', 'response'],
+    responseError: ['session', 'responseError']
   }
-
-  onSubmit(e) {
-    e.preventDefault();
-    this.props.dispatch(submitResponse());
-  }
-
-  render() {
-    let {response} = this.props.session;
-    return (
-      <form action="#" onSubmit={this.onSubmit.bind(this)}>
-        <input type="text" value={response} onChange={this.onInput.bind(this)} />
-      </form>
-    );
-  }
-}
-
-export default LearnResponseForm;
+});

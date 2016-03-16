@@ -1,22 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router';
-import { browserHistory } from 'react-router';
-import { startSession } from '../actions';
+import { branch } from 'baobab-react/higher-order';
+import { startSession } from '../actions/session';
 
-const RoundReady = ({params, dispatch, round, level}) => {
-  function startClicked() {
-    dispatch(startSession(level, round));
-    browserHistory.push(`/level/${params.level}/round/${params.round}/learn`);
-  }
+const RoundReady = ({params, actions, level, round}) => (
+  <div className="round__ready">
+    <p>R U READY!?!?</p>
+    <button onClick={() => actions.startSession(level, round)}>
+      YEAH!
+    </button>
+  </div>
+);
 
-  return (
-    <div className="round__ready">
-      <p>R U READY!?!?</p>
-      <button onClick={startClicked}>
-        YEAH!
-      </button>
-    </div>
-  );
-};
-
-export default RoundReady;
+export default branch(RoundReady, {
+  actions: { startSession }
+});
