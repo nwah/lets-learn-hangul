@@ -4,9 +4,13 @@ import { startSession } from '../actions/session';
 
 const RoundReady = ({params, actions, level, round}) => (
   <div className="round__ready">
-    <p>R U READY!?!?</p>
+    { round.text.start ? (
+      <p>{round.text.start[0]}</p>
+    ) : (
+      <p>Ready to learn this round's words?</p>
+    )}
     <button onClick={() => actions.startSession(level, round)}>
-      YEAH!
+      Start!
     </button>
   </div>
 );

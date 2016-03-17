@@ -1,19 +1,29 @@
 import React from 'react';
 import { branch } from 'baobab-react/higher-order';
+import CourseIndex from './CourseIndex';
+import YouAreHere from './YouAreHere';
 
-const Level = ({children, params, level}) => {
+const Level = ({children, params, level, indexShowing}) => {
   if (!level) return <noscript />;
 
   return (
-    <div className="level">
-      <h3>{level.name}</h3>
-      {React.cloneElement(children, {level})}
+    <div className="level-container">
+      { indexShowing && <CourseIndex /> }
+      <YouAreHere params={params} />
+
+      <div className="level">
+        <h3>{level.name}</h3>
+        {React.cloneElement(children, {level, params})}
+      </div>
     </div>
   );
 }
 
 export default branch(Level, {
-  cursors: {
-    level: ['levels', '1']
+  cursors({params}) {
+    return {
+      level: ['levels', params.level],
+      indexShowing: ['indexShowing']
+    };
   }
 });

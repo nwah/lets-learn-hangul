@@ -22,10 +22,10 @@ const tree = new Baobab({
   words: {/*
     
   */},
-  jamo: {},
-  shapes: {/*
+  jamo: {/*
     jamo_Cv_g: "M322.204,99.002 ..."
   */},
+  shapes: {},
 
   progress: {
     levels: {complete: {}},
@@ -49,8 +49,6 @@ const tree = new Baobab({
     started: 0,
     elapsed: 0
   },
-
-  indexShowing: false
 });
 
 export default tree;

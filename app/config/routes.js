@@ -39,8 +39,7 @@ export function createRoutes(tree) {
   function onEnterRoundLearn({params}, replace) {
     let session = tree.get('session');
     if (!session || !session.active) {
-      // replace(`/level/${params.level}/round/${params.round}`);
-      replace(`/level/${params.level}/round/${params.round}/ready`);
+      replace(`/level/${params.level}/round/${params.round}`);
     }
   }
 
@@ -48,19 +47,19 @@ export function createRoutes(tree) {
     <Route path="/" component={App}>      
       <IndexRoute component={Landing} />
 
-      <Route path="/level/:level" component={Level} onEnter={onEnterLevel} >
+      <Route path="/level/:level(/intro/:levelIntro)" component={Level} onEnter={onEnterLevel} >
         <IndexRoute component={LevelIntro} />
 
-        <Route path="round/:round" component={Round} onEnter={onEnterRound}>
+        <Route path="round/:round(/intro/:roundIntro)" component={Round} onEnter={onEnterRound}>
           <IndexRoute component={RoundIntro} />
-          <Route path="letters" component={RoundLetters} />
-          <Route path="headword" component={RoundHeadword} />
+          <Route path="letters(/:letters)" component={RoundLetters} />
+          <Route path="headword(/:headword)" component={RoundHeadword} />
           <Route path="ready" component={RoundReady} />
           <Route path="learn" component={RoundLearn} onEnter={onEnterRoundLearn} />
-          <Route path="complete" component={RoundComplete} />
+          <Route path="complete(/:roundComplete)" component={RoundComplete} />
         </Route>
 
-        <Route path="complete" component={LevelComplete} />
+        <Route path="complete(/:levelComplete)" component={LevelComplete} />
       </Route>
     </Route>
   );

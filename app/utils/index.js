@@ -3,24 +3,6 @@ import romanizations from '../data/romanizations';
 import { decompose, isMedial, isIotizedVowel } from './hangul';
 
 export function getRomanizations(str = '') {
-  // initial
-  // final
-  // beforeVowel
-  // beforeIY
-  // alternateBeforeNasal
-  // alternateBeforeR
-  // afterR
-  // afterN
-  // alternateAfterG
-  // alternateAfterM
-  // alternateAfterNg
-  // alternateAfterB
-
-  // normal
-  // alternates
-  // afterS
-  // afterNull
-
   let syllables = map(str.split(''), decompose);
   let word = syllables.reduce((acc, syl) => acc.concat(syl), []);
   let jamoReadings = word.map(jamo => []);
@@ -53,8 +35,6 @@ export function getRomanizations(str = '') {
 
       let rules = romanizations[jamo];
       let readings = jamoReadings[i];
-
-      console.log(jamo, 'isBeforeVowel:', isBeforeVowel, 'isBeforeIY:', isBeforeIY, 'isFinal:', isFinal, 'rules.beforeVowel:', rules.beforeVowel);
       
       // Primary reading
       if (isAfterR && rules.afterR) readings.push(rules.afterR);
@@ -87,12 +67,12 @@ export function getRomanizations(str = '') {
     }
   }
 
-  let primary = map(jamoReadings, rs => rs[0]).join('');
+  let ideal = map(jamoReadings, rs => rs[0]).join('');
   let pattern = map(jamoReadings, readings => {
     readings = uniq(filter(readings, r => r.length));
     if (readings.length === 0) return '';
     return `(?:${readings.join('|')})`;
   }).join('');
   let regexp = new RegExp(`^${pattern}$`, 'i');
-  return [primary, regexp];
+  return {ideal, regexp};
 }

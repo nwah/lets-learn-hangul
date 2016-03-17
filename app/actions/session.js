@@ -1,4 +1,5 @@
 import { browserHistory } from 'react-router';
+import { checkRomanization } from '../utils/validation';
 
 export function startSession(tree, level, round) {
   // TODO: Store defaults somewhere?
@@ -30,17 +31,19 @@ export function updateResponse(tree, response) {
 
 export function submitResponse(tree) {
   let session = tree.select('session');
-  let response = session.get('response');
-
   session.set('responseError', null);
 
-  let result = response === 'correct' ? {correct: true} : {correct: false, reason: 'blah blah blah'};
+  let word = session.get('words')[session.get('current')];
+  let response = session.get('response');
+  let result = checkRomanization(word, response);
+
   if (result.correct) handleCorrectResponse(session, result);
   else handleIncorrectResponse(session, result);
 }
 
 function handleCorrectResponse(session, result) {
   session.set('currentMisses', 0);
+  session.set('response', '');
 
   let next = session.get('current') + 1;
   if (next >= session.get('words').length) {

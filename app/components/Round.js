@@ -10,9 +10,12 @@ const Round = ({children, level, round, shapes}) => (
 );
 
 export default branch(Round, {
-  cursors: {
-    level: ['levels', '1'],
-    round: ['rounds', '1.1'],
-    shapes: ['shapes']
+  cursors({params}) {
+    let {level, round} = params;
+    return {
+      level: ['levels', level],
+      round: ['rounds', `${level}.${round}`],
+      shapes: ['shapes']
+    };
   }
 });

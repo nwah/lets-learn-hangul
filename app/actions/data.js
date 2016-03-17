@@ -1,17 +1,25 @@
 import { zipObject, map, pluck, omit } from 'lodash';
+import { processText } from '../utils/text';
 
 function extractLevels(data) {
   let levels = data;
   let ids = pluck(levels, 'level');
-  let pruned = map(levels, lvl => omit(lvl, 'rounds'));
+  let pruned = map(levels, lvl => ({
+    ...lvl,
+    text: processText(lvl.text),
+    rounds: lvl.rounds.map(rnd => `${lvl.level}.${rnd.round}`),
+  }));
   return zipObject(ids, pruned);
 }
 
 function extractRounds(data) {
   let rounds = {};
-  data.forEach(level => {
-    level.rounds.forEach(round => {
-      rounds[`${level.level}.${round.round}`] = round;
+  data.forEach(lvl => {
+    lvl.rounds.forEach(rnd => {
+      rounds[`${lvl.level}.${rnd.round}`] = {
+        ...rnd,
+        text: processText(rnd.text),
+      };
     });
   });
   return rounds;

@@ -1,0 +1,10 @@
+.you-are-here {
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800;
+
+  & > span {
+    padding: 0 6px;
+  }
+}
