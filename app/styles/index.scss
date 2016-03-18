@@ -18,9 +18,13 @@ body {
   font-weight: 600;
 }
 
+@import "common/elements";
 @import "common/radial";
 
+@import "components/Circle";
+@import "components/BigSyllable";
+@import "components/YouAreHere";
 @import "components/App";
 @import "components/Landing";
 @import "components/Level";
-@import "components/YouAreHere";
+@import "components/Round";

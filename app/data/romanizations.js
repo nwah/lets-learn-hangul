@@ -52,7 +52,8 @@ module.exports = {
     alternateInitial: 'p',
     alternateFinal: 'b',
     alternateBeforeNasal: 'm',
-    alternateBeforeR: 'm'
+    alternateBeforeR: 'm',
+    alernates: ['v']
   },
   'ㅃ': {
     initial: 'bb'
@@ -111,7 +112,7 @@ module.exports = {
   'ㅍ': {
     initial: 'p',
     final: 'p',
-    alternates: ['ph'],
+    alternates: ['ph', 'f'],
     alternateBeforeNasal: 'm'
   },
   'ㅎ': {

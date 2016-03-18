@@ -26,7 +26,9 @@ export function createRoutes(tree) {
 
   function onEnterLevel({params}) {
     if (isEmpty(tree.get('levels'))) {
-      loadCourse(tree);
+      // loadCourse(tree);
+      loadCourse(tree)
+        .then(() => require('../actions/session').startSession(tree, tree.get('levels')[1], tree.get('rounds')['1.2']));
     }
   }
 
@@ -39,7 +41,7 @@ export function createRoutes(tree) {
   function onEnterRoundLearn({params}, replace) {
     let session = tree.get('session');
     if (!session || !session.active) {
-      replace(`/level/${params.level}/round/${params.round}`);
+      // replace(`/level/${params.level}/round/${params.round}`);
     }
   }
 

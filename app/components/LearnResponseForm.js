@@ -10,6 +10,7 @@ const LearnResponseForm = ({actions, response, responseError}) => (
     }}
   >
     <input type="text"
+      className="fat-input"
       value={response}
       onChange={e => actions.updateResponse(e.target.value)}
     />

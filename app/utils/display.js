@@ -177,6 +177,6 @@ export function getHintIDs(syllable) {
 export function getJamoHint(jamo, isInitial = false) {
   let main = mapping[jamo];
   let alt = alternates[jamo];
-  if (jamo === 'ㅇ' && isInitial) return '(none)';
+  if (jamo === 'ㅇ' && isInitial) return '—';
   return alt ? `${main} / ${alt}` : main;
 }

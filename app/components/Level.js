@@ -12,7 +12,6 @@ const Level = ({children, params, level, indexShowing}) => {
       <YouAreHere params={params} />
 
       <div className="level">
-        <h3>{level.name}</h3>
         {React.cloneElement(children, {level, params})}
       </div>
     </div>

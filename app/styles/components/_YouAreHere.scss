@@ -1,4 +1,9 @@
 .you-are-here {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10rem;
+  margin-left: -5rem;
   cursor: pointer;
   text-align: center;
   font-size: 14px;

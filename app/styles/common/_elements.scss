@@ -1,0 +1,19 @@
+label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.fat-input {
+  font-size: 36px;
+  padding: 10px 0.5rem;
+  border-radius: 6px;
+  background: rgba(54, 122, 221, 0.15);
+  border: 3px solid rgba(54, 122, 221, 0.3);
+  outline: none;
+
+  &:focus {
+    border-color: rgba(54, 122, 221, 1);
+  }
+}

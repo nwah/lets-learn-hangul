@@ -1,9 +1,9 @@
-import { zipObject, map, pluck, omit } from 'lodash';
+import { zipObject, map, omit } from 'lodash';
 import { processText } from '../utils/text';
 
 function extractLevels(data) {
   let levels = data;
-  let ids = pluck(levels, 'level');
+  let ids = map(levels, lvl => lvl.level);
   let pruned = map(levels, lvl => ({
     ...lvl,
     text: processText(lvl.text),
