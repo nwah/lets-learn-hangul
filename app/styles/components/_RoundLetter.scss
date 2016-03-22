@@ -1,0 +1,51 @@
+.round__letter {
+  @extend .radial;
+
+  &__description {
+    width: 410px;
+    transform: translateX(0px) translateY(-50%);
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+
+    p:first-child {
+      font-size: inherit;
+      line-height: inherit;
+      margin-bottom: 12px;
+    }
+
+    img {
+      display: block;
+      margin-top: 12px;
+    }
+  }
+
+  label {
+    transform: translateX(-280px) translateY(-150px);
+  }
+
+  .bubble {
+    width: 74px;
+    height: 74px;
+    font-size: 24px;
+    line-height: 74px;
+    transform: translateX(-95px) translateY(-166px);
+  }
+
+  .big-jamo {
+    width: 350px;
+    height: 350px;
+    transform: translateX(-340px) translateY(-50%);
+
+    &--vertical {
+      transform: translateX(-310px) translateY(-50%);
+    }
+  }
+
+  .button {
+    transform: translateX(110px) translateY(140px);
+  }
+}

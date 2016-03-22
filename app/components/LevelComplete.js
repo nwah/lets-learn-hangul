@@ -1,4 +1,5 @@
 import React from 'react';
+import Markdown from 'react-remarkable';
 import { Link } from 'react-router';
 import { branch } from 'baobab-react/higher-order';
 

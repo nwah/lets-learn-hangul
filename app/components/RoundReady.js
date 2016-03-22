@@ -1,11 +1,12 @@
 import React from 'react';
 import { branch } from 'baobab-react/higher-order';
+import Markdown from 'react-remarkable';
 import { startSession } from '../actions/session';
 
 const RoundReady = ({params, actions, level, round}) => (
   <div className="round__ready">
     { round.text.start ? (
-      <p>{round.text.start[0]}</p>
+      <Markdown source={round.text.start[0]} />
     ) : (
       <p>Ready to learn this round's words?</p>
     )}

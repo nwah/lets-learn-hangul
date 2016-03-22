@@ -1,4 +1,5 @@
 import React from 'react';
+import Markdown from 'react-remarkable';
 import {Link} from 'react-router';
 
 const RoundHeadword = ({params, round}) => {
@@ -11,7 +12,7 @@ const RoundHeadword = ({params, round}) => {
     <div className="round__headword">
       <p>The key word for this round is</p>
       <h4>{round.headword}</h4>
-      <p>{text}</p>
+      <Markdown source={text} />
 
       {hasMoreText ? (
         <Link to={`/level/${params.level}/round/${params.round}/headword/${next}`}>

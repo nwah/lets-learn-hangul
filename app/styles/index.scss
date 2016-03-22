@@ -1,11 +1,12 @@
 @import "common/colors";
+@import "common/data-uris";
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-size: 24px;
+  font-size: 36px;
   background: $butter;
 }
 
@@ -13,18 +14,25 @@ body {
   background: $butter;
   color: $black;
   font-family: "ff-enzo-web",sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 36px;
   font-weight: 600;
 }
 
 @import "common/elements";
+@import "common/button";
+@import "common/bubble";
 @import "common/radial";
 
 @import "components/Circle";
 @import "components/BigSyllable";
+@import "components/BigJamo";
 @import "components/YouAreHere";
 @import "components/App";
 @import "components/Landing";
 @import "components/Level";
-@import "components/Round";
+@import "components/LevelIntro";
+@import "components/RoundIntro";
+@import "components/RoundLetters";
+@import "components/RoundLetter";
+@import "components/RoundLearn";

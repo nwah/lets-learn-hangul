@@ -1,26 +1,39 @@
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
+import { isMedial } from '../utils/hangul';
+import { getJamoHint } from '../utils/display';
+import Circle from './Circle';
+import Markdown from './Markdown';
+import BigJamo from './BigJamo';
 
-const RoundLetters = ({params, round}) => {
-  let slides = round.text.letters;
-  let text = slides[params.letters] || slides[0];
-  let next = (parseFloat(params.letters) || 0) + 1;
-  let hasMoreText = next < slides.length;
+const defaultText = 'Here are the new letters for this round.';
+
+const RoundLetters = ({params, round, shapes}) => {
+  let text = round.text.letters[0] || defaultText;
 
   return (
     <div className="round__letters">
-      <h4>{round.jamo.join(' ')}</h4>
-      <p>{text}</p>
+      <div className="round__letters__text">
+        <Markdown source={text} />
+      </div>
 
-      {hasMoreText ? (
-        <Link to={`/level/${params.level}/round/${params.round}/letters/${next}`}>
-          Continue
-        </Link>
-      ) : (
-        <Link to={`/level/${params.level}/round/${params.round}/headword`}>
-          Continue
-        </Link>
-      )}
+      <div className="round__letters__container">
+        {round.jamo.map((jamo, i) => (
+          <div className="round__letters__jamo" key={jamo}>
+            <Circle r="137" />
+            <BigJamo jamo={jamo} shapes={shapes} />
+            <div className={`bubble ${isMedial(jamo) ? 'bubble--blue' : ''}`}>
+              {getJamoHint(jamo)}
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <Link
+        className="button button--forward"
+        to={`/level/${params.level}/round/${params.round}/letter`}>
+        Continue
+      </Link>
     </div>
   );
 };

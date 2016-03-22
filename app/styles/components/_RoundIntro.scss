@@ -1,0 +1,17 @@
+.round__intro {
+  @extend .radial;
+  margin-top: 1rem;
+
+  &__inner {
+    width: 500px;
+    transform: translateX(-230px) translateY(-110px);
+  }
+
+  &__circle {
+    transform: translateX(-294px) translateY(-160px);
+  }
+
+  .button {
+    transform: translateX(110px) translateY(140px);
+  }
+}

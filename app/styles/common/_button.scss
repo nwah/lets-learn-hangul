@@ -1,0 +1,28 @@
+.button,
+button {
+  padding: 10px 12px;
+  line-height: 18px;
+  background: $blueTranslucent;
+  color: $blue;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+
+  &--forward:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url($blueArrow);
+    background-position: center right;
+    height: 15px;
+    width: 40px;
+    margin-left: 12px;
+    transition: width 0.06s ease-out;
+  }
+
+  &--forward:hover::after {
+    width: 52px;
+  }
+}

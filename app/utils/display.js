@@ -1,5 +1,5 @@
 import { map } from 'lodash';
-import { decompose } from './hangul';
+import { decompose, isMedial } from './hangul';
 
 export const mapping = {
   "ㄱ": "g",
@@ -115,6 +115,18 @@ export const ccs = {
   "ㄳ": 1,
 };
 
+export function isVertical(jamo) {
+  return jamo in vs;
+}
+
+export function isHorizontal(jamo) {
+  return jamo in hs;
+}
+
+export function isCombo(jamo) {
+  return jamo in ws;
+}
+
 export function getSyllableType(syllable) {
   if (syllable.length > 1) {
     return syllable.split('').map(getSyllableType);
@@ -122,7 +134,7 @@ export function getSyllableType(syllable) {
 
   let jamos = decompose(syllable);
   let type = ['C'];
-  type.push(jamos[1] in ws ? 'W' : jamos[1] in hs ? 'H' : 'V');
+  type.push(isCombo(jamos[1]) ? 'W' : isHorizontal(jamos[1]) ? 'H' : 'V');
   if (jamos[2]) type.push(jamos[2] in ccs ? 'CC' : 'C');
   return type.join('-');
 }
@@ -148,6 +160,14 @@ export function getShapeIDs(syllable) {
   });
 }
 
+export function getShapeID(jamo) {
+  let latin = mapping[jamo];
+  let type = (isMedial(jamo)
+    ? (jamo in ws ? 'W' : jamo in hs ? 'H' : 'V')
+    : (jamo in ccs ? 'CC' : 'C'));
+  return `jamo_${type}_${latin}`;
+}
+
 // TODO: Make more elegant
 export function getHintIDs(syllable) {
   let type = getSyllableType(syllable);
@@ -164,15 +184,6 @@ export function getHintIDs(syllable) {
   };
   return ids[type].map(id => `hint_${id}`);
 }
-
-// export function getShapes(syllable) {
-//   if (syllable.length > 1) {
-//     return syllable.split('').map(getShapes);
-//   }
-
-//   let shapeIDs = getShapeIDs(syllable);
-//   return shapeIDs.map(id => shapes[id]);
-// }
 
 export function getJamoHint(jamo, isInitial = false) {
   let main = mapping[jamo];

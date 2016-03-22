@@ -1,0 +1,47 @@
+.round__learn {
+  position: relative;
+  height: 25rem;
+  z-index: 5;
+
+  &__new-word {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    margin-left: -13.5rem;
+
+    .circle {
+      top: -1.5rem;
+      width: 11rem;
+      height: 11rem;
+    }
+
+    .big-word {
+      margin-left: 2rem;
+    }
+
+    .big-syllable {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  &__entry {
+    position: absolute;
+    left: 50%;
+    margin-left: -1rem;
+    top: 14rem;
+    text-align: right;
+
+    .circle {
+      top: -1rem;
+      left: auto;
+      right: -3.5rem;
+      width: 7rem;
+      height: 7rem;
+    }
+
+    .fat-input {
+      width: 9rem;
+    }
+  }
+}

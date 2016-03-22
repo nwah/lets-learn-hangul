@@ -1,5 +1,6 @@
 import React from 'react';
 import { branch } from 'baobab-react/higher-order';
+import Markdown from 'react-remarkable';
 import Circle from './Circle';
 import BigWord from './BigWord';
 import LearnResponseForm from './LearnResponseForm';

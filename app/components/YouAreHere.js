@@ -8,10 +8,10 @@ const YouAreHere = ({params, actions}) => {
   return (
     <div className="you-are-here" onClick={actions.toggleIndex}>
       <span className="you-are-here__level">
-        Level {level}
+        Level {level || '1'}
       </span>
       <span className="you-are-here__level">
-        Round {round}
+        Round {round || '1'}
       </span>
     </div>
   );

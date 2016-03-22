@@ -2,7 +2,7 @@ import { isEmpty } from 'lodash';
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import { loadCourse, loadShapes } from '../actions/data';
+import { loadCourse, loadShapes, loadJamos } from '../actions/data';
 
 // Top level
 import App from '../components/App';
@@ -16,6 +16,7 @@ import LevelComplete from '../components/LevelComplete';
 // Round
 import Round from '../components/Round';
 import RoundIntro from '../components/RoundIntro';
+import RoundLetter from '../components/RoundLetter';
 import RoundLetters from '../components/RoundLetters';
 import RoundHeadword from '../components/RoundHeadword';
 import RoundReady from '../components/RoundReady';
@@ -26,22 +27,23 @@ export function createRoutes(tree) {
 
   function onEnterLevel({params}) {
     if (isEmpty(tree.get('levels'))) {
-      // loadCourse(tree);
-      loadCourse(tree)
-        .then(() => require('../actions/session').startSession(tree, tree.get('levels')[1], tree.get('rounds')['1.2']));
+      loadCourse(tree);
+      // loadCourse(tree)
+      //   .then(() => require('../actions/session').startSession(tree, tree.get('levels')[1], tree.get('rounds')['1.2']));
     }
   }
 
   function onEnterRound({params}) {
     if (isEmpty(tree.get('shapes'))) {
       loadShapes(tree);
+      loadJamos(tree);
     }
   }
 
   function onEnterRoundLearn({params}, replace) {
     let session = tree.get('session');
     if (!session || !session.active) {
-      // replace(`/level/${params.level}/round/${params.round}`);
+      replace(`/level/${params.level}/round/${params.round}`);
     }
   }
 
@@ -55,6 +57,7 @@ export function createRoutes(tree) {
         <Route path="round/:round(/intro/:roundIntro)" component={Round} onEnter={onEnterRound}>
           <IndexRoute component={RoundIntro} />
           <Route path="letters(/:letters)" component={RoundLetters} />
+          <Route path="letter(/:letter)" component={RoundLetter} />
           <Route path="headword(/:headword)" component={RoundHeadword} />
           <Route path="ready" component={RoundReady} />
           <Route path="learn" component={RoundLearn} onEnter={onEnterRoundLearn} />

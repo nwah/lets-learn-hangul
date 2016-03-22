@@ -1,25 +1,31 @@
 import React from 'react';
+import Markdown from 'react-remarkable';
 import {Link} from 'react-router';
+import Circle from './Circle';
 
 const RoundIntro = ({round, params}) => {
   let slides = round.text.intro;
   let text = slides[params.roundIntro] || slides[0];
   let next = (parseFloat(params.roundIntro) || 0) + 1;
   let hasMoreText = next < slides.length;
+  let path = (
+    hasMoreText ? `/level/${params.level}/round/${params.round}/intro/${next}`
+    : `/level/${params.level}/round/${params.round}/letters`
+  );
 
   return (
     <div className="round__intro">
-      <p>{text}</p>
+      <Circle className="round__intro__circle" r="128" />
 
-      {hasMoreText ? (
-        <Link to={`/level/${params.level}/round/${params.round}/intro/${next}`}>
-          Continue
-        </Link>
-      ) : (
-        <Link to={`/level/${params.level}/round/${params.round}/letters`}>
-          Continue
-        </Link>
-      )}
+      <div className="round__intro__inner">
+        <Markdown source={text} />
+      </div>
+
+      <Link
+        className="button button--forward"
+        to={path}>
+        Continue
+      </Link>
     </div>
   );
 }

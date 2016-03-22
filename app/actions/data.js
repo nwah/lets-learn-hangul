@@ -1,12 +1,10 @@
 import { zipObject, map, omit } from 'lodash';
-import { processText } from '../utils/text';
 
 function extractLevels(data) {
   let levels = data;
   let ids = map(levels, lvl => lvl.level);
   let pruned = map(levels, lvl => ({
     ...lvl,
-    text: processText(lvl.text),
     rounds: lvl.rounds.map(rnd => `${lvl.level}.${rnd.round}`),
   }));
   return zipObject(ids, pruned);
@@ -16,10 +14,7 @@ function extractRounds(data) {
   let rounds = {};
   data.forEach(lvl => {
     lvl.rounds.forEach(rnd => {
-      rounds[`${lvl.level}.${rnd.round}`] = {
-        ...rnd,
-        text: processText(rnd.text),
-      };
+      rounds[`${lvl.level}.${rnd.round}`] = rnd;
     });
   });
   return rounds;
@@ -39,4 +34,13 @@ export function loadShapes(tree) {
   return fetch('/data/shapes.json')
     .then(res => res.json())
     .then(data => tree.set('shapes', data));
+}
+
+export function loadJamos(tree) {
+  return fetch('/data/jamos.json')
+    .then(res => res.json())
+    .then(data => {
+      let keys = map(data, jamo => jamo.jamo);
+      tree.set('jamos', zipObject(keys, data));
+    });
 }

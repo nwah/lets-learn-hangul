@@ -1,5 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router';
+import Markdown from './Markdown';
+import { Link } from 'react-router';
+import Circle from './Circle';
 
 const LevelIntro = ({level, params}) => {
   let slides = level.text.intro;
@@ -9,19 +11,39 @@ const LevelIntro = ({level, params}) => {
 
   return (
     <div className="level__intro">
-      <p>{text}</p>
+      <Calligraphy />
+
+      <Circle className="level__intro__circle" />
+
+      <div className="bubble level__intro__level">
+        {level.level}
+      </div>
+      <label className="level__intro__level-label">
+        Level
+      </label>
+
+      <div className="level__intro__inner">
+        <Markdown source={text} />
+      </div>
 
       {hasMoreText ? (
-        <Link to={`/level/${params.level}/intro/${next}`}>
+        <Link to={`/level/${params.level}/intro/${next}`} className="button button--forward">
           Continue
         </Link>
       ) : (
-        <Link to={`/level/${params.level}/round/1`}>
+        <Link to={`/level/${params.level}/round/1`} className="button button--forward">
           Start Round 1
         </Link>
       )}
     </div>
   );
 }
+
+const Calligraphy = ({level}) => (
+  <div className="level__intro__calligraphy">
+    <Circle r="186px" />
+    <img src="/images/calligraphy/whet-your-appetite.svg" width="260" height="260" />
+  </div>
+);
 
 export default LevelIntro;

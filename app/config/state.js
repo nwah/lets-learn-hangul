@@ -22,7 +22,14 @@ const tree = new Baobab({
   words: {/*
     
   */},
-  jamo: {},
+  jamos: {/*
+    jamo: 'ㅁ',
+    latin: 'm',
+    description: `
+      This letter sounds like **m** in English.
+    `,
+    memory: '**m**at'
+  */},
   shapes: {/*
     jamo_Cv_g: "M322.204,99.002 ..."
   */},
