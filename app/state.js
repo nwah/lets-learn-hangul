@@ -38,6 +38,7 @@ const tree = new Baobab({
     active: false,
     paused: true,
     complete: false,
+    showCorrect: false,
     level: null,
     round: null,
     words: [],

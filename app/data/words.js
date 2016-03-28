@@ -1,1882 +1,3063 @@
 module.exports = [
   {
-    word: "김치",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "김",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "침",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "기",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "비빔밥",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "박",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "비",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "밤",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "가",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "차",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "감",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "마",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "불고기",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "곰",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "봄",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "미국",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "길",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "발",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "칠",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "바람",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "비바람",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "순두부",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "친구",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "만두",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "삼",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "사",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "살",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "소",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "나",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "나가",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "다",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "술",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "산",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "신",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "신발",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "부산",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "서울",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "너",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "거",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "더",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "알",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "이",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "안",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "추석",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "고추",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "독일",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "일본",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "한국",
-    translation: "",
-    description: "",
-    image: {
-        url: "",
-        source: {
-          description: "",
-          url: ""
-        }
-      },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
-      }
-    }
-  },
-  {
-    word: "하하",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "김치",
+    "translation": "kimchi",
+    "image": {
+      "url": "words/kimchi.jpg",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/kimchi.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "후추",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "침",
+    "translation": "spit",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/chim.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "호도",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "기",
+    "translation": "spirit / qi",
+    "latin": "gi",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/gi.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "강남",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "김",
+    "translation": "nori (laver)",
+    "latin": "gim",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/gim.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "PC방",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "비빔밥",
+    "translation": "bibimbap",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/bibimbap.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "한강",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "김밥",
+    "translation": "kimbap",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/gimbap.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "고추장",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "박",
+    "translation": "Park (family name)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/bak.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "멍멍!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "비",
+    "translation": "rain",    
+    "image": {
+      "url": "",
+      "source": {
+        "description": "words/bi.mp3",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "호주",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "밤",
+    "translation": "night",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/bam.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "김치전",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "가",
+    "translation": "go",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/ga.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "좀",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "차",
+    "translation": "tea",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/cha.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "가자!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "감",
+    "translation": "persimmon",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/gam.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "남자",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "마",
+    "translation": "evil spirit",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/ma.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "남자친구",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "불고기",
+    "translation": "bulgogi",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/bulgogi.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "남친",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "불",
+    "translation": "fire",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/bul.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "영국",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "고기",
+    "translation": "meat",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/gogi.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "염소",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "곰",
+    "translation": "bear",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/gom.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "여자",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "봄",
+    "translation": "spring",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/bom.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "변기",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "미국",
+    "translation": "United States",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/miguk.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "녀석",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "길",
+    "translation": "road",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/gil.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "여자친구",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "발",
+    "translation": "foot",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/bal.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "여친",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "칠",
+    "translation": "seven",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/chil.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "안녕!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "바람",
+    "translation": "wind",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/baram.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "대박!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "만두",
+    "translation": "dumpling",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/mandu.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "짱!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "친구",
+    "translation": "friend",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/chingu.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "아싸!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "돈",
+    "translation": "money",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/don.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "오빠!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "나",
+    "translation": "I / me",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/na.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "꺼져!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "나가!",
+    "translation": "Get out!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "떡볶이",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "다",
+    "translation": "all",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/da.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "사랑해요!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "부산",
+    "translation": "Busan",
+    "latin": "Busan",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/busan.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "안녕하세요!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "산",
+    "translation": "Mountain",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/san.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "네!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "삼",
+    "translation": "three",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/sam.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "예!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "사",
+    "translation": "four",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/sa.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "걔",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "살",
+    "translation": "fat",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/sal.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "야!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "소",
+    "translation": "cow",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/so.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "우유",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "술",
+    "translation": "alcohol",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/sul.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "고마워요!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "신",
+    "translation": "god / spirit",
+    "latin": "shin",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/shin.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "뭐",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "신발",
+    "translation": "shoe",
+    "latin": "shinbal",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "원",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "서울",
+    "translation": "Seoul",
+    "latin": "Seoul",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/seoul.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "월",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "거",
+    "translation": "thing",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/geo.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "웹툰",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "더",
+    "translation": "more",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/deo.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "위험",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "이",
+    "translation": "tooth",
+    "latin": "ee",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/ee.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "와!",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "안",
+    "translation": "not",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/an.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "왜!?",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "추석",
+    "translation": "Chuseok (Korean Thanksgiving)",
+    "latin": "Chuseok",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/chuseok.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "외국인",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "고추",
+    "translation": "hot pepper",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "캐나다",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "독일",
+    "translation": "Germany",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/dokil.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "티비",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "일본",
+    "translation": "Japan",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "words/ilbon.mp3",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "커피",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "강남",
+    "translation": "Gangnam",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "한글",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "사랑",
+    "translation": "love",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   },
   {
-    word: "의사",
-    translation: "",
-    description: "",
-    image: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "word": "성공",
+    "translation": "success",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     },
-    audio: {
-      url: "",
-      source: {
-        description: "",
-        url: ""
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "PC방",
+    "translation": "PC Café",
+    "latin": "PC Bang",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "한강",
+    "translation": "Han River",
+    "latin": "Han kang",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "고추장",
+    "translation": "hot pepper paste",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "멍멍!",
+    "translation": "Woof woof!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "한국",
+    "translation": "Korean",
+    "latin": "Hangook",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "후추",
+    "translation": "Black pepper",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "호두",
+    "translation": "walnut",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "한복",
+    "translation": "Hanbok (Korean traditional dress)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "호주",
+    "translation": "Australia",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "좀",
+    "translation": "a little bit",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "가자!",
+    "translation": "Let's go!",
+    "latin": "gaja!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "남자",
+    "translation": "man",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "남자친구",
+    "translation": "boyfriend",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "브라질",
+    "translation": "Brazil",
+    "latin": "beu-razil",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "한글",
+    "translation": "Hangul (Korean alphabet)",
+    "latin": "hangeul",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "글자",
+    "translation": "written character",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "참기름",
+    "translation": "sesame oil",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "가슴",
+    "translation": "heart / chest",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "흠…",
+    "translation": "hmm…",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "대박!",
+    "translation": "Awesome!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "실패",
+    "translation": "fail",
+    "latin": "shilpae",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "새",
+    "translation": "bird",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "해",
+    "translation": "sun / year",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "런닝맨",
+    "translation": "Running Man",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "네!",
+    "translation": "Yes!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "제발!",
+    "translation": "For heaven's sake!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "데뷔",
+    "translation": "debut",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "세기",
+    "translation": "century",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "섹시",
+    "translation": "sexy",
+    "latin": "sekshi",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "야!",
+    "translation": "Hey! (not the greeting)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "예",
+    "translation": "Yes (formal)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "예문",
+    "translation": "example sentence",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "계속",
+    "translation": "continuously",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "계란",
+    "translation": "egg",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "양복",
+    "translation": "suit",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "향수",
+    "translation": "fragrance",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "안녕!",
+    "translation": "Hi!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "얘기",
+    "translation": "story",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "염소",
+    "translation": "goat",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "여자",
+    "translation": "woman",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "변기",
+    "translation": "toilet",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "녀석",
+    "translation": "fella",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "여자친구",
+    "translation": "girlfriend",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "걔",
+    "translation": "that guy",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "안녕하세요!",
+    "translation": "Hello! (polite)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "사랑해요!",
+    "translation": "I love you! (polite)",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "유머",
+    "translation": "humor",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "두유",
+    "translation": "soy milk",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "요즘",
+    "translation": "recently",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "학교",
+    "translation": "school",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "교복",
+    "translation": "school uniform",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "짱!",
+    "translation": "amazing! / the best!",
+    "latin": "zzang!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "아싸!",
+    "translation": "Yippee!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "쩔어",
+    "translation": "dope",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "짜",
+    "translation": "salty",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "씨름",
+    "translation": "wrestling",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "싸",
+    "translation": "expensive",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "비싸",
+    "translation": "cheap",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "쓰레기",
+    "translation": "trash",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "써",
+    "translation": "bitter",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "오빠!",
+    "translation": "Oppa! ('big brother', said by a woman)",
+    "latin": "oppa",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "떡볶이!",
+    "translation": "Tteokbokki (Ddukbokki)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "꺼져!",
+    "translation": "Get lost!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "뽀로로",
+    "translation": "Pororo",
+    "latin": "Pororo",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "뽀뽀",
+    "translation": "kiss",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "띠",
+    "translation": "belt (in martial arts)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "따라",
+    "translation": "follow",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "떨려",
+    "translation": "tremble / shake",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "까나리",
+    "translation": "sand eel (used in fish sauce)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "캐나다",
+    "translation": "Canada",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "멕시코",
+    "translation": "Mexico",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "홍콩",
+    "translation": "Hong Kong",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "카라",
+    "translation": "KARA (girl group)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "코",
+    "translation": "nose",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "카메라",
+    "translation": "camera",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "크림",
+    "translation": "cream",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "커피",
+    "translation": "coffee",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "스팸",
+    "translation": "Spam",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "파",
+    "translation": "green onion",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "파전",
+    "translation": "green onion pancake",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "포도",
+    "translation": "grape",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "피",
+    "translation": "blood",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "팔",
+    "translation": "arm",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "작품",
+    "translation": "work (of art) / product",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "티비",
+    "translation": "T.V.",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "베트남",
+    "translation": "Vietnam",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "이탈리아",
+    "translation": "Italy",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "토요일",
+    "translation": "Saturday",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "투명",
+    "translation": "transparent",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "놀이터",
+    "translation": "playground",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "와!",
+    "translation": "Wow!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "왜?",
+    "translation": "Why?",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "와인",
+    "translation": "wine",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "과일",
+    "translation": "fruit",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "황소",
+    "translation": "bull",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "내놔!",
+    "translation": "gimme!",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "안돼!",
+    "translation": "no way!",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "꽤",
+    "translation": "quite / rather",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "뭐?",
+    "translation": "What?",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "웹툰",
+    "translation": "Webtoon",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "고마워요!",
+    "translation": "Thank you!",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "원",
+    "translation": "won (Korean currency)",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "내버려둬",
+    "translation": "leave alone",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "웰빙",
+    "translation": "well-being",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "웨딩드레스",
+    "translation": "wedding dress",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "위험",
+    "translation": "danger",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "외국인",
+    "translation": "foreigner",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "가위, 바위, 보!",
+    "translation": "rock, paper, scissors!",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "쥐",
+    "translation": "mouse",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "귀",
+    "translation": "ear",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "왼손",
+    "translation": "left hand",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "괴물",
+    "translation": "monster",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "회사",
+    "translation": "company",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "의사",
+    "translation": "doctor",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "의자",
+    "translation": "chair",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "의리",
+    "translation": "honor",
+    "latin": "",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "희망",
+    "translation": "hope",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
       }
     }
   }

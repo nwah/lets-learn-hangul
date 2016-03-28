@@ -22,7 +22,7 @@ Sometimes the bottom part will curve inwards to make it a little more visually b
     latin: 'i',
     description: `
 This letter sounds like **ee** in English,
-and is usually just written as **i**.
+and is usually transcribed as **i**.
     `,
     memory: 'tr**ee**'
   },
@@ -40,11 +40,11 @@ This letter sounds like **m** in English.
     description: `
 This letter sounds like **ch** in English.
 
-Depending on the font, sometimes the little line
-one the top will be vertical. And sometimes the bottom
-part will attach in the middle instead of on the right.
+Depending on the font, sometimes the little stroke
+on the top will be vertical. And sometimes the “legs” at
+the bottom attach in the middle instead of on the right.
 
-Here’s a few examples:
+Here’s a few examples of ㅊ:
 <img src="/images/examples/ch-versions.png" width="250" height="40" />
     `,
     memory: `**ch**icken`

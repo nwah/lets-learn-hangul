@@ -4,11 +4,26 @@
 
   &__inner {
     width: 500px;
-    transform: translateX(-230px) translateY(-110px);
+    transform: translateX(-104px) translateY(-57%);
+  }
+
+  h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 20px;
+  }
+
+  &__round {
+    transform: translateX(-193px) translateY(-200px);
+  }
+
+  &__round-label {
+    transform: translateX(-235px) translateY(-184px);
   }
 
   &__circle {
-    transform: translateX(-294px) translateY(-160px);
+    width: 460px;
+    height: 460px;
   }
 
   .button {

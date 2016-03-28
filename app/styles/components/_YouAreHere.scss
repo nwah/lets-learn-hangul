@@ -2,14 +2,47 @@
   position: absolute;
   top: 0;
   left: 50%;
-  width: 10rem;
-  margin-left: -5rem;
   cursor: pointer;
   text-align: center;
   font-size: 14px;
   font-weight: 800;
+  z-index: 10;
 
-  & > span {
-    padding: 0 6px;
+  .bubble {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  &__level,
+  &__round {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: -100px;
+    width: 90px;
+    height: 40px;
+
+    .bubble {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .small-word {
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: 6px;
+    }
+  }
+
+  &__round {
+    left: 10px;
+
+    .small-word {
+      top: 11px;
+    }
   }
 }

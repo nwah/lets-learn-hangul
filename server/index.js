@@ -4,6 +4,7 @@ import express from 'express';
 import courseData from '../app/data/course';
 import shapesData from '../app/data/shapes';
 import jamosData from '../app/data/jamos';
+import wordsData from '../app/data/words';
 import { processText } from '../app/utils/text';
 
 // Setup
@@ -27,6 +28,7 @@ server.get('/data/course.json', (req, res) => res.json(
 ));
 server.get('/data/shapes.json', (req, res) => res.json(shapesData));
 server.get('/data/jamos.json', (req, res) => res.json(jamosData));
+server.get('/data/words.json', (req, res) => res.json(wordsData));
 
 // App Routes
 server.get(['/', '/level/*'], (req, res) => res.render('index'));

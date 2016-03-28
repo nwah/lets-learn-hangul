@@ -1,7 +1,6 @@
 import React from 'react';
 import { branch } from 'baobab-react/higher-order';
 import CourseIndex from './CourseIndex';
-import YouAreHere from './YouAreHere';
 
 const Level = ({children, params, level, indexShowing}) => {
   if (!level) return <noscript />;
@@ -9,7 +8,6 @@ const Level = ({children, params, level, indexShowing}) => {
   return (
     <div className="level-container">
       { indexShowing && <CourseIndex /> }
-      <YouAreHere params={params} />
 
       <div className="level">
         {React.cloneElement(children, {level, params})}

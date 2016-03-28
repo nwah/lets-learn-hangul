@@ -1,28 +1,48 @@
 import React from 'react';
 import Markdown from 'react-remarkable';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
+import { getRomanizations } from '../utils';
+import Circle from './Circle';
+import BigSyllable from './BigSyllable';
 
-const RoundHeadword = ({params, round}) => {
+const RoundHeadword = ({params, round, shapes}) => {
+  let syllables = round.headword.split('');
+  console.log('round.headword', round.headword, 'syllables', syllables)
   let slides = round.text.word;
   let text = slides[params.headword] || slides[0];
   let next = (parseFloat(params.headword) || 0) + 1;
   let hasMoreText = next < slides.length;
+  let continuePath = (
+    hasMoreText ? `/level/${params.level}/round/${params.round}/headword/${next}`
+    : `/level/${params.level}/round/${params.round}/ready`
+  );
 
   return (
     <div className="round__headword">
-      <p>The key word for this round is</p>
-      <h4>{round.headword}</h4>
-      <Markdown source={text} />
+      <div className="round__headword__word">
+        <Circle />
+        <label>Round Keyword</label>
+        <div className="round__headword__syllables">
+          {syllables.map(syllable => 
+            <div className="round__headword__syllable" key={syllable}>
+              <BigSyllable syllable={syllable} shapes={shapes} />
+              <p className="round__headword__syllable__phonetics">
+                {getRomanizations(syllable).ideal}
+              </p> 
+            </div>
+          )}
+        </div>
+      </div>
 
-      {hasMoreText ? (
-        <Link to={`/level/${params.level}/round/${params.round}/headword/${next}`}>
+      <div className="round__headword__content">
+        <Circle />
+        <div className="round__headword__content__inner">
+          <Markdown source={text} />
+        </div>
+        <Link className="button button--forward" to={continuePath}>
           Continue
         </Link>
-      ) : (
-        <Link to={`/level/${params.level}/round/${params.round}/ready`}>
-          Continue
-        </Link>
-      )}
+      </div>
     </div>
   );
 };

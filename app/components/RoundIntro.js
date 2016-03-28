@@ -17,6 +17,13 @@ const RoundIntro = ({round, params}) => {
     <div className="round__intro">
       <Circle className="round__intro__circle" r="128" />
 
+      <div className="bubble bubble--blue round__intro__round">
+        {round.round}
+      </div>
+      <label className="round__intro__round-label">
+        Round
+      </label>
+
       <div className="round__intro__inner">
         <Markdown source={text} />
       </div>

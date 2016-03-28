@@ -44,3 +44,12 @@ export function loadJamos(tree) {
       tree.set('jamos', zipObject(keys, data));
     });
 }
+
+export function loadWords(tree) {
+  return fetch('/data/words.json')
+    .then(res => res.json())
+    .then(data => {
+      let keys = map(data, word => word.word);
+      tree.set('words', zipObject(keys, data));
+    });
+}

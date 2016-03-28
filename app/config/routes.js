@@ -2,7 +2,7 @@ import { isEmpty } from 'lodash';
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import { loadCourse, loadShapes, loadJamos } from '../actions/data';
+import { loadCourse, loadShapes, loadJamos, loadWords } from '../actions/data';
 
 // Top level
 import App from '../components/App';
@@ -25,19 +25,22 @@ import RoundComplete from '../components/RoundComplete';
 
 export function createRoutes(tree) {
 
-  function onEnterLevel({params}) {
+  function onEnterApp({params}) {
     if (isEmpty(tree.get('levels'))) {
       loadCourse(tree);
-      // loadCourse(tree)
-      //   .then(() => require('../actions/session').startSession(tree, tree.get('levels')[1], tree.get('rounds')['1.2']));
+    }
+  }
+
+  function onEnterLevel({params}) {
+    if (isEmpty(tree.get('shapes'))) {
+      loadCourse(tree);
+      loadWords(tree);
+      loadShapes(tree);
+      loadJamos(tree);
     }
   }
 
   function onEnterRound({params}) {
-    if (isEmpty(tree.get('shapes'))) {
-      loadShapes(tree);
-      loadJamos(tree);
-    }
   }
 
   function onEnterRoundLearn({params}, replace) {
@@ -48,7 +51,7 @@ export function createRoutes(tree) {
   }
 
   return (
-    <Route path="/" component={App}>      
+    <Route path="/" component={App} onEnter={onEnterApp}>      
       <IndexRoute component={Landing} />
 
       <Route path="/level/:level(/intro/:levelIntro)" component={Level} onEnter={onEnterLevel} >

@@ -1,6 +1,6 @@
 .round__letters {
   position: relative;
-  margin-top: 100px;
+  margin-top: 130px;
 
   &__text {
     text-align: center;
@@ -10,7 +10,7 @@
   &__container {
     display: flex;
     justify-content: center;
-    margin-top: 90px;
+    margin-top: 80px;
   }
 
   &__jamo {
@@ -44,7 +44,7 @@
 
   .button {
     position: absolute;
-    top: 375px;
+    top: 345px;
     left: 50%;
     margin-left: 120px;
   }

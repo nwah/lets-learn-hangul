@@ -8,7 +8,18 @@ button {
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+  border: none;
   border-radius: 5px;
+
+  &--red {
+    color: $red;
+    background-color: $redTranslucent;
+  }
+
+  &--green {
+    color: $green;
+    background-color: $greenTranslucent;
+  }
 
   &--forward:after {
     content: '';
@@ -21,6 +32,15 @@ button {
     margin-left: 12px;
     transition: width 0.06s ease-out;
   }
+
+  &--red:after {
+    background-image: url($redArrow);
+  }
+
+  &--green:after {
+    background-image: url($greenArrow);
+  }
+
 
   &--forward:hover::after {
     width: 52px;

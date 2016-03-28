@@ -1,0 +1,86 @@
+.round__headword {
+  position: relative;
+  margin-top: 40px;
+  height: 600px;
+  z-index: 5;
+
+  &__word {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -337px;
+    transform: translateX(20px);
+    transition: transform 0.3s;
+
+    label {
+      margin-left: -36px;
+    }
+
+    .circle {
+      position: absolute;
+      top: -16px;
+      left: -24px;
+      width: 240px;
+      height: 240px;
+      z-index: -1;
+    }
+
+    .big-syllable {
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  &__syllables {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  &__syllable {
+    float: left;
+
+    &__phonetics {
+      margin-top: -12px;
+      font-size: 21px;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 120px;
+    width: 340px;
+    height: 340px;
+    margin-left: -32px;
+  
+    .circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 340px;
+      height: 340px;
+      z-index: -1;
+    }
+
+    &__inner {
+      position: absolute;
+      top: 50%;
+      left: 42px;
+      transform: translateY(-50%);
+      width: 360px;
+    }
+
+    .button {
+      position: absolute;
+      bottom: 42px;
+      left: 50%;
+      white-space: nowrap;
+    }
+  }
+}

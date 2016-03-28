@@ -1,6 +1,9 @@
 @import "common/colors";
 @import "common/data-uris";
 
+// Sound by Marek Polakovic from the Noun Project
+// https://thenounproject.com/search/?q=sound&i=120755
+
 * {
   box-sizing: border-box;
 }
@@ -27,6 +30,7 @@ body {
 @import "components/Circle";
 @import "components/BigSyllable";
 @import "components/BigJamo";
+@import "components/JamoTable";
 @import "components/YouAreHere";
 @import "components/App";
 @import "components/Landing";
@@ -35,4 +39,7 @@ body {
 @import "components/RoundIntro";
 @import "components/RoundLetters";
 @import "components/RoundLetter";
+@import "components/RoundHeadword";
+@import "components/RoundReady";
 @import "components/RoundLearn";
+@import "components/RoundComplete";

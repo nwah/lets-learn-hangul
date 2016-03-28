@@ -1,22 +1,37 @@
 .round__learn {
   position: relative;
-  height: 25rem;
+  margin-top: 40px;
+  height: 600px;
   z-index: 5;
 
   &__new-word {
     position: absolute;
-    top: 5rem;
+    top: 120px;
     left: 50%;
-    margin-left: -13.5rem;
+    margin-left: -324px;
+    transform: translateX(20px);
+    transition: transform 0.3s;
+
+    .has-image.show-correct & {
+      transform: translateX(-100px);
+    }
+
+    label {
+      margin-bottom: 0;
+    }
 
     .circle {
-      top: -1.5rem;
-      width: 11rem;
-      height: 11rem;
+      position: absolute;
+      top: -36px;
+      width: 264px;
+      height: 264px;
+      z-index: -1;
     }
 
     .big-word {
-      margin-left: 2rem;
+      margin-left: 48px;
+      position: relative;
+      z-index: 10;
     }
 
     .big-syllable {
@@ -25,23 +40,124 @@
     }
   }
 
+  &__phonetics {
+    position: absolute;
+    text-align: right;
+    top: 180px;
+    left: -60px;
+    width: 240px;
+    font-size: 21px;
+    opacity: 0;
+    transition: opacity 0.2s;
+
+    .show-correct & {
+      opacity: 1;
+    }
+  }
+
+  &__audio {
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    background: $green;
+    cursor: pointer;
+  }
+
+  &__image {
+    position: absolute;
+    top: -56px;
+    left: 214px;
+    width: 442px;
+    height: 442px;
+    background: white;
+    border: 16px white solid;
+    border-radius: 1000px;
+    overflow: hidden;
+  }
+
+  &__image,
+  &__audio {
+    pointer-events: none;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+    transform: scale(0, 0);
+
+    .show-correct & {
+      pointer-events: all;
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
   &__entry {
     position: absolute;
+    z-index: 5;
     left: 50%;
-    margin-left: -1rem;
-    top: 14rem;
+    margin-left: -64px;
+    top: 336px;
     text-align: right;
 
     .circle {
-      top: -1rem;
+      position: absolute;
+      top: -24px;
       left: auto;
-      right: -3.5rem;
-      width: 7rem;
-      height: 7rem;
+      right: -84px;
+      width: 168px;
+      height: 168px;
+      z-index: -1;
     }
 
     .fat-input {
-      width: 9rem;
+      width: 216px;
+    }
+  }
+
+  &__correct-word {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 342px;
+    margin-left: 97px;
+  
+    .circle {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      width: 168px;
+      height: 168px;
+      z-index: -1;
+    }
+
+    label {
+      color: $green;
+      margin-bottom: 4px;
+    }
+
+    h3 {
+      margin: 0;
+      display: table-cell;
+      white-space: nowrap;
+      text-align: center;
+      min-width: 107px;
+    }
+
+    button {
+      position: absolute;
+      top: 88px;
+      left: 50px;
+      white-space: nowrap;
+    }
+  }
+
+  &__entry,
+  &__correct-word {
+    transition: transform 0.3s;
+
+    .has-image.show-correct & {
+      transform: translateX(50px);
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { branch } from 'baobab-react/higher-order';
 import { toggleIndex } from '../actions/navigation';
+import SmallWord from './SmallWord';
 
 const YouAreHere = ({params, actions}) => {
   let {level, round} = params;
@@ -8,10 +9,14 @@ const YouAreHere = ({params, actions}) => {
   return (
     <div className="you-are-here" onClick={actions.toggleIndex}>
       <span className="you-are-here__level">
-        Level {level || '1'}
+        <div className="bubble">{level || '1'}</div>
+        <SmallWord word="level" />
       </span>
-      <span className="you-are-here__level">
-        Round {round || '1'}
+      <span className="you-are-here__round">
+        <div className="bubble bubble--blue">
+          {round || '1'}
+        </div>
+        <SmallWord word="round" />
       </span>
     </div>
   );

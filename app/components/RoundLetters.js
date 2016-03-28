@@ -6,10 +6,11 @@ import Circle from './Circle';
 import Markdown from './Markdown';
 import BigJamo from './BigJamo';
 
-const defaultText = 'Here are the new letters for this round.';
+const defaultText = 'New letters for this round…';
 
 const RoundLetters = ({params, round, shapes}) => {
-  let text = round.text.letters[0] || defaultText;
+  // let text = round.text.letters[0] || defaultText;
+  let text = defaultText;
 
   return (
     <div className="round__letters">

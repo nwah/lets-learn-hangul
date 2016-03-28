@@ -1,10 +1,12 @@
 import React from 'react';
 import { branch } from 'baobab-react/higher-order';
+import YouAreHere from './YouAreHere';
 
-const Round = ({children, level, round, shapes, jamos}) => (
+const Round = ({params, children, level, round, shapes, jamos, words}) => (
   !round ? <noscript /> :
   <div className="round">
-    {React.cloneElement(children, {level, round, shapes, jamos})}
+    <YouAreHere params={params} />
+    {React.cloneElement(children, {level, round, shapes, jamos, words})}
   </div>
 );
 
@@ -15,7 +17,8 @@ export default branch(Round, {
       level: ['levels', level],
       round: ['rounds', `${level}.${round}`],
       jamos: ['jamos'],
-      shapes: ['shapes']
+      shapes: ['shapes'],
+      words: ['words']
     };
   }
 });
