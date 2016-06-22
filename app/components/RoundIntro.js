@@ -30,7 +30,8 @@ const RoundIntro = ({round, params}) => {
 
       <Link
         className="button button--forward"
-        to={path}>
+        to={path}
+        autoFocus>
         Continue
       </Link>
     </div>

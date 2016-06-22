@@ -36,6 +36,12 @@ export function loadShapes(tree) {
     .then(data => tree.set('shapes', data));
 }
 
+export function loadGeometric(tree) {
+  return fetch('/data/geometric.json')
+    .then(res => res.json())
+    .then(data => tree.set('geometric', data));
+}
+
 export function loadJamos(tree) {
   return fetch('/data/jamos.json')
     .then(res => res.json())

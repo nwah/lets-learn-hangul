@@ -39,7 +39,7 @@ const RoundHeadword = ({params, round, shapes}) => {
         <div className="round__headword__content__inner">
           <Markdown source={text} />
         </div>
-        <Link className="button button--forward" to={continuePath}>
+        <Link className="button button--forward" to={continuePath} autoFocus>
           Continue
         </Link>
       </div>

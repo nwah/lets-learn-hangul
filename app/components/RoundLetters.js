@@ -32,7 +32,8 @@ const RoundLetters = ({params, round, shapes}) => {
       
       <Link
         className="button button--forward"
-        to={`/level/${params.level}/round/${params.round}/letter`}>
+        to={`/level/${params.level}/round/${params.round}/letter`}
+        autoFocus>
         Continue
       </Link>
     </div>

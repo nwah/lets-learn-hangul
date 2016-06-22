@@ -1,4 +1,4 @@
-import { reduce, get } from 'lodash';
+import { reduce, get, mapKeys } from 'lodash';
 import { browserHistory } from 'react-router';
 import { checkRomanization } from '../utils/validation';
 import { playEffect, play, preload } from '../sound';
@@ -32,10 +32,9 @@ export function startSession(tree, level, round) {
     let url = get(word, 'audio.url');
     return url ? arr.concat([url]) : arr;
   }, []);
-  console.log('words:', words);
-  console.log('sounds:', sounds);
-
   preload(sounds);
+
+  playEffect('ready');
 }
 
 export function continueSession(tree) {
@@ -92,6 +91,7 @@ function handleIncorrectResponse(session, result, meta) {
 
 export function completeSession(tree) {
   let session = tree.select('session');
+  let progress = tree.select('progress', 'jamo');
   let level = session.get('level');
   let round = session.get('round');
 
@@ -100,5 +100,15 @@ export function completeSession(tree) {
     complete: true,
     paused: true
   });
+
+  let newJamos = mapKeys(session.get('jamo'), jamo => jamo);
+  progress.merge({
+    known: {
+      ...progress.get('known'),
+      ...newJamos,
+    },
+    justLearned: newJamos
+  });
+
   browserHistory.push(`/level/${level.level}/round/${round.round}/complete`);
 }

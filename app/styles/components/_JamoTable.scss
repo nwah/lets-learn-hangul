@@ -1,0 +1,27 @@
+.jamo-table {
+  width: 1000px;
+
+  &__jamo {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+
+    .circle {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 80px;
+      height: 80px;
+    }
+
+    .geometric-jamo {
+      position: relative;
+      left: 20px;
+      top: 20px;
+      width: 60px;
+      height: 60px;
+      z-index: 5;
+    }
+  }
+}

@@ -11,6 +11,7 @@
     margin-left: -337px;
     transform: translateX(20px);
     transition: transform 0.3s;
+    z-index: 5;
 
     label {
       margin-left: -36px;
@@ -24,11 +25,6 @@
       height: 240px;
       z-index: -1;
     }
-
-    .big-syllable {
-      width: 130px;
-      height: 130px;
-    }
   }
 
   &__syllables {
@@ -41,6 +37,12 @@
 
   &__syllable {
     float: left;
+    margin-left: -5px;
+
+    .big-syllable {
+      width: 110px;
+      height: 110px;
+    }
 
     &__phonetics {
       margin-top: -12px;
@@ -52,12 +54,10 @@
 
   &__content {
     position: absolute;
-    z-index: 5;
     left: 50%;
     top: 120px;
     width: 340px;
     height: 340px;
-    margin-left: -32px;
   
     .circle {
       position: absolute;

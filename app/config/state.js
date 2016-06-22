@@ -38,7 +38,7 @@ const tree = new Baobab({
     levels: {complete: {}},
     rounds: {complete: {}},
     words: {learned: {}},
-    jamo: {learned: {}}
+    jamo: {known: {}, justLearned: {}},
   },
 
   session: {

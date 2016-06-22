@@ -138,7 +138,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -488,7 +488,7 @@ module.exports = [
     }
   },
   {
-    "word": "나가!",
+    "word": "나가",
     "translation": "Get out!",
     "image": {
       "url": "",
@@ -498,7 +498,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -681,7 +681,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/shinbal.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -811,7 +811,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gochu.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -865,7 +865,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gangnam.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -883,7 +883,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/sarang.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -901,7 +901,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/seonggong.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -920,7 +920,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/pcbang.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -939,7 +939,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hangang.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -958,7 +958,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gochujang.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -966,7 +966,7 @@ module.exports = [
     }
   },
   {
-    "word": "멍멍!",
+    "word": "멍멍",
     "translation": "Woof woof!",
     "image": {
       "url": "",
@@ -976,7 +976,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/meongmeong.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -995,7 +995,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hanguk.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1013,7 +1013,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/huchu.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1031,7 +1031,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hodu.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1049,7 +1049,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hanbok.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1067,7 +1067,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hoju.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1085,7 +1085,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/jom.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1093,7 +1093,7 @@ module.exports = [
     }
   },
   {
-    "word": "가자!",
+    "word": "가자",
     "translation": "Let's go!",
     "latin": "gaja!",
     "image": {
@@ -1104,7 +1104,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gaja.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1122,7 +1122,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/namja.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1140,7 +1140,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/namjachingu.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1159,7 +1159,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/beurajil.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1178,7 +1178,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hangeul.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1196,7 +1196,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/geulja.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1214,7 +1214,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/chamgireum.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1232,7 +1232,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gaseum.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1250,7 +1250,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/heum.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1258,7 +1258,7 @@ module.exports = [
     }
   },
   {
-    "word": "대박!",
+    "word": "대박",
     "translation": "Awesome!",
     "image": {
       "url": "",
@@ -1268,7 +1268,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/daebak.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1287,7 +1287,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/shilpae.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1305,7 +1305,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/sae.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1323,7 +1323,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hae.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1341,7 +1341,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/reonningmaen.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1349,7 +1349,7 @@ module.exports = [
     }
   },
   {
-    "word": "네!",
+    "word": "네",
     "translation": "Yes!",
     "image": {
       "url": "",
@@ -1359,7 +1359,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ne.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1367,7 +1367,7 @@ module.exports = [
     }
   },
   {
-    "word": "제발!",
+    "word": "제발",
     "translation": "For heaven's sake!",
     "image": {
       "url": "",
@@ -1377,7 +1377,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/jebal.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1395,7 +1395,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/debwi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1413,7 +1413,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/segi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1432,7 +1432,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/sekshi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1440,7 +1440,7 @@ module.exports = [
     }
   },
   {
-    "word": "야!",
+    "word": "야",
     "translation": "Hey! (not the greeting)",
     "image": {
       "url": "",
@@ -1450,7 +1450,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ya.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1468,7 +1468,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ye.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1486,7 +1486,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/yemun.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1504,7 +1504,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hangsang.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1522,7 +1522,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gyeran.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1540,7 +1540,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/yangbok.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1558,7 +1558,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hyangsu.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1566,7 +1566,7 @@ module.exports = [
     }
   },
   {
-    "word": "안녕!",
+    "word": "안녕",
     "translation": "Hi!",
     "image": {
       "url": "",
@@ -1576,7 +1576,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/annyeong.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1594,7 +1594,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/yaegi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1612,7 +1612,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/yeomso.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1630,7 +1630,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/yeoja.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1648,7 +1648,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/byeongi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1666,7 +1666,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/nyeoseok.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1684,16 +1684,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
-      "source": {
-        "description": "",
-        "url": ""
-      }
-    }
-  },
-  {
-    "audio": {
-      "url": "",
+      "url": "words/yeojachingu.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1711,7 +1702,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gyae.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1719,7 +1710,7 @@ module.exports = [
     }
   },
   {
-    "word": "안녕하세요!",
+    "word": "안녕하세요",
     "translation": "Hello! (polite)",
     "image": {
       "url": "",
@@ -1729,7 +1720,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/annyeonghaseyo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1737,7 +1728,7 @@ module.exports = [
     }
   },
   {
-    "word": "사랑해요!",
+    "word": "사랑해요",
     "translation": "I love you! (polite)",
     "latin": "",
     "image": {
@@ -1748,7 +1739,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/saranghaeyo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1766,7 +1757,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/yumeo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1784,7 +1775,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/duyu.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1802,7 +1793,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/yojeum.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1820,7 +1811,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hakgyo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1838,7 +1829,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gyobok.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1846,7 +1837,7 @@ module.exports = [
     }
   },
   {
-    "word": "짱!",
+    "word": "짱",
     "translation": "amazing! / the best!",
     "latin": "zzang!",
     "image": {
@@ -1857,7 +1848,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/jjang.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1865,7 +1856,7 @@ module.exports = [
     }
   },
   {
-    "word": "아싸!",
+    "word": "아싸",
     "translation": "Yippee!",
     "image": {
       "url": "",
@@ -1875,7 +1866,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/assa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1893,7 +1884,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/jjeoleo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1911,7 +1902,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/jaa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1929,7 +1920,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ssireum.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1948,7 +1939,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ssa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1967,7 +1958,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/bissa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -1985,7 +1976,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/sseuregi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2003,7 +1994,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/sseo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2011,7 +2002,7 @@ module.exports = [
     }
   },
   {
-    "word": "오빠!",
+    "word": "오빠",
     "translation": "Oppa! ('big brother', said by a woman)",
     "latin": "oppa",
     "image": {
@@ -2022,7 +2013,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/oppa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2030,7 +2021,7 @@ module.exports = [
     }
   },
   {
-    "word": "떡볶이!",
+    "word": "떡볶이",
     "translation": "Tteokbokki (Ddukbokki)",
     "image": {
       "url": "",
@@ -2040,7 +2031,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ddeokbokki.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2048,7 +2039,7 @@ module.exports = [
     }
   },
   {
-    "word": "꺼져!",
+    "word": "꺼져",
     "translation": "Get lost!",
     "image": {
       "url": "",
@@ -2058,7 +2049,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ggeojyeo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2077,7 +2068,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/bbororo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2095,7 +2086,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/bbobbo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2113,7 +2104,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ddi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2131,7 +2122,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ddara.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2139,8 +2130,8 @@ module.exports = [
     }
   },
   {
-    "word": "떨려",
-    "translation": "tremble / shake",
+    "word": "떨리다",
+    "translation": "to tremble / to shake",
     "image": {
       "url": "",
       "source": {
@@ -2149,7 +2140,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ddeollida.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2167,7 +2158,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gganari.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2185,7 +2176,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/kaenada.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2203,7 +2194,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/mekshiko.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2221,7 +2212,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hongkong.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2239,7 +2230,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/kara.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2257,7 +2248,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ko.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2275,7 +2266,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/kamera.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2293,7 +2284,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/keurim.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2311,7 +2302,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/keopi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2329,7 +2320,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/seupam.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2347,7 +2338,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/pa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2366,7 +2357,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/pajeon.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2384,7 +2375,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/podo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2402,7 +2393,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/pi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2420,7 +2411,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/pal.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2438,7 +2429,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/jakpum.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2456,7 +2447,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/tibi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2474,7 +2465,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/beteunam.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2492,7 +2483,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/itallia.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2510,7 +2501,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/toyoil.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2528,7 +2519,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/tumyeong.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2546,7 +2537,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/noliteo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2554,7 +2545,7 @@ module.exports = [
     }
   },
   {
-    "word": "와!",
+    "word": "와",
     "translation": "Wow!",
     "image": {
       "url": "",
@@ -2564,7 +2555,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/wa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2582,7 +2573,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/wae.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2601,7 +2592,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/wain.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2619,7 +2610,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gwail.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2638,7 +2629,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hwangso.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2646,7 +2637,7 @@ module.exports = [
     }
   },
   {
-    "word": "내놔!",
+    "word": "내놔",
     "translation": "gimme!",
     "latin": "",
     "image": {
@@ -2657,7 +2648,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/naenwa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2665,7 +2656,7 @@ module.exports = [
     }
   },
   {
-    "word": "안돼!",
+    "word": "안돼",
     "translation": "no way!",
     "latin": "",
     "image": {
@@ -2676,7 +2667,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/andwae.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2695,7 +2686,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/ggwae.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2714,7 +2705,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/mweo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2733,7 +2724,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/weptun.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2741,7 +2732,7 @@ module.exports = [
     }
   },
   {
-    "word": "고마워요!",
+    "word": "고마워요",
     "translation": "Thank you!",
     "latin": "",
     "image": {
@@ -2752,7 +2743,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gomaweoyo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2771,7 +2762,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/weon.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2790,7 +2781,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/naebeoryeodweo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2809,7 +2800,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/welbing.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2828,7 +2819,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/wedingdeureseu.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2847,7 +2838,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/wiheom.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2866,7 +2857,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/wehgukin.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2874,7 +2865,7 @@ module.exports = [
     }
   },
   {
-    "word": "가위, 바위, 보!",
+    "word": "가위, 바위, 보",
     "translation": "rock, paper, scissors!",
     "image": {
       "url": "",
@@ -2884,7 +2875,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/kawibawibo.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2903,7 +2894,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/jwi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2922,7 +2913,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gwi.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2941,7 +2932,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/wehnson.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2960,7 +2951,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/gwehmul.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2979,7 +2970,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/hwehsa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2998,7 +2989,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/euisa.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -3017,7 +3008,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/euija.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -3036,7 +3027,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/euiri.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -3054,7 +3045,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "",
+      "url": "words/heuimang.mp3",
       "source": {
         "description": "",
         "url": ""

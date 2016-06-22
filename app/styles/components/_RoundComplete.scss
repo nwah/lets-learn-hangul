@@ -1,0 +1,43 @@
+.round__complete {
+  width: 1000px;
+  height: 600px;
+  margin-left: -50px;
+
+  .jamo-table {
+    margin-top: 120px;
+  }
+
+  &__top {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -465px;
+
+    .circle {
+      position: absolute;
+      top: -204px;
+      left: -152px;
+      width: 304px;
+      height: 304px;
+    }
+
+    label {
+      color: $green;
+      margin-bottom: 0;
+    }
+
+    label,
+    p {
+      position: relative;
+      z-index: 5;
+    }
+  }
+
+  .button {
+    display: block;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    margin-left: 335px;
+  }
+}

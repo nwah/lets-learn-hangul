@@ -2,7 +2,13 @@ import { isEmpty } from 'lodash';
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import { loadCourse, loadShapes, loadJamos, loadWords } from '../actions/data';
+import {
+  loadCourse,
+  loadShapes,
+  loadJamos,
+  loadWords,
+  loadGeometric,
+} from '../actions/data';
 
 // Top level
 import App from '../components/App';
@@ -37,6 +43,7 @@ export function createRoutes(tree) {
       loadWords(tree);
       loadShapes(tree);
       loadJamos(tree);
+      loadGeometric(tree);
     }
   }
 

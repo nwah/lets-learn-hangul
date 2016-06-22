@@ -13,6 +13,7 @@ import LearnResponseForm from './LearnResponseForm';
 const RoundLearn = ({params, session, shapes, words, actions}) => {
   let {current, response, showCorrect} = session;
   let word = session.words[current];
+  console.log('word', word);
   let {image, audio, translation, latin} = words[word];
 
   let hasImage = image && image.url;
@@ -51,14 +52,17 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
           <Circle />
           <label>Correct!</label>
           <h3>{translation}</h3>
-          <button className="button--green button--forward" onClick={actions.continueSession}>
+          <button
+            className="button--green button--forward"
+            onClick={actions.continueSession}
+            autoFocus>
             Next
           </button>
         </div>
       ) : (
         <div className="round__learn__entry">
           <Circle />
-          <label>Type it in English</label>
+          <label>Transliterate into Latin alphabet</label>
           <LearnResponseForm />
         </div>
       )}

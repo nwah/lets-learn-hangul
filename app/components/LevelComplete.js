@@ -9,7 +9,7 @@ const LevelComplete = ({nextLevel, params}) => {
   return (
     <div className="level__complete">
       <p>Level Complete!</p>
-      <Link to={path}>Continue</Link>
+      <Link to={path} autoFocus>Continue</Link>
     </div>
   );
 }
