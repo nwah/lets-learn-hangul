@@ -93,7 +93,7 @@ class BigSyllable extends React.Component {
                   fontSize: '140',
                   fill: 'white',
                 }}>
-                {getJamoHint(jamo, i === 2)}
+                {getJamoHint(jamo, i === 0)}
               </text>
             </g>
           )
