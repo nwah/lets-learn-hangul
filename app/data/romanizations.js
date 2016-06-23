@@ -56,7 +56,10 @@ module.exports = {
     alernates: ['v']
   },
   'ㅃ': {
-    initial: 'bb'
+    initial: 'bb',
+    final: 'pp',
+    alternateInitial: 'pp',
+    alternateFinal: 'bb',
   },
   'ㅅ': {
     beforeVowel: 's',
@@ -187,8 +190,8 @@ module.exports = {
     afterS: ['a']
   },
   'ㅒ': {
-    normal: 'ye',
-    afterS: ['e']
+    normal: 'yae',
+    alternates: ['ye'],
   },
   'ㅓ': {
     normal: 'eo',
