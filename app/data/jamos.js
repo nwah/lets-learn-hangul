@@ -111,11 +111,7 @@ a tail, or a _z_:
     jamo: 'ㄴ',
     latin: 'n',
     description: `
-We don’t have this sound in English, but it’s somewhere
-between **r** and **l**—probably closer to **l**.
-
-It’s usually written as **r** at the beginning of words,
-and **l** at the end.
+Just like **n** in English.
     `,
     memory: '**N**ike'
   },
@@ -135,7 +131,9 @@ of a syllable and **t** for the end.
     jamo: 'ㅅ',
     latin: 's',
     description: `
-This is **s**.
+Pronounced like **s** in English.
+
+Before an **i** or **y** sound it’s pronounced like **sh**.
     `,
     memory: '**s**eagull'
   },
@@ -179,11 +177,7 @@ It's also silent placeholder when used in place of the first consonant of a syll
     jamo: 'ㅎ',
     latin: 'h',
     description: `
-This letter sounds like **d** or **t** in English.
-
-Like with ㄱ and ㅂ, Korean doesn't make a distinction between
-these two sounds. You'll usually see **d** for the start
-of a syllable and **t** for the end.
+Pronounced like **h** in English.
     `,
     memory: '**h**at'
   },
@@ -194,7 +188,7 @@ of a syllable and **t** for the end.
 This letter sounds like **j** in jazz. Just a little softer, with less air.
 
 Koreans use this letter instead of **z** when writing foreign words, so you’ll
-often see this written as either **j** or **z**.
+often see this written as either **j** or **z**. It’s sometimes written as **ch** too.
     `,
     memory: '**j**a**zz**'
   },
