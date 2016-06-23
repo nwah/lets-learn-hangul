@@ -1,5 +1,5 @@
 import React from 'react';
-import { each, map } from 'lodash';
+import { each, map, includes } from 'lodash';
 import classNames from 'classnames';
 import { branch } from 'baobab-react/higher-order';
 import GeometricJamo from './GeometricJamo';
@@ -12,14 +12,14 @@ const jamos = (
   'ㅐ ㅔ ㅏ ㅓ ㅒ ㅑ ㅕ ㅝ ㅞ ㅟ'
 ).split(' ');
 
-const JamoTable = ({known, justLearned, geometric}) => (console.log(known, justLearned, geometric), 
+const JamoTable = ({known = {}, newJamos = {}, geometric}) => (
   <div className="jamo-table">
     {jamos.map(jamo => 
       <div
         key={jamo}
         className={classNames("jamo-table__jamo", {
           "jamo-table__jamo--unknown": !(known[jamo]),
-          "jamo-table__jamo--new": justLearned[jamo]
+          "jamo-table__jamo--new": includes(newJamos, jamo),
         })}>
         <GeometricJamo jamo={jamo} geometric={geometric} />
       </div>
@@ -30,7 +30,5 @@ const JamoTable = ({known, justLearned, geometric}) => (console.log(known, justL
 export default branch(JamoTable, {
   cursors: {
     geometric: ['geometric'],
-    justLearned: ['progress', 'jamo', 'justLearned'],
-    known: ['progress', 'jamo', 'known'],
   }
 });

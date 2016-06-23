@@ -7,14 +7,6 @@
     width: 100px;
     height: 100px;
 
-    .circle {
-      position: absolute;
-      left: 10px;
-      top: 10px;
-      width: 80px;
-      height: 80px;
-    }
-
     .geometric-jamo {
       position: relative;
       left: 20px;
@@ -22,6 +14,24 @@
       width: 60px;
       height: 60px;
       z-index: 5;
+    }
+  }
+
+  &__jamo--unknown {
+    opacity: 0.25;
+  }
+
+  &__jamo--new {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 80px;
+      height: 80px;
+      background: #fff;
+      border-radius: 80px;
     }
   }
 }
