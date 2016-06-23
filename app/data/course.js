@@ -1,10 +1,10 @@
 module.exports = [
   {
     level: 1,
-    name: "Whet Your Appetite",
+    name: "Food",
     text: {
       intro: `
-# Whet Your **Appetite**
+# Level One: Food
 Let’s start with the basics…
 ---
 Hangul is a simple alphabet in a complex", "Chinese-character-like disguise.
@@ -211,7 +211,7 @@ Welcome to Level 2. Let's go on a trip around the world.
           `
         },
         jamo: ["ㅎ"],
-        words: ["후추", "호두", "한복"]
+        words: ["후추", "한강", "호두", "한복"]
       },
       {
         round: 5,
@@ -272,7 +272,7 @@ Welcome to Level 2. Let's go on a trip around the world.
           `
         },
         jamo: ["ㅐ"],
-        words: ["실패", "새", "해", "런닝맨"]
+        words: ["새", "해", "런닝맨", "개"]
       },
       {
         round: 2,
@@ -290,67 +290,14 @@ Welcome to Level 2. Let's go on a trip around the world.
           `
         },
         jamo: ["ㅔ"],
-        words: ["제발", "데뷔", "세기", "섹시"]
+        words: ["제발", "세기", "섹시"]
       },
       {
         round: 3,
-        name: "Hey!",
-        headword: "야",
-        text: {
-          intro: `
-# Round&nbsp;Three: **Hey!**
-          `,
-          word: `
-            **Hey!** blah blah blah
-          `,
-          start: `
-            Let’s see what we can read with our new letters!
-          `
-        },
-        jamo: ["ㅖ", "ㅑ"],
-        words: ["예", "예문", "계속", "계란", "양복", "향수"]
-      },
-      {
-        round: 4,
-        name: "Hi!",
-        headword: "안녕",
-        text: {
-          intro: `
-# Round&nbsp;Four: **Hi**
-          `,
-          word: `
-            **Hi** blah blah blah
-          `,
-          start: `
-            Let’s see what we can read with our new letters!
-          `
-        },
-        jamo: ["ㅕ", "ㅒ"],
-        words: ["얘기", "염소", "여자", "변기", "녀석", "여자친구", "걔"]
-      },
-      {
-        round: 5,
-        headword: "안녕하세요",
-        text: {
-          intro: `
-# Round&nbsp;Five: **Hello**
-          `,
-          word: `
-            **Hello** blah blah blah
-          `,
-          start: `
-            Let’s see what we can read with our new letters!
-          `
-        },
-        jamo: ["ㅛ", "ㅠ"],
-        words: ["사랑해요", "유머", "두유", "요즘", "학교", "교복"]
-      },
-      {
-        round: 6,
         headword: "짱",
         text: {
           intro: `
-# Round&nbsp;Six: **The Best!**
+# Round&nbsp;Three: **The Best!**
           `,
           word: `
             **Busan** blah blah blah
@@ -363,11 +310,11 @@ Welcome to Level 2. Let's go on a trip around the world.
         words: ["아싸", "쩔어", "짜", "씨름", "싸", "비싸", "쓰레기", "써"]
       },
       {
-        round: 7,
+        round: 4,
         headword: "오빠",
         text: {
           intro: `
-# Round&nbsp;Seven: **Oppa**
+# Round&nbsp;Four: **Oppa**
           `,
           word: `
             **Oppa** blah blah blah
@@ -378,7 +325,60 @@ Welcome to Level 2. Let's go on a trip around the world.
         },
         jamo: ["ㅃ", "ㄸ", "ㄲ"],
         words: ["떡볶이", "꺼져", "뽀로로", "뽀뽀", "띠", "따라", "떨리다", "까나리"]
-      }
+      },
+      {
+        round: 5,
+        name: "Hey!",
+        headword: "야",
+        text: {
+          intro: `
+# Round&nbsp;Five: **Hey!**
+          `,
+          word: `
+            **Hey!** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        jamo: ["ㅖ", "ㅑ"],
+        words: ["예", "예문", "계속", "계란", "양복", "향수"]
+      },
+      {
+        round: 6,
+        name: "Hi!",
+        headword: "안녕",
+        text: {
+          intro: `
+# Round&nbsp;Six: **Hi**
+          `,
+          word: `
+            **Hi** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        jamo: ["ㅕ", "ㅒ"],
+        words: ["얘기", "염소", "여자", "변기", "녀석", "여자친구", "걔"]
+      },
+      {
+        round: 7,
+        headword: "안녕하세요",
+        text: {
+          intro: `
+# Round&nbsp;Seven: **Hello**
+          `,
+          word: `
+            **Hello** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        jamo: ["ㅛ", "ㅠ"],
+        words: ["사랑해요", "유머", "두유", "요즘", "학교", "교복"]
+      },
     ]
   },
 
@@ -435,7 +435,7 @@ Welcome to Level 2. Let's go on a trip around the world.
           `
         },
         jamo: ["ㅍ"],
-        words: ["스팸", "파", "파전", "포도", "피", "팔", "작품"]
+        words: ["실패", "스팸", "파", "파전", "포도", "피", "팔", "작품"]
       },
       {
         round: 4,
@@ -486,7 +486,7 @@ Welcome to Level 2. Let's go on a trip around the world.
           `
         },
         jamo: ["ㅟ", "ㅚ"],
-        words: ["외국인", "가위 바위 보", "쥐", "귀", "왼손", "괴물", "회사"]
+        words: ["외국인", "가위 바위 보", "쥐", "귀", "왼손", "괴물", "데뷔", "회사"]
       },
       {
         round: 7,
