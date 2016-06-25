@@ -174,7 +174,7 @@ Welcome to Level 2. Let's go on a trip around the world.
             Let’s see what we can read with our new letters!
           `
         },
-        jamo: ["ㅓ", "ㅇ"],
+        jamo: ["ㅓ", "-"],
         words: ["거", "더", "이", "안", "추석", "독일", "일본"]
       },
       {
@@ -272,7 +272,7 @@ Welcome to Level 2. Let's go on a trip around the world.
           `
         },
         jamo: ["ㅐ"],
-        words: ["새", "해", "런닝맨", "개"]
+        words: ["새", "해", "배", "런닝맨", "개", "뱀"]
       },
       {
         round: 2,

@@ -151,14 +151,14 @@ You may see it written in English as **eo**, **uh** or even just **o**.
   },
 
   {
-    jamo: 'ㅇ',
-    latin: '(initial placeholder)',
+    jamo: '-',
+    latin: '-',
     description: `
-This circle is used as a placeholder when a syllable doesn't start
-with a consonant sound. It would be weird to have ㅣ and ㅡ just floating
-around unattached, so this is used instead.
+This circle is used as a silent placeholder when a syllable doesn't start
+with a consonant sound.
 
-It is totally silent at the start of a syllable.
+It would be weird to have ㅣ and ㅡ just floating around unattached, so this
+is used instead. It is totally silent when it’s at the start of a syllable.
     `,
     memory: 'silence'
   },
@@ -167,9 +167,9 @@ It is totally silent at the start of a syllable.
     jamo: 'ㅇ',
     latin: 'ng',
     description: `
-This represents the **ng** sound when it's the final consonant of a syllable.
+When used as the final consonant in a syllable this is an **ng** sound, like in **song**.
 
-It's also silent placeholder when used in place of the first consonant of a syllable.
+It looks identical to the silent placeholder used at the start of a syllable.
     `,
     memory: 'ri**ng**'
   },

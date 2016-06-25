@@ -10,7 +10,7 @@ const RoundReady = ({params, actions, level, round}) => (
     ) : (
       <p>Ready to learn this round's words?</p>
     )}
-    <button onClick={() => actions.startSession(level, round)} autoFocus>
+    <button onClick={() => actions.startSession(level, round)} autoFocus data-autofocus="true">
       Start!
     </button>
   </div>

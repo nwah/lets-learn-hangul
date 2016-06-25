@@ -13,7 +13,7 @@ const LearnResponseForm = ({actions, response, responseError}) => (
       className="fat-input"
       value={response}
       onChange={e => actions.updateResponse(e.target.value)}
-      autoFocus
+      autoFocus data-autofocus="true"
     />
 
     {responseError ? responseError : null}

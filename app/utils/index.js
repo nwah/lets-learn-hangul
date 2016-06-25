@@ -1,8 +1,12 @@
-import { map, uniq, filter } from 'lodash';
+import { map, uniq, filter, flattenDeep, flatMapDeep } from 'lodash';
 import romanizations from '../data/romanizations';
 import { decompose, isMedial, isIotizedVowel } from './hangul';
 
+let cache = {};
+
 export function getRomanizations(str = '') {
+  if (str in cache) return cache[str];
+
   let syllables = map(str.split(''), decompose);
   let word = syllables.reduce((acc, syl) => acc.concat(syl), []);
   let jamoReadings = word.map(jamo => []);
@@ -74,5 +78,15 @@ export function getRomanizations(str = '') {
     return `(?:${readings.join('|')})`;
   }).join('');
   let regexp = new RegExp(`^${pattern}$`, 'i');
-  return {ideal, regexp};
+
+  let possibilities = [];
+  (function walk(str, nodes = []) {
+    return nodes.length
+      ? map(nodes, node => walk(str + node[0], node[1]))
+      : possibilities.push(str);
+  })('', (function recurse(jamos) {
+    return map(jamos[0], jamo => [jamo, recurse(jamos.slice(1))])
+  })(jamoReadings));
+
+  return (cache[str] = {ideal, regexp, possibilities, readings: jamoReadings});
 }

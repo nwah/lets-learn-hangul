@@ -11,7 +11,6 @@ const RoundLetter = ({params, round, jamos, shapes}) => {
   let next = (parseFloat(params.letter) || 0) + 1;
   let hasAnother = next < round.jamo.length;
   let {description, latin, memory} = jamos[jamo];
-  console.log(jamo, 'isVertical:', isVertical(jamo))
 
   return (
     <div className="round__letter">
@@ -23,9 +22,11 @@ const RoundLetter = ({params, round, jamos, shapes}) => {
         jamo={jamo}
         shapes={shapes} />
 
-      <div className={`bubble ${isMedial(jamo) ? 'bubble--blue' : ''}`}>
-        {getJamoHint(jamo)}
-      </div>
+      {jamo !== '-' &&
+        <div className={`bubble ${isMedial(jamo) ? 'bubble--blue' : ''}`}>
+          {getJamoHint(jamo)}
+        </div>
+      }
 
       <div className="round__letter__description">
         <Markdown source={description} options={{breaks: false}}/>
@@ -35,14 +36,14 @@ const RoundLetter = ({params, round, jamos, shapes}) => {
         <Link 
           className="button button--forward"
           to={`/level/${params.level}/round/${params.round}/letter/${next}`}
-          autoFocus>
+          autoFocus data-autofocus="true">
           Next letter
         </Link>
       ) : (
         <Link
           className="button button--forward"
           to={`/level/${params.level}/round/${params.round}/headword`}
-          autoFocus>
+          autoFocus data-autofocus="true">
           Continue
         </Link>
       )}

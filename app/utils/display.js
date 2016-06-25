@@ -148,7 +148,7 @@ export function getShapeIDs(syllable) {
   let jamos = decompose(syllable);
   
   return jamos.map((jamo, i) => {
-    let latin = mapping[jamo];
+    let latin = '-' === jamo ? 'ng' : mapping[jamo];
     let id = type.toLowerCase().split('-');
     
     if (type.substr(2) === 'CC' && i < 2) {
@@ -161,7 +161,7 @@ export function getShapeIDs(syllable) {
 }
 
 export function getShapeID(jamo) {
-  let latin = mapping[jamo];
+  let latin = '-' === jamo ? 'ng' : mapping[jamo];
   let type = (isMedial(jamo)
     ? (jamo in ws ? 'W' : jamo in hs ? 'H' : 'V')
     : (jamo in ccs ? 'CC' : 'C'));

@@ -22,3 +22,11 @@ ReactDOM.render(
   </Root>,
   document.getElementById('mount')
 );
+
+// Temporary hack to make [Enter] work
+window.addEventListener('keydown', ({keyCode, target}) => {
+  if (keyCode !== 13) return;
+  let elem = document.querySelector('[data-autofocus]');
+  let hasActive = document.activeElement && document.activeElement.tagName !== 'BODY';
+  if (!hasActive && elem) elem.click();
+});
