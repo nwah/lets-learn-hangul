@@ -1331,6 +1331,24 @@ module.exports = [
     }
   },
   {
+    "word": "배",
+    "translation": "pear",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/bae.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
     "word": "런닝맨",
     "translation": "Running Man",
     "image": {
@@ -1342,6 +1360,42 @@ module.exports = [
     },
     "audio": {
       "url": "words/reonningmaen.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "개",
+    "translation": "dog",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/gae.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "뱀",
+    "translation": "snake",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/baem.mp3",
       "source": {
         "description": "",
         "url": ""
@@ -2865,8 +2919,8 @@ module.exports = [
     }
   },
   {
-    "word": "가위, 바위, 보",
-    "translation": "rock, paper, scissors!",
+    "word": "가위바위보",
+    "translation": "rock, paper, scissors",
     "image": {
       "url": "",
       "source": {
@@ -2875,7 +2929,7 @@ module.exports = [
       }
     },
     "audio": {
-      "url": "words/kawibawibo.mp3",
+      "url": "words/gawibawibo.mp3",
       "source": {
         "description": "",
         "url": ""

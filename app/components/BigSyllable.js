@@ -1,7 +1,8 @@
 import React from 'react';
 import { clamp } from 'lodash';
-import { decompose } from '../utils/hangul';
+import { decompose, isHangul } from '../utils/hangul';
 import { getShapeIDs, getHintIDs, getSyllableType, getJamoHint } from '../utils/display';
+import BigText from './BigText';
 
 const hintRadius = 190;
 const colors = ['#ee1a60', '#367add', '#b70d4e'];
@@ -104,17 +105,21 @@ class BigSyllable extends React.Component {
 
   render() {
     let {hinted, hovering} = this.state;
+    let {syllable} = this.props;
 
     return (
-      <svg viewBox="0 0 600 600" className="big-syllable">
-        {this.renderJamos()}
-        {this.renderHints()}
-        <Hitareas
-          {...this.props}
-          onHit={this.showHint.bind(this)}
-          onMouseEnter={this.mouseEnter.bind(this)}
-          onMouseLeave={this.mouseLeave.bind(this)} />
-      </svg>
+      isHangul(syllable) ?
+        <svg viewBox="0 0 600 600" className="big-syllable">
+          {this.renderJamos()}
+          {this.renderHints()}
+          <Hitareas
+            {...this.props}
+            onHit={this.showHint.bind(this)}
+            onMouseEnter={this.mouseEnter.bind(this)}
+            onMouseLeave={this.mouseLeave.bind(this)} />
+        </svg>
+      :
+        <BigText text={syllable} />
     );
   }
 }

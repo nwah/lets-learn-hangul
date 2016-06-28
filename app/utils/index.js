@@ -1,19 +1,28 @@
 import { map, uniq, filter, flattenDeep, flatMapDeep } from 'lodash';
 import romanizations from '../data/romanizations';
-import { decompose, isMedial, isIotizedVowel } from './hangul';
+import { decompose, isHangul, isMedial, isIotizedVowel } from './hangul';
 
 let cache = {};
 
 export function getRomanizations(str = '') {
   if (str in cache) return cache[str];
+  
+  let characters = str.split('');
+  if (filter(characters, isHangul).length === 0) return str;
 
-  let syllables = map(str.split(''), decompose);
+  let syllables = map(characters, decompose);
   let word = syllables.reduce((acc, syl) => acc.concat(syl), []);
   let jamoReadings = word.map(jamo => []);
 
   let i = 0;
   for (let s = 0; s < syllables.length; s++) {
-    let syllable = syllables[s];
+    if (!isHangul(characters[s])) {
+      jamoReadings[i] = {literal: characters[s]};
+      i++;
+      continue;
+    }
+
+    let syllable = syllables[s] || characters[s];
     for (let j = 0; j < syllable.length; j++) {
       let jamo = syllable[j];
       let prev = word[i-1];
@@ -49,7 +58,7 @@ export function getRomanizations(str = '') {
       else if (isBeforeVowel && rules.beforeVowel) readings.push(rules.beforeVowel);
       else if (isInitial && rules.initial != null) readings.push(rules.initial);
       else if (isFinal && rules.final) readings.push(rules.final);
-      else if (isAfterNull && rules.afterNull) readings.push(rules.afterNull);
+      else if (isAfterNull && rules.afterNull) readings.push.apply(readings, rules.afterNull);
       else if (isAfterS && rules.afterS) readings.push(rules.afterS);
       else if (isVowel) readings.push(rules.normal);
 
@@ -71,8 +80,13 @@ export function getRomanizations(str = '') {
     }
   }
 
-  let ideal = map(jamoReadings, rs => rs[0]).join('');
+  let ideal = map(jamoReadings, rs => rs.literal || rs[0]).join('');
   let pattern = map(jamoReadings, readings => {
+    if (readings.literal) {
+      return /[a-zA-Z0-9-]/.test(readings.literal)
+        ? `(?:${readings.literal})`
+        : `(?:[^a-zA-Z]*)`;
+    }
     readings = uniq(filter(readings, r => r.length));
     if (readings.length === 0) return '';
     return `(?:${readings.join('|')})`;

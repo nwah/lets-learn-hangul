@@ -32,7 +32,7 @@ const LevelIntro = ({level, params}) => {
         </Link>
       ) : (
         <Link to={`/level/${params.level}/round/1`} className="button button--forward" autoFocus data-autofocus="true">
-          Start Round 1
+          Start round one
         </Link>
       )}
     </div>

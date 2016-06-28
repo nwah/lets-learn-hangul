@@ -40,9 +40,14 @@
     float: left;
     margin-left: -5px;
 
-    .big-syllable {
+    .big-syllable,
+    .big-text {
       width: 110px;
       height: 110px;
+    }
+
+    .big-text {
+      width: 73px;
     }
 
     &__phonetics {

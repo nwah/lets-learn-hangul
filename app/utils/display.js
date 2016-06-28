@@ -1,5 +1,5 @@
 import { map } from 'lodash';
-import { decompose, isMedial } from './hangul';
+import { decompose, isHangul, isMedial } from './hangul';
 
 export const mapping = {
   "ㄱ": "g",
@@ -115,6 +115,15 @@ export const ccs = {
   "ㄳ": 1,
 };
 
+export const punctuation = {
+  "!": "exclamation",
+  "?": "question",
+  ".": "period",
+  "~": "tilde",
+  ":": "colon",
+  ",": "comma",
+};
+
 export function isVertical(jamo) {
   return jamo in vs;
 }
@@ -132,6 +141,8 @@ export function getSyllableType(syllable) {
     return syllable.split('').map(getSyllableType);
   }
 
+  if (!isHangul(syllable)) return 'P';
+
   let jamos = decompose(syllable);
   let type = ['C'];
   type.push(isCombo(jamos[1]) ? 'W' : isHorizontal(jamos[1]) ? 'H' : 'V');
@@ -146,7 +157,9 @@ export function getShapeIDs(syllable) {
 
   let type = getSyllableType(syllable);
   let jamos = decompose(syllable);
-  
+
+  if (type === 'P')  return syllable;
+
   return jamos.map((jamo, i) => {
     let latin = '-' === jamo ? 'ng' : mapping[jamo];
     let id = type.toLowerCase().split('-');
@@ -161,6 +174,8 @@ export function getShapeIDs(syllable) {
 }
 
 export function getShapeID(jamo) {
+  if (!isHangul(jamo)) return jamo;
+
   let latin = '-' === jamo ? 'ng' : mapping[jamo];
   let type = (isMedial(jamo)
     ? (jamo in ws ? 'W' : jamo in hs ? 'H' : 'V')

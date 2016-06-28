@@ -226,9 +226,9 @@ module.exports = {
     alternates: ['we', 'weh']
   },
   'ㅚ': {
-    normal: 'oi',
-    alternates: ['oe', 'weh', 'way', 'we', 'eh', 'e'],
-    afterNull: ['weh', 'oe', 'way', 'we']
+    normal: 'we',
+    alternates: ['oi', 'oe', 'weh', 'way', 'we', 'eh', 'e'],
+    afterNull: ['we', 'oe', 'way', 'weh']
   },
   'ㅛ': {
     normal: 'yo',

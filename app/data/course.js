@@ -4,7 +4,7 @@ module.exports = [
     name: "Food",
     text: {
       intro: `
-# Level One: Food
+# Level&nbsp;One: **Food**
 Let’s start with the basics…
 ---
 Hangul is a simple alphabet in a complex", "Chinese-character-like disguise.
@@ -13,7 +13,7 @@ The only big difference between Hangul and other alphabets (like the one you're 
 is that instead of all the letters sitting side-by-side in a horizontal row", "Hangul letters
 are stacked up into blocks—one for each syllable.
 ---
-It takes most people only about 20-40 minutes to learn Hangul. Let's get started!
+It takes most people only about 30-60 minutes to learn Hangul. Let's get started!
       `
     },
     rounds: [
@@ -134,7 +134,7 @@ Woo! Four letters and four words down. Let’s keep going!
     name: "World Tour",
     text: {
       intro: `
-# World Tour
+# Level&nbsp;Two: **World Tour**
 Welcome to Level 2. Let's go on a trip around the world.
       `
     },
@@ -254,7 +254,13 @@ Welcome to Level 2. Let's go on a trip around the world.
 
   {
     level: 3,
-    name: 'Yes!',
+    name: 'Oh yeah!',
+    text: {
+      intro: `
+# Level&nbsp;Three: **Oh&nbsp;yeah**!
+Now we get to the fun words!
+      `
+    },
     rounds: [
       {
         round: 1,
@@ -385,6 +391,12 @@ Welcome to Level 2. Let's go on a trip around the world.
   {
     level: 4,
     name: 'Go West!',
+    text: {
+      intro: `
+# Level&nbsp;Four: **Go west!**
+Last set of letters.
+      `
+    },
     rounds: [
       {
         round: 1,
@@ -486,7 +498,7 @@ Welcome to Level 2. Let's go on a trip around the world.
           `
         },
         jamo: ["ㅟ", "ㅚ"],
-        words: ["외국인", "가위 바위 보", "쥐", "귀", "왼손", "괴물", "데뷔", "회사"]
+        words: ["외국인", "가위바위보", "쥐", "귀", "왼손", "괴물", "데뷔", "회사"]
       },
       {
         round: 7,

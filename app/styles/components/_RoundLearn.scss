@@ -35,9 +35,26 @@
       z-index: 10;
     }
 
-    .big-syllable {
+    .big-syllable,
+    .big-text {
       width: 140px;
       height: 140px;
+    }
+
+    .big-text {
+      width: 93px;
+    }
+
+    &.long-word {
+      .big-syllable,
+      .big-text {
+        width: 70px;
+        height: 70px;
+      }
+
+      .big-text {
+        width: 47px;
+      }
     }
   }
 

@@ -27,7 +27,9 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
       'has-audio': hasAudio,
       'show-correct': showCorrect,
     })}>
-      <div className="round__learn__new-word">
+      <div className={classNames('round__learn__new-word', {
+          'long-word': word.length > 3
+        })}>
         <Circle className="round__learn__new-word__circle" />
         <label>New word</label>
         <BigWord word={word} shapes={shapes} />
