@@ -20,7 +20,10 @@ const JamoTable = ({known = {}, newJamos = {}, geometric}) => (
         className={classNames("jamo-table__jamo", {
           "jamo-table__jamo--unknown": !(known[jamo]),
           "jamo-table__jamo--new": includes(newJamos, jamo),
-        })}>
+        })}
+        style={{
+          animationDelay: `${Math.max(0, newJamos.indexOf(jamo)) * 100}ms`
+        }}>
         <GeometricJamo jamo={jamo} geometric={geometric} />
       </div>
     )}
