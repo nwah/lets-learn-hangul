@@ -52,3 +52,4 @@ gulp.task('watch', ['js', 'css'], () => {
 });
 
 gulp.task('default', ['js', 'css', 'copyassets']);
+gulp.task('build-prod', ['prod-js', 'prod-css', 'copyassets']);

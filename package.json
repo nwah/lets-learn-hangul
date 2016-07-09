@@ -4,6 +4,7 @@
   "description": "Interactive lessons to learn Hangul in 30 minutes",
   "main": "server.js",
   "scripts": {
+    "postinstall": "gulp build-prod",
     "start": "node_modules/.bin/babel-node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

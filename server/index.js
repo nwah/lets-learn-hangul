@@ -10,6 +10,7 @@ import wordsData from '../app/data/words';
 import { processText } from '../app/utils/text';
 
 // Setup
+const env = process.env.NODE_ENV || 'development';
 const server = express();
 
 server.set('port', (process.env.PORT || 4444));
@@ -36,7 +37,7 @@ server.get('/data/geometric.json', (req, res) => res.json(geometricData));
 server.get('/data/words.json', (req, res) => res.json(wordsData));
 
 // App Routes
-server.get(['/', '/level/*'], (req, res) => res.render('index'));
+server.get(['/', '/level/*'], (req, res) => res.render('index', {env}));
 
 // Run server
 server.listen(server.get('port'));
