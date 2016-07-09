@@ -12,6 +12,7 @@ import { processText } from '../app/utils/text';
 // Setup
 const server = express();
 
+server.set('port', (process.env.PORT || 4444));
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 server.use(compression());
@@ -38,5 +39,5 @@ server.get('/data/words.json', (req, res) => res.json(wordsData));
 server.get(['/', '/level/*'], (req, res) => res.render('index'));
 
 // Run server
-server.listen(4444);
-console.log('Running on localhost:4444');
+server.listen(server.get('port'));
+console.log(`Running on port ${server.get('port')}`);
