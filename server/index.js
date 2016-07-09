@@ -2,7 +2,6 @@ import path from 'path';
 import fs from 'fs';
 import express from 'express';
 import compression from 'compression';
-import wwwhisper from 'connect-wwwhisper';
 import courseData from '../app/data/course';
 import shapesData from '../app/data/shapes';
 import jamosData from '../app/data/jamos';
@@ -19,10 +18,6 @@ server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 server.use(compression());
 server.use(express.static(path.join(__dirname, '..', 'public')));
-
-if (env === 'production') {
-  server.use(wwwhisper(false));
-}
 
 // TODO: Should probably handle this as part of build step
 // Data
