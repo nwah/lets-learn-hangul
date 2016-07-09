@@ -1,16 +1,32 @@
 import React from 'react';
 import { branch } from 'baobab-react/higher-order';
 import Markdown from 'react-remarkable';
+import Circle from './Circle';
 import { startSession } from '../actions/session';
 
 const RoundReady = ({params, actions, level, round}) => (
   <div className="round__ready">
-    { round.text.start ? (
-      <Markdown source={round.text.start[0]} />
-    ) : (
-      <p>Ready to learn this round's words?</p>
-    )}
-    <button onClick={() => actions.startSession(level, round)} autoFocus data-autofocus="true">
+    <Circle className="round__ready__circle" r="128" />
+
+    <div className="bubble bubble--blue round__ready__round">
+      {round.round}
+    </div>
+    <label className="round__ready__round-label">
+      Round
+    </label>
+
+    <div className="round__ready__inner">
+      <h3>Ready?</h3>
+      { round.text.start ? (
+        <Markdown source={round.text.start[0]} />
+      ) : (
+        <p>Ready to learn this round's words?</p>
+      )}
+    </div>
+    <button
+      className="button button--forward"
+      onClick={() => actions.startSession(level, round)}
+      autoFocus data-autofocus="true">
       Start!
     </button>
   </div>

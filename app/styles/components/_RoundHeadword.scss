@@ -34,6 +34,10 @@
       display: table;
       clear: both;
     }
+
+    .one-syllable & {
+      padding-left: 40px;
+    }
   }
 
   &__syllable {

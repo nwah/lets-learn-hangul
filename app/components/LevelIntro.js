@@ -11,7 +11,7 @@ const LevelIntro = ({level, params}) => {
 
   return (
     <div className="level__intro">
-      <Calligraphy />
+      {false && <Calligraphy />}
 
       <Circle className="level__intro__circle" />
 

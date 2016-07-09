@@ -40,6 +40,7 @@ export function startSession(tree, level, round) {
 export function continueSession(tree) {
   const session = tree.select('session');
 
+  session.set('response', '');
   session.set('showCorrect', false);
 
   let next = session.get('current') + 1;
@@ -47,11 +48,20 @@ export function continueSession(tree) {
     return completeSession(tree);
   }
   session.set('current', next);
+
+  // TODO: Don't do this
+  setTimeout(() => {
+    let input = document.querySelector('.learn-response-form .fat-input');
+    console.log('input:', input);
+    input.focus();
+    input.select();
+  }, 50);
 }
 
 export function updateResponse(tree, response) {
   const session = tree.select('session');
   session.set('response', response);
+  session.set('responseError', null);
   tree.commit();
 }
 
@@ -70,7 +80,6 @@ export function submitResponse(tree) {
 
 function handleCorrectResponse(session, result, meta) {
   session.set('currentMisses', 0);
-  session.set('response', '');
 
   playEffect('correct');
   if (meta.audio && meta.audio.url) {
@@ -85,7 +94,7 @@ function handleIncorrectResponse(session, result, meta) {
 
   session.merge({
     currentMisses: session.get('currentMisses') + 1,
-    responseError: result.reason
+    responseError: result
   });
 }
 

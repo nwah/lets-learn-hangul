@@ -17,7 +17,7 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params})
     <div className="round__complete">
       <div className="round__complete__top">
         <Circle />
-        <label>Round Complete!</label>
+        <label>Round {round.round} Complete!</label>
         <p>{'You’ve learned ' + (newJamos.length > 1 ? `${newJamos.length} new Hangul letters!` : 'a new Hangul letter!')}</p>
       </div>
 

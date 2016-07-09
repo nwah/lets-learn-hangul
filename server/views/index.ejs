@@ -10,6 +10,47 @@
 </head>
 <body>
   <div id='mount'></div>
+  <div class="floaties"></div>
   <script src='/js/app.js'></script>
+  <style>
+  /*.landing { height: 1200px; }*/
+
+  .floaties {
+    position: absolute;
+    left: 50%;
+    top: 600px;
+  }
+
+  .floaty {
+    border-radius: 1000px;
+    position: absolute;
+    margin: -50px 0 0 -50px;
+    width: 100px;
+    height: 100px;
+    border: 1px red solid;
+  }
+  </style>
+  <script>
+    // var circle = document.querySelector('.landing__circle');
+    // document.addEventListener('click', function(e) {
+    //   var bbox = circle.getBoundingClientRect();
+    //   var x = e.clientX - bbox.left - bbox.width/2;
+    //   var y = e.clientY - bbox.top - bbox.height/2;
+
+    //   var floaty = document.createElement('div');
+    //   floaty.className = 'floaty';
+    //   floaty.style.left = x + 'px';
+    //   floaty.style.top = y + 'px';
+
+    //   floaty.setAttribute('data-xy', x + ',' + y);
+
+    //   document.querySelector('.floaties').appendChild(floaty);
+
+    //   floaty.addEventListener('click', function(e) {
+    //     e.stopPropagation();
+    //     floaty.parentNode.removeChild(floaty);
+    //   });
+    // });
+  </script>
 </body>
 </html>

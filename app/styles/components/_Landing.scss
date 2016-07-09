@@ -2,7 +2,23 @@
   @extend .radial;
 
   &__brush-title {
-    transform: translateX(-100%) translateY(-66%);
+    transform: translateX(-100%) translateY(-62%);
+  }
+
+  &__inner {
+    width: 360px;
+    transform: translateX(0) translateY(-60%);
+  }
+
+  h1,
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 20px;
   }
 
   &__circle {
@@ -10,5 +26,9 @@
     height: 420px;
     background: $white;
     border-radius: 600px;
+  }
+
+  .button {
+    transform: translateX(0px) translateY(140px);
   }
 }

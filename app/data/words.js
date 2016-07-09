@@ -1,4 +1,4 @@
-module.exports = [
+  module.exports = [
   {
     "word": "김치",
     "translation": "kimchi",
@@ -19,7 +19,7 @@ module.exports = [
   },
   {
     "word": "침",
-    "translation": "spit",
+    "translation": "needle",
     "image": {
       "url": "",
       "source": {
@@ -2748,8 +2748,8 @@ module.exports = [
     }
   },
   {
-    "word": "뭐?",
-    "translation": "What?",
+    "word": "뭐",
+    "translation": "what",
     "latin": "",
     "image": {
       "url": "",
@@ -3105,5 +3105,245 @@ module.exports = [
         "url": ""
       }
     }
-  }
+  },
+
+
+
+
+
+
+  {
+    "word": "한복",
+    "translation": "Hanbok (traditional Korean clothing)",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/hanbok.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "사람",
+    "translation": "person",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/saram.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "맥주",
+    "translation": "beer",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/maekju.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "노래",
+    "translation": "song",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/norae.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "바나나",
+    "translation": "banana",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/banana.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "쇼핑",
+    "translation": "shopping",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/shyoping.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "서핑",
+    "translation": "surfing",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/seoping.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "컴퓨터",
+    "translation": "computer",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/keompyuteo.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "이메일",
+    "translation": "e-mail",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/imeil.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "디지털",
+    "translation": "digital",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/dijiteol.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "파일",
+    "translation": "(computer) file",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/pail.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "영어",
+    "translation": "English",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/yeongeo.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  {
+    "word": "고양이",
+    "translation": "cat",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/goyangi.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
 ];

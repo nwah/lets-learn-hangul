@@ -2,6 +2,12 @@
   0% {
     transform: scale(0);
   }
+  66% {
+    transform: scale(1);
+  }
+  83% {
+    transform: scale(.9);
+  }
   100% {
     transform: scale(1);
   }
@@ -15,6 +21,7 @@
     float: left;
     width: 100px;
     height: 100px;
+    cursor: pointer;
 
     .geometric-jamo {
       position: relative;
@@ -23,6 +30,32 @@
       width: 60px;
       height: 60px;
       z-index: 5;
+    }
+
+    &__latin {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-weight: 900;
+      color: $red;
+      font-size: 32px;
+      pointer-events: none;
+      opacity: 0;
+
+      &.vowel {
+        color: $blue;
+      }
+    }
+
+    &:hover {
+      .jamo-table__jamo__latin {
+        opacity: 1;
+      }
+
+      .geometric-jamo {
+        opacity: 0;
+      }
     }
   }
 
@@ -41,7 +74,7 @@
       height: 80px;
       background: #fff;
       border-radius: 80px;
-      animation: scale-in 0.5s both;
+      animation: scale-in .72s both;
       animation-delay: inherit;
     }
   }

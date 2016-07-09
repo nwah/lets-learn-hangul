@@ -1,0 +1,24 @@
+.learn-response-form {
+  position: relative;
+
+  &__highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    padding: 10px 0.5rem;
+    border-radius: 10px;
+    background: transparent;
+    border: 4px solid transparent;
+    outline: none;
+    pointer-events: none;
+    color: transparent;
+    text-align: left;
+
+    .wrong {
+      color: $orange;
+    }
+  }
+}

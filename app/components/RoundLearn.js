@@ -9,9 +9,10 @@ import Image from './Image';
 import Circle from './Circle';
 import BigWord from './BigWord';
 import LearnResponseForm from './LearnResponseForm';
+import SoundButton from './SoundButton';
 
 const RoundLearn = ({params, session, shapes, words, actions}) => {
-  let {current, response, showCorrect} = session;
+  let {current, response, showCorrect, responseError} = session;
   let word = session.words[current];
   let {image, audio, translation, latin} = words[word];
 
@@ -26,10 +27,10 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
       'has-image': hasImage,
       'has-audio': hasAudio,
       'show-correct': showCorrect,
+      'medium-word': word.length > 3 && word.length < 5,
+      'long-word': word.length >= 5,
     })}>
-      <div className={classNames('round__learn__new-word', {
-          'long-word': word.length > 3
-        })}>
+      <div className='round__learn__new-word'>
         <Circle className="round__learn__new-word__circle" />
         <label>New word</label>
         <BigWord word={word} shapes={shapes} />
@@ -42,31 +43,38 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
         )}
 
         { hasAudio && (
-          <div
-            className="round__learn__audio"
-            onClick={() => play(audio.url)} />
+          <div className="round__learn__audio">
+            <SoundButton url={audio.url} />
+          </div>
         )}
       </div>
 
-      { showCorrect ? (
+      { showCorrect && (
         <div className="round__learn__correct-word">
           <Circle />
-          <label>Correct!</label>
+          <label>Meaning</label>
           <h3>{translation}</h3>
+        </div>
+      )}
+
+      <div className="round__learn__entry">
+        <Circle />
+        { showCorrect
+          ? <label className="correct">Correct!</label>
+          : responseError ? <label className="error">Oops!</label>
+          : <label>Romanization</label>
+        }
+        <LearnResponseForm />
+
+        { showCorrect &&
           <button
-            className="button--green button--forward"
+            className="button--blue button--forward"
             onClick={actions.continueSession}
             autoFocus data-autofocus="true">
             Next
           </button>
-        </div>
-      ) : (
-        <div className="round__learn__entry">
-          <Circle />
-          <label>Romanization</label>
-          <LearnResponseForm />
-        </div>
-      )}
+        }
+      </div>
     </div>
   );
 }

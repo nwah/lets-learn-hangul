@@ -1,0 +1,22 @@
+.constellation {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+
+  &__center {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+  }
+
+  &__jamo {
+    display: block;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 300;
+  }
+}

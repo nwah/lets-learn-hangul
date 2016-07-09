@@ -1,13 +1,13 @@
 import React from 'react';
 import Markdown from 'react-remarkable';
 import { Link } from 'react-router';
+import classNames from 'classnames';
 import { getRomanizations } from '../utils';
 import Circle from './Circle';
 import BigSyllable from './BigSyllable';
 
 const RoundHeadword = ({params, round, shapes}) => {
   let syllables = round.headword.split('');
-  console.log('round.headword', round.headword, 'syllables', syllables)
   let slides = round.text.word;
   let text = slides[params.headword] || slides[0];
   let next = (parseFloat(params.headword) || 0) + 1;
@@ -18,7 +18,9 @@ const RoundHeadword = ({params, round, shapes}) => {
   );
 
   return (
-    <div className="round__headword">
+    <div className={classNames("round__headword", {
+      'one-syllable': syllables.length === 1,
+    })}>
       <div className="round__headword__word">
         <Circle />
         <label>Round Keyword</label>

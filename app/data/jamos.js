@@ -3,36 +3,38 @@ module.exports = [
     jamo: 'ㄱ',
     latin: 'g / k',
     description: `
-This letter makes a sound like
-**g** or **k** in English.
+This letter sounds similar to **G** in English.
 
-Korean doesn’t make a distinction between
-**g** and **k** sounds, so you may see this letter written
-either way in English. Usually people pick **g** at the
-start of a syllable and **k** at the end.
+But, it can be transcribed as either **G** or **K**. Both **kimchi** and **Gangnam** both begin with **ㄱ**.
 
-Sometimes the bottom part will curve inwards to make it a little more visually balanced, like so:
+Here we’ll write it as **G** at the start of a syllable, and **K** at the end of a syllable.
+
+A few other ways **ㄱ** can appear:
 
 <img src="/images/examples/g-versions.png" width="111" height="33" />
     `,
-    memory: '**g**un'
+    memory: '**g**un',
+    audio: {url: 'jamos/g.mp3'}, 
   },
   {
     jamo: 'ㅣ',
     latin: 'i',
     description: `
-This letter sounds like **ee** in English,
-and is usually transcribed as **i**.
+This letter sounds like **ee** in English.
+
+Here we’ll write it as **i**.
     `,
-    memory: 'tr**ee**'
+    memory: 'tr**ee**',
+    audio: {url: 'jamos/i.mp3'},
   },
   {
     jamo: 'ㅁ',
     latin: 'm',
     description: `
-This letter sounds like **m** in English.
+This represents the **m** sound.
     `,
-    memory: '**m**at'
+    memory: '**m**at',
+    audio: {url: 'jamos/m.mp3'},
   },
   {
     jamo: 'ㅊ',
@@ -44,44 +46,49 @@ Depending on the font, sometimes the little stroke
 on the top will be vertical. And sometimes the “legs” at
 the bottom attach in the middle instead of on the right.
 
-Here’s a few examples of ㅊ:
+Here are a few examples of ㅊ:
 <img src="/images/examples/ch-versions.png" width="250" height="40" />
     `,
-    memory: `**ch**icken`
+    memory: `**ch**icken`,
+    audio: {url: 'jamos/ch.mp3'},
   },
   {
     jamo: 'ㅂ',
     latin: 'b / p',
     description: `
-This letter sounds like **b** or **p** in English.
+This letter sounds similar to **B** in English.
 
-Like with ㄱ, Korean doesn't make a distinction between
-the two sounds. You'll usually see **b** for the start
-of a syllable and **p** for the end.
+Like with ㄱ before, this letter can be transcribed two ways: as either **b** or **p**.
+
+Here we’ll use **b** at the start of a syllable and **p** at the end of a syllable.
     `,
-    memory: '**b**ucket'
+    memory: '**b**ucket',
+    audio: {url: 'jamos/b.mp3'},
   },
   {
     jamo: 'ㅏ',
     latin: 'a',
     description: `
-This letter sounds like **ahh** in English,
-and is usually just written as **a**.
+This letter sounds like **ahhhh**.
 
-Notice that it's just ㅣ with a notch on the right.
+Here we’ll write it as **a**.
     `,
-    memory: '**a**l*right*'
+    memory: '**a**l*right*',
+    audio: {url: 'jamos/a.mp3'},
   },
   {
     jamo: 'ㅜ',
     latin: 'u',
     description: `
-This letter sounds like **oo** in English,
-and is usually just written as **u**.
+This letter sounds like **oo**.
 
-It has a notch *u*nder the horizontal line.
+Here we’ll write it as **u**.
+
+Remember that it has a notch<br/>
+**u**nder the horizontal line.
     `,
-    memory: 'r**oo**t'
+    memory: 'r**oo**t',
+    audio: {url: 'jamos/u.mp3'},
   },
   {
     jamo: 'ㅗ',
@@ -90,9 +97,10 @@ It has a notch *u*nder the horizontal line.
 This letter sounds like **ohh** in English,
 and is usually written as **o**.
 
-It has a notch *o*ver the horizontal line.
+Remember that it has a notch *o*ver the horizontal line.
     `,
-    memory: 'r**o**se'
+    memory: 'r**o**se',
+    audio: {url: 'jamos/o.mp3'},
   },
   {
     jamo: 'ㄹ',
@@ -105,7 +113,8 @@ It’s usually transcribed in English as **r** at the beginning of words, and **
 at the end. Depending on the font or handwriting, it can also look like a _3_ with
 a tail, or a _z_:
     `,
-    memory: '**l**ong **r**eceipt'
+    memory: '**l**ong **r**eceipt',
+    audio: {url: 'jamos/r.mp3'},
   },
   {
     jamo: 'ㄴ',
@@ -113,7 +122,8 @@ a tail, or a _z_:
     description: `
 Just like **n** in English.
     `,
-    memory: '**N**ike'
+    memory: '**N**ike',
+    audio: {url: 'jamos/n.mp3'},
   },
   {
     jamo: 'ㄷ',
@@ -125,7 +135,8 @@ Like with ㄱ and ㅂ, Korean doesn't make a distinction between
 these two sounds. You'll usually see **d** for the start
 of a syllable and **t** for the end.
     `,
-    memory: '**d**oor'
+    memory: '**d**oor',
+    audio: {url: 'jamos/d.mp3'},
   },
   {
     jamo: 'ㅅ',
@@ -135,7 +146,8 @@ Pronounced like **s** in English.
 
 Before an **i** or **y** sound it’s pronounced like **sh**.
     `,
-    memory: '**s**eagull'
+    memory: '**s**eagull',
+    audio: {url: 'jamos/s.mp3'},
   },
 
   {
@@ -143,11 +155,14 @@ Before an **i** or **y** sound it’s pronounced like **sh**.
     latin: 'eo',
     description: `
 We don’t have this exact sound in English. It pronounced similarly to **uh**,
-but with your lips more rounded (like for **oh**).
+but with your lips more rounded <br />
+(like in **oh**).
 
-You may see it written in English as **eo**, **uh** or even just **o**.
+You may see it written in English as **eo**, **uh** or <br />
+even just **o**.
     `,
-    memory: '****oor'
+    memory: '****oor',
+    audio: {url: 'jamos/eo.mp3'},
   },
 
   {
@@ -160,7 +175,8 @@ with a consonant sound.
 It would be weird to have ㅣ and ㅡ just floating around unattached, so this
 is used instead. It is totally silent when it’s at the start of a syllable.
     `,
-    memory: 'silence'
+    memory: 'silence',
+    audio: {url: 'jamos/ng.mp3'},
   },
 
   {
@@ -171,7 +187,8 @@ When used as the final consonant in a syllable this is an **ng** sound, like in 
 
 It looks identical to the silent placeholder used at the start of a syllable.
     `,
-    memory: 'ri**ng**'
+    memory: 'ri**ng**',
+    audio: {url: 'jamos/ng.mp3'},
   },
   {
     jamo: 'ㅎ',
@@ -179,7 +196,8 @@ It looks identical to the silent placeholder used at the start of a syllable.
     description: `
 Pronounced like **h** in English.
     `,
-    memory: '**h**at'
+    memory: '**h**at',
+    audio: {url: 'jamos/h.mp3'},
   },
   {
     jamo: 'ㅈ',
@@ -190,7 +208,8 @@ This letter sounds like **j** in jazz. Just a little softer, with less air.
 Koreans use this letter instead of **z** when writing foreign words, so you’ll
 often see this written as either **j** or **z**. It’s sometimes written as **ch** too.
     `,
-    memory: '**j**a**zz**'
+    memory: '**j**a**zz**',
+    audio: {url: 'jamos/j.mp3'},
   },
   {
     jamo: 'ㅡ',
@@ -201,7 +220,8 @@ but a little softer, like **oo** in **book**.
 
 It’s usually written as **eu** or just **u**.
     `,
-    memory: 'burn'
+    memory: 'burn',
+    audio: {url: 'jamos/eu.mp3'},
   },
   {
     jamo: 'ㅐ',
@@ -210,7 +230,8 @@ It’s usually written as **eu** or just **u**.
 We don’t have this exact sound in English, but it's somewhere
 between **e** in **met**, and **a** in **mat**.
     `,
-    memory: 'mat'
+    memory: 'mat',
+    audio: {url: 'jamos/ae.mp3'},
   },
   {
     jamo: 'ㅔ',
@@ -218,7 +239,8 @@ between **e** in **met**, and **a** in **mat**.
     description: `
 This letter sounds like **é** in **café**.
     `,
-    memory: 'elephant'
+    memory: 'elephant',
+    audio: {url: 'jamos/e.mp3'},
   },
   {
     jamo: 'ㅖ',
@@ -226,7 +248,8 @@ This letter sounds like **é** in **café**.
     description: `
 This letter sounds like **ye** in **Kanye**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/ye.mp3'},
   },
   {
     jamo: 'ㅑ',
@@ -234,7 +257,8 @@ This letter sounds like **ye** in **Kanye**.
     description: `
 This letter sounds like **ya** in **yacht**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/ya.mp3'},
   },
   {
     jamo: 'ㅕ',
@@ -242,7 +266,8 @@ This letter sounds like **ya** in **yacht**.
     description: `
 This letter sounds like **you-** in **young**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/yeo.mp3'},
   },
   {
     jamo: 'ㅒ',
@@ -250,7 +275,8 @@ This letter sounds like **you-** in **young**.
     description: `
 This letter sounds like **ye** in **yet**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/yae.mp3'},
   },
   {
     jamo: 'ㅛ',
@@ -258,7 +284,8 @@ This letter sounds like **ye** in **yet**.
     description: `
 This letter sounds like **Yo!**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/yo.mp3'},
   },
   {
     jamo: 'ㅠ',
@@ -266,7 +293,8 @@ This letter sounds like **Yo!**.
     description: `
 This letter sounds like **you**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/yu.mp3'},
   },
   {
     jamo: 'ㅉ',
@@ -276,7 +304,8 @@ This is the stressed version of ㅈ.
 
 It sounds like ㅈ but stronger, with the vocal cords tensed.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/jj.mp3'},
   },
   {
     jamo: 'ㅆ',
@@ -286,7 +315,8 @@ This is the stressed version of ㅅ.
 
 It sounds like ㅅ but stronger, with the vocal cords tensed.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/ss.mp3'},
   },
   {
     jamo: 'ㅃ',
@@ -296,7 +326,8 @@ This is the stressed version of ㅂ.
 
 It sounds like ㅂ but stronger, with the vocal cords tensed.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/bb.mp3'},
   },
   {
     jamo: 'ㄸ',
@@ -306,7 +337,8 @@ This is the stressed version of ㄷ.
 
 It sounds like ㄷ but stronger, with the vocal cords tensed.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/dd.mp3'},
   },
   {
     jamo: 'ㄲ',
@@ -316,7 +348,8 @@ This is the stressed version of ㄱ.
 
 It sounds like ㄱ but stronger, with the vocal cords tensed.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/gg.mp3'},
   },
   {
     jamo: 'ㅋ',
@@ -326,7 +359,8 @@ This is the aspirated version of ㄱ.
 
 It sounds like ㄱ except a puff of air comes out when it's said.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/k.mp3'},
   },
   {
     jamo: 'ㅌ',
@@ -336,7 +370,8 @@ This is the aspirated version of ㄷ.
 
 It sounds like ㄷ except a puff of air comes out when it's said.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/t.mp3'},
   },
   {
     jamo: 'ㅍ',
@@ -346,7 +381,8 @@ This is the aspirated version of ㅂ.
 
 It sounds like ㅂ except a puff of air comes out when it's said.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/p.mp3'},
   },
   {
     jamo: 'ㅘ',
@@ -356,7 +392,8 @@ This letter is a combination of ㅗ and ㅏ.
 
 It sounds like **wa** in **water**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/wa.mp3'},
   },
   {
     jamo: 'ㅙ',
@@ -366,7 +403,8 @@ This letter is a combination of ㅗ and ㅐ.
 
 We don't have this sound in English, but it's between **we** in **wet** and **wa** in **wag**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/wae.mp3'},
   },
   {
     jamo: 'ㅝ',
@@ -376,7 +414,8 @@ This letter is a combination of ㅜ and ㅓ.
 
 We don't have this sound in English, but it's close to like **wo** in **wonderful**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/weo.mp3'},
   },
   {
     jamo: 'ㅞ',
@@ -386,7 +425,8 @@ This letter is a combination of ㅜ and ㅔ.
 
 It sounds like **we** in **Zimbabwe**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/we.mp3'},
   },
   {
     jamo: 'ㅟ',
@@ -396,7 +436,8 @@ This letter is a combination of ㅜ and ㅣ.
 
 It sounds like **wee**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/wi.mp3'},
   },
   {
     jamo: 'ㅚ',
@@ -406,7 +447,8 @@ This letter is a combination of ㅗ and ㅣ.
 
 In modern Korean, it’s pronounced the same as ㅞ: like **we** in **Zimbabwe**.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/oi.mp3'},
   },
   {
     jamo: 'ㅢ',
@@ -418,7 +460,8 @@ It's usually just pronounced like ㅡ and ㅣ said quickly, one after the other.
 
 It can also be pronounced just **ㅣ** (especially when in names), and sometimes like ㅔ.
     `,
-    memory: ''
+    memory: '',
+    audio: {url: 'jamos/eui.mp3'},
   },
 
 ];

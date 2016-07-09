@@ -36,6 +36,13 @@
     transform: translateX(-95px) translateY(-166px);
   }
 
+  .sound-button {
+    width: 42px;
+    height: 42px;
+    transform: translateX(-45px) translateY(-119px);
+    z-index: 1;
+  }
+
   .big-jamo {
     width: 350px;
     height: 350px;
@@ -48,5 +55,75 @@
 
   .button {
     transform: translateX(110px) translateY(140px);
+  }
+
+  &[data-shape="jamo_V_a"] {
+    .big-jamo { margin-left: 27px; }
+  }
+
+  &[data-shape="jamo_V_eo"] {
+    .big-jamo { margin-left: -30px; }
+  }
+
+  &[data-shape="jamo_H_eu"] {
+    .big-jamo { margin-left: -30px; }
+  }
+
+  &[data-shape="jamo_V_ae"] {
+    .big-jamo { margin-left: 35px; }
+    .bubble { margin-left: 70px; }
+  }
+
+  &[data-shape="jamo_V_e"] {
+    .big-jamo { margin-left: 7px; }
+    .bubble { margin-left: 70px; }
+  }
+
+  &[data-shape="jamo_V_ye"] {
+    .big-jamo { margin-left: 7px; }
+    .bubble { margin-left: 70px; }
+  }
+
+  &[data-shape="jamo_V_ya"] {
+    .big-jamo { margin-left: 30px; }
+  }
+
+  &[data-shape="jamo_V_yeo"] {
+    .big-jamo { margin-left: -35px; }
+  }
+
+  &[data-shape="jamo_V_yae"] {
+    .big-jamo { margin-left: 35px; }
+    .bubble { margin-left: 70px; }
+  }
+
+  &[data-shape="jamo_W_wa"] {
+    .big-jamo { margin-left: -50px; }
+  }
+
+  &[data-shape="jamo_W_wae"] {
+    .big-jamo { margin-left: -30px; }
+    .bubble { margin-left: 70px; }
+  }
+
+  &[data-shape="jamo_W_weo"] {
+    .big-jamo { margin-left: -90px; }
+  }
+
+  &[data-shape="jamo_W_we"] {
+    .big-jamo { margin-left: -35px; }
+    .bubble { margin-left: 70px; }
+  }
+
+  &[data-shape="jamo_W_wi"] {
+    .big-jamo { margin-left: -90px; }
+  }
+
+  &[data-shape="jamo_W_oi"] {
+    .big-jamo { margin-left: -87px; }
+  }
+
+  &[data-shape="jamo_W_eui"] {
+    .big-jamo { margin-left: -90px; }
   }
 }

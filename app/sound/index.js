@@ -26,13 +26,16 @@ export function play(file) {
 }
 
 export function isPlaying(file) {
-  return true;
+  if (!cache[file]) return false;
+  return cache[file].isPlaying;
 }
 
 export function preload(file, autoplay = false) {
   if (isArray(file)) return file.map(preload);
   cache[file] = new Howl({
     urls: [`${basePath}${file}`],
-    autoplay: autoplay === true
+    autoplay: autoplay === true,
+    onplay: () => cache[file].isPlaying = true,
+    onend: () => cache[file].isPlaying = false,
   });
 }

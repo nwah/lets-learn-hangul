@@ -34,6 +34,7 @@ export function createRoutes(tree) {
   function onEnterApp({params}) {
     if (isEmpty(tree.get('levels'))) {
       loadCourse(tree);
+      loadGeometric(tree);
     }
   }
 

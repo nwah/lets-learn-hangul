@@ -1,0 +1,14 @@
+.sound-button {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+  // background-color: darken($blue, 20%);
+  background-color: $black;
+  cursor: pointer;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

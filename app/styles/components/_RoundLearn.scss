@@ -12,6 +12,7 @@
     margin-left: -324px;
     transform: translateX(20px);
     transition: transform 0.3s;
+    z-index: 2;
 
     .has-image.show-correct & {
       transform: translateX(-100px);
@@ -45,7 +46,19 @@
       width: 93px;
     }
 
-    &.long-word {
+    .medium-word & {
+      .big-syllable,
+      .big-text {
+        width: 105px;
+        height: 105px;
+      }
+
+      .big-text {
+        width: 70px;
+      }
+    }
+
+    .long-word & {
       .big-syllable,
       .big-text {
         width: 70px;
@@ -77,11 +90,6 @@
     position: absolute;
     top: 180px;
     left: 200px;
-    width: 55px;
-    height: 55px;
-    border-radius: 100px;
-    background: $green;
-    cursor: pointer;
   }
 
   &__image {
@@ -110,6 +118,10 @@
     }
   }
 
+  &__audio {
+    transition: transform 0.15s, opacity 0.15s;
+  }
+
   &__entry {
     position: absolute;
     z-index: 5;
@@ -117,6 +129,16 @@
     margin-left: -64px;
     top: 336px;
     text-align: right;
+
+    label {
+      &.correct {
+        color: $green;
+      }
+
+      &.error {
+        color: $orange;
+      }
+    }
 
     .circle {
       position: absolute;
@@ -130,16 +152,30 @@
 
     .fat-input {
       width: 216px;
+
+      &.correct {
+        background-color: rgba(91, 216, 174, 0.6);
+        border-color: $green;
+        color: white;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 90px;
+      left: 240px;
+      white-space: nowrap;
     }
   }
 
   &__correct-word {
     position: absolute;
-    z-index: 5;
+    z-index: 2;
     left: 50%;
-    top: 342px;
-    margin-left: 97px;
-  
+    top: 42px;
+    margin-left: 76px;
+    padding-top: 38px;
+
     .circle {
       position: absolute;
       top: -30px;
@@ -150,8 +186,10 @@
     }
 
     label {
-      color: $green;
-      margin-bottom: 4px;
+      position: absolute;
+      left: -40px;
+      top: 0;
+      text-align: right;
     }
 
     h3 {
@@ -160,13 +198,9 @@
       white-space: nowrap;
       text-align: center;
       min-width: 107px;
-    }
-
-    button {
-      position: absolute;
-      top: 88px;
-      left: 50px;
-      white-space: nowrap;
+      font-size: 36px;
+      font-weight: 600;
+      color: $blue;
     }
   }
 

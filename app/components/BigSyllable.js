@@ -129,6 +129,7 @@ const Hitareas = ({syllable, shapes, onHit, onMouseEnter, onMouseLeave}) => (
     {getHintIDs(syllable).map((id, i) => 
       <path style={{cursor: 'pointer'}} fill="transparent" key={i}
         d={shapes[id] || ''}
+        onMouseDown={(e) => e.preventDefault()}
         onClick={() => onHit(i)}
         onMouseEnter={() => onMouseEnter(i)}
         onMouseLeave={() => onMouseLeave(i)}

@@ -7,13 +7,16 @@ module.exports = [
 # Level&nbsp;One: **Food**
 Let’s start with the basics…
 ---
-Hangul is a simple alphabet in a complex", "Chinese-character-like disguise.
+The Korean Language has its very own alphabet called Hangul.
 ---
-The only big difference between Hangul and other alphabets (like the one you're reading now)
-is that instead of all the letters sitting side-by-side in a horizontal row", "Hangul letters
-are stacked up into blocks—one for each syllable.
+Although it looks similar to Chinese and Japanese characters, Hangul is actually a simple alphabet.
 ---
-It takes most people only about 30-60 minutes to learn Hangul. Let's get started!
+There's only one major difference between Hangul and other alphabets like Latin (what you're reading now) or Cyrillic (Russian).
+---
+Instead of all the letters sitting side-by-side in a horizontal row, Hangul letters are stacked up
+into blocks—one for each syllable.
+---
+Let's learn to read our first Korean word!
       `
     },
     rounds: [
@@ -29,18 +32,24 @@ It takes most people only about 30-60 minutes to learn Hangul. Let's get started
 
 That means we’ll need to learn 4 Hangul
 letters to read it.
+---
+As you learn the Hangul letters, keep in mind that there isn’t an exact one-to-one correspondence with Latin letters.
+---
+We’ll be using the most common Latin spellings for Hangul letters to help you learn, but the important thing is to learn the actual Korean sounds that the Hangul letters represent.
+---
+On to the letters!
           `,
           word: `
 Now let’s check out how these four
-letters combine to spell **kimchi**
+letters combine to spell **kimchi**.
 ---
-**Kimchi** has 2 syllables—**kim** and **chi**—so it has two syllabic blocks.
+**Kimchi** has 2 syllables (**kim** and **chi**), so there are two syllabic blocks.
 ---
-Take a look at the arrangement of the letters within the block.
+Take a look at the arrangement of the letters within each block.
 ---
 In **kim**, the ㄱ and ㅣ are stacked on top of the ㅁ, but in **chi** the ㅊ and ㅣ are sitting side-by-side.
 ---
-Whenever the vowel is tall and skinny like this, we arrange the block like the ones in **kimchi**.
+Any time the the vowel is tall and skinny like **ㅣ** we arrange the letters like this.
           `,
           start: `
 Alright, enough theory!
@@ -51,7 +60,7 @@ Let’s try some reading!
 Woo! Four letters and four words down. Let’s keep going!
           `
         },
-        jamo: ["ㄱ", "ㅣ", "ㅁ", "ㅊ"],
+        jamo: ["ㅁ", "ㅊ", "ㄱ", "ㅣ"],
         words: ["침", "기", "김"]
       },
       {
@@ -63,18 +72,11 @@ Woo! Four letters and four words down. Let’s keep going!
 # Round&nbsp;Two: **Bibimbap**
           `,
           word: `
-            Three syllables. Three blocks. Bi. Bim. Bap.
+            Three syllables. Three blocks.
+            Bi. Bim. Bap.
             ---
-            Even though we write b-a-p in English, they're the same Hangul
-            letter ㅂ
-            ---
-            Take a look at how the letters are arranged inside each block…
-            ---
-            The initial consonant is in top left corner…
-            ---
-            The tall skinny vowel is on the right…
-            ---
-            …and any final consonants are down at the bottom.
+            Notice that even though we transcribe the last syllable as *b-a-p*,
+            the *b* and *p* are both **ㅂ**.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -94,12 +96,7 @@ Woo! Four letters and four words down. Let’s keep going!
           word: `
             The keyword for this round is **bulgogi**.
             ---
-            Check out how the **ㄱ** changes shape to fit with the other letters.
-            ---
-            **Bul** means "fire", and **gogi** means "meat"
-            ---
-            Put them together and you've got **bulgogi**: tasty
-            Korean barbecue.
+            Check out how the **ㄱ** changes shape to fit better.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -117,14 +114,18 @@ Woo! Four letters and four words down. Let’s keep going!
 # Round&nbsp;Four: **Mandu**
           `,
           word: `
-            **Mandu** is the Korean word for dumplings
+            **Mandu** are Korean dumplings.
+            ---
+            Be careful not to confuse **ㄴ** with **ㄱ**.
+            --
+            **ㄱ** looks like a **g**un, while **ㄴ** looks like the **N**ike swoosh.
           `,
           start: `
             Let’s see what we can read with our new letters!
           `
         },
         jamo: ["ㄴ", "ㄷ"],
-        words: ["친구", "돈", "나", "나가", "다"]
+        words: ["바나나", "친구", "돈", "나", "나가", "다"]
       }
     ]
   },
@@ -135,7 +136,8 @@ Woo! Four letters and four words down. Let’s keep going!
     text: {
       intro: `
 # Level&nbsp;Two: **World Tour**
-Welcome to Level 2. Let's go on a trip around the world.
+Welcome to Level 2.
+Let's go on a trip around the world!
       `
     },
     rounds: [
@@ -148,16 +150,18 @@ Welcome to Level 2. Let's go on a trip around the world.
 # Round&nbsp;One: **Busan**
           `,
           word: `
-            **Busan** is Korea’s second biggest city, located on the coast in the southeast
+            Busan is Korea’s 2nd biggest city.
             ---
-            Busan’s got beaches, mountains, temples, and a cool accent.
+            The second syllable, **산**, means *mountain* in Korean.
+            ---
+            **ㅅ** looks a bit like a mountain.
           `,
           start: `
             Let’s see what we can read with our new letters!
           `
         },
         jamo: ["ㅅ"],
-        words: ["산", "삼", "사", "살", "소", "술", "신", "신발"]
+        words: ["산", "삼", "사람", "살", "소", "술", "신", "신발"]
       },
       {
         round: 2,
@@ -168,7 +172,12 @@ Welcome to Level 2. Let's go on a trip around the world.
 # Round&nbsp;Two: **Seoul**
           `,
           word: `
-            **Seoul** blah blah blah
+            In Korean, **Seoul** is two syllables:
+            **suh**-**ool**
+            ---
+            Since the second syllable starts with a vowel sound,
+            we use the silent placeholder **ㅇ** where the consonant
+            would normally go.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -186,10 +195,11 @@ Welcome to Level 2. Let's go on a trip around the world.
 # Round&nbsp;Three: **Gangnam**
           `,
           word: `
-            **Gangnam** blah blah blah
+            Here we see the other **ㅇ** used to represent the **ng**
+            sound in the first syllable of *Gangnam*.
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s see what we can read with this new letter!
           `
         },
         jamo: ["ㅇ"],
@@ -204,14 +214,20 @@ Welcome to Level 2. Let's go on a trip around the world.
 # Round&nbsp;Four: **Korea**
           `,
           word: `
-            Korea blah blah blah
+            **ㅎ** looks like **ㅇ** with a **h**at on.
+            ---
+            The prefix **한** means *Korean*, and suffix **국** means *country*.
+            ---
+            **한** is used as a prefix in many words for Korean things.
+            ---
+            And almost all country names end with **국** in Korean.
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s see what we can read with this new letter!
           `
         },
         jamo: ["ㅎ"],
-        words: ["후추", "한강", "호두", "한복"]
+        words: ["후추", "한강", "호두", "한복"] //, "한식"
       },
       {
         round: 5,
@@ -222,10 +238,17 @@ Welcome to Level 2. Let's go on a trip around the world.
 # Round&nbsp;Five: **Australia**
           `,
           word: `
-            Australia blah blah
+            In addition to representing *j* sounds,
+            **ㅈ** is the closest sound in Korean to **z** in English.
+            ---
+            Not only are most English words with **z** usually transcribed
+            with **ㅈ**
+            ---
+            But Korean names with **ㅈ** are often stylized as **z**, like
+            *Zico* and *Zion T*.
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s see what we can read with our new letter!
           `
         },
         jamo: ["ㅈ"],
@@ -240,10 +263,12 @@ Welcome to Level 2. Let's go on a trip around the world.
 # Round&nbsp;Six: **Brazil**
           `,
           word: `
-            Brazil blah blah blah
+            Remember what I said last round about **ㅈ** and **z**?
+            ---
+            Here's a perfect example: *Brazil*.
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s see what we can read with our new letter!
           `
         },
         jamo: ["ㅡ"],
@@ -259,6 +284,11 @@ Welcome to Level 2. Let's go on a trip around the world.
       intro: `
 # Level&nbsp;Three: **Oh&nbsp;yeah**!
 Now we get to the fun words!
+---
+We’ll be learning a couple more vowels and the stressed consonants in this level.
+---
+These will let us read some of the most
+fun words in Korean!
       `
     },
     rounds: [
@@ -271,14 +301,17 @@ Now we get to the fun words!
 # Round&nbsp;One: **Daebak!**
           `,
           word: `
-            **Daebak** blah blah blah
+            **Daebak!** is an exclamation that’s a lot like 
+            *awesome!* in American English.
+            ---
+            You can use this whenever you encounter something amazing.
           `,
           start: `
             Let’s see what we can read with our new letters!
           `
         },
         jamo: ["ㅐ"],
-        words: ["새", "해", "배", "런닝맨", "개", "뱀"]
+        words: ["맥주", "노래", "개", "배", "런닝맨", "뱀"]
       },
       {
         round: 2,
@@ -289,14 +322,24 @@ Now we get to the fun words!
 # Round&nbsp;Two: **Yes**
           `,
           word: `
-            **Yes** blah blah blah
+            Don’t sweat it if you don’t hear much difference between **ㅔ** and **ㅐ**.
+            ---
+            Most Koreans nowadays pronounce these two letters the same, and often mix them up when spelling.
+            ---
+            One way to help remember them is to think of **ㅐ** as **ㅏ**+**ㅣ** and to think of **ㅔ** as **ㅓ**+**ㅣ**
+            ---
+            **ㅐ** (**ㅏ**+**ㅣ**) sounds *slightly* closer to the short **a** sound in *cat*, so try and
+            remember that **ㅏ** corresponds to the short **a** sound.
+            ---
+            Koreans often use the **ㅏㅣ**/**ㅓㅣ** thing when asking people how to spell something
+            (ex: *“Is that spelled ah-ee or uh-ee?”*)
           `,
           start: `
             Let’s see what we can read with our new letters!
           `
         },
         jamo: ["ㅔ"],
-        words: ["제발", "세기", "섹시"]
+        words: ["이메일", "제발", "세기", "섹시"]
       },
       {
         round: 3,
@@ -306,14 +349,24 @@ Now we get to the fun words!
 # Round&nbsp;Three: **The Best!**
           `,
           word: `
-            **Busan** blah blah blah
+            **짱** means *the best* or *awesome*, as in *you’re the best!*.
+            ---
+            There are stressed versions of most of the basic consonants.
+            ---
+            These stressed consonants often sound kind of cutesy to Koreans
+            so you’ll come across them in lots of slang words and onomatopoeias.
+            ---
+            If you’re learning to speak Korean, be sure and spend a lot of time
+            listening to them and practicing saying them aloud.
+            ---
+            They’re fun once you get the hang of them!
           `,
           start: `
             Let’s see what we can read with our new letters!
           `
         },
         jamo: ["ㅉ", "ㅆ"],
-        words: ["아싸", "쩔어", "짜", "씨름", "싸", "비싸", "쓰레기", "써"]
+        words: ["아싸!", "쩔어!", "짜", "씨름", "싸", "비싸", "쓰레기", "써"]
       },
       {
         round: 4,
@@ -323,14 +376,23 @@ Now we get to the fun words!
 # Round&nbsp;Four: **Oppa**
           `,
           word: `
-            **Oppa** blah blah blah
+            **Oppa** is what girls call older guys.
+            ---
+            It literally means *older brother*, but is used by anyone regardless
+            of whether they’re actually siblings.
+            ---
+            There are different words for each combination of gender and age.
+            ---
+            These family words are are a very big part of the Korean language,
+            and reflect a lot about how close (or distant) the speaker is with
+            the person they’re speaking to.
           `,
           start: `
             Let’s see what we can read with our new letters!
           `
         },
         jamo: ["ㅃ", "ㄸ", "ㄲ"],
-        words: ["떡볶이", "꺼져", "뽀로로", "뽀뽀", "띠", "따라", "떨리다", "까나리"]
+        words: ["떡볶이", "뽀로로", "뽀뽀", "띠", "따라", "떨리다"] //, "깍두기"
       },
       {
         round: 5,
@@ -341,14 +403,15 @@ Now we get to the fun words!
 # Round&nbsp;Five: **Hey!**
           `,
           word: `
-            **Hey!** blah blah blah
+            All the vowels except **ㅡ** and **ㅣ** have **y** version,
+            formed by doubling up the little notch.
+            ---
+            Sof if there's a notch, you can double it up to make a **y** sound.
           `,
-          start: `
-            Let’s see what we can read with our new letters!
-          `
+          start: ``
         },
         jamo: ["ㅖ", "ㅑ"],
-        words: ["예", "예문", "계속", "계란", "양복", "향수"]
+        words: ["예", "고양이", "예문", "계속", "계란", "양복", "향수"]
       },
       {
         round: 6,
@@ -366,7 +429,7 @@ Now we get to the fun words!
           `
         },
         jamo: ["ㅕ", "ㅒ"],
-        words: ["얘기", "염소", "여자", "변기", "녀석", "여자친구", "걔"]
+        words: ["영어", "얘기", "염소", "여자", "꺼져", "변기", "녀석", "여자친구", "걔"]
       },
       {
         round: 7,
@@ -447,7 +510,7 @@ Last set of letters.
           `
         },
         jamo: ["ㅍ"],
-        words: ["실패", "스팸", "파", "파전", "포도", "피", "팔", "작품"]
+        words: ["쇼핑", "실패", "서핑", "파", "파전", "포도", "피", "팔", "작품"]
       },
       {
         round: 4,
@@ -468,7 +531,7 @@ Last set of letters.
       },
       {
         round: 5,
-        headword: "뭐?",
+        headword: "뭐",
         text: {
           intro: `
 # Round&nbsp;Five: **What?**
@@ -518,5 +581,130 @@ Last set of letters.
         words: ["의자", "의리", "희망"]
       },
     ]
+  },
+
+  {
+    level: 5,
+    name: 'Say What!?',
+    text: {
+      intro: `
+# Level&nbsp;Five: **Say What!?**
+In this final level you'll learn a few pronunciation quirks.
+---
+In the 600 years since Hangul was invented, Korean pronunciation has changed
+a little bit.
+---
+Just think how different American and British pronunciation is, and we've only
+been separated for half that time!
+---
+This means there are a few situations where the actual pronunciation of a word
+is a little different than the spelling might make you think.
+---
+The good news is that these rules are completely regular, so once you learn them
+you'll be able to confidently and accurately read any Korean word.
+      `
+    },
+    rounds: [
+      {
+        round: 1,
+        headword: "깃",
+        text: {
+          intro: `
+# Round&nbsp;One: **Breathless**
+          `,
+          word: `
+            **깃** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        words: ["맛", "옷", "낮잠", "맞다", "받침", "로봇", "꽃", "같다", "햇반", "이웃"]
+      },
+      {
+        round: 2,
+        headword: "같이",
+        text: {
+          intro: `
+# Round&nbsp;Two: **Gas Leak**
+          `,
+          word: `
+            **같이** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        words: ["맛있어요", "맞아요", "꽃잎", "웃음", "로봇이 아니다"]
+      },
+      {
+        round: 3,
+        headword: "닉네임",
+        text: {
+          intro: `
+# Round&nbsp;Three: **Ningname**
+          `,
+          word: `
+            **Nickname** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        words: ["막내", "박민우", "악마", "박물관", "빅맥", "적립", "생리", "속눈섭", "식량", "정리", "석류", "식물", "정력"]
+      },
+      {
+        round: 4,
+        headword: "입맛",
+        text: {
+          intro: `
+# Round&nbsp;Four: **Hambone**
+          `,
+          word: `
+            **Appetite** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        words: ["업무", "입매", "앞니", "옆문", "맞나?", "얻는다", "놓는다", "붓는다", "윷놀이"]
+      },
+      {
+        round: 5,
+        headword: "알람",
+        text: {
+          intro: `
+# Round&nbsp;Five: **Rolling**
+          `,
+          word: `
+            **Alarm** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        words: ["올리브", "원래", "빨리", "빨래", "온라인", "설날", "완료", "신랑"]
+      },
+      {
+        round: 6,
+        headword: "읽다",
+        text: {
+          intro: `
+# Round&nbsp;Six: **Talking**
+          `,
+          word: `
+            **to read** blah blah blah
+          `,
+          start: `
+            Let’s see what we can read with our new letters!
+          `
+        },
+        words: ["읽은 책", "있다", "있어", "앉다", "없다", "없어요", "없는", "앉아!", "괜찮아요", "닭", "없다"]
+      },
+    ]
   }
 ];
+
+/*
+
+*/

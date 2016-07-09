@@ -8,7 +8,7 @@ export const mapping = {
   "ㄴ": "n",
   "ㄷ": "d",
   "ㄸ": "dd",
-  "ㄹ": "r",
+  "ㄹ": "l",
   "ㅁ": "m",
   "ㅂ": "b",
   "ㅃ": "bb",
@@ -53,6 +53,13 @@ export const mapping = {
   "ㄶ": "nh",
   "ㄵ": "nj",
   "ㄳ": "gs",
+};
+
+export const friendlier = {
+  "ㄹ": "l",
+  "ㅓ": "uh",
+  "ㅕ": "yuh",
+  "ㅚ": "weh"
 };
 
 export const alternates = {
@@ -174,7 +181,7 @@ export function getShapeIDs(syllable) {
 }
 
 export function getShapeID(jamo) {
-  if (!isHangul(jamo)) return jamo;
+  if (!isHangul(jamo) && jamo !== '-') return jamo;
 
   let latin = '-' === jamo ? 'ng' : mapping[jamo];
   let type = (isMedial(jamo)
@@ -201,8 +208,13 @@ export function getHintIDs(syllable) {
 }
 
 export function getJamoHint(jamo, isInitial = false) {
-  let main = mapping[jamo];
+  if (jamo === '-' || (jamo === 'ㅇ' && isInitial)) return '∅';
+  return friendlier[jamo] || mapping[jamo];
+}
+
+export function getJamoHintWithAlternate(jamo, isInitial = false) {
+  let main = friendlier[jamo] || mapping[jamo];
   let alt = alternates[jamo];
   if (jamo === 'ㅇ' && isInitial) return '—';
-  return alt ? `${main} / ${alt}` : main;
+  return alt ? `${main} (${alt})` : main;
 }
