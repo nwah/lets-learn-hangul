@@ -50,6 +50,7 @@
     "baobab-react": "~1.0.1",
     "classnames": "^2.2.3",
     "compression": "^1.6.2",
+    "connect-wwwhisper": "*",
     "ejs": "^2.4.1",
     "es6-promise": "^3.1.2",
     "express": "^4.13.4",
