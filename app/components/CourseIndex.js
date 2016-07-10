@@ -4,49 +4,55 @@ import { Link } from 'react-router';
 import { branch } from 'baobab-react/higher-order';
 import { hideIndex } from '../actions/navigation';
 
-const CourseIndex = ({levels, rounds, actions}) => {
+const CourseIndex = ({levels, rounds, actions, indexShowing}) => {
+  if (!indexShowing) return <noscript />;
+
   return (
     <div className="course-index">
       <button className="course-index__close" onClick={actions.hideIndex}>
-        &times; close
+        &times;
       </button>
-      <LevelsList levels={levels} rounds={rounds} />
+      <LevelsList levels={levels} rounds={rounds} actions={actions} />
     </div>
   );
 }
 
-const LevelsList = ({levels, rounds}) => (
-  <ul>
+const LevelsList = ({levels, rounds, actions}) => (
+  <div className="course-index__levels">
     {map(levels, lvl => (
-      <li key={lvl.level}>
-        <Link to={`/level/${lvl.level}`}>
-          Level {lvl.level}:
-          {lvl.name}
+      <div className="course-index__level" key={lvl.level}>
+        <Link className="level-name" to={`/level/${lvl.level}`} onClick={actions.hideIndex}>
+          <div className="bubble">{lvl.level}</div>
+          <span className="name">{lvl.name}</span>
         </Link>
 
-        <RoundsList level={lvl} rounds={rounds} />
-      </li>
+        <RoundsList level={lvl} rounds={rounds} actions={actions} />
+      </div>
     ))}
-  </ul>
+  </div>
 );
 
-const RoundsList = ({level, rounds}) => (
-  <ul>
+const RoundsList = ({level, rounds, actions}) => (
+  <div className="course-index__rounds">
     {map(level.rounds, round => (
-      <li key={round}>
-        <Link to={`/level/${level.level}/round/${rounds[round].round}`}>
-          Round {rounds[round].round}:
-          {rounds[round].name}
+      <div className="course-index__round" key={round}>
+        <Link className="round-name" to={`/level/${level.level}/round/${rounds[round].round}`} onClick={actions.hideIndex}>
+          <div className="bubble bubble--blue">{rounds[round].round}</div>
+          <span className="name">{rounds[round].name}</span>
+          <span className="jamos">
+            {(rounds[round].jamo || []).map(j => j === '-' ? 'ㅇ' : j).join(' ')}
+          </span>
         </Link>
-      </li>
+      </div>
     ))}
-  </ul>
+  </div>
 );
 
 export default branch(CourseIndex, {
   cursors: {
     levels: ['levels'],
-    rounds: ['rounds']
+    rounds: ['rounds'],
+    indexShowing: ['indexShowing'],
   },
-  actions: { hideIndex }
+  actions: { hideIndex },
 });

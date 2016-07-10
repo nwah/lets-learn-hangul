@@ -1,0 +1,83 @@
+.course-index {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow-y: auto;
+  background-color: $butter;
+
+  a {
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  &__close {
+    display: block;
+    position: absolute;
+    background: transparent;
+    color: $black;
+    font-size: 42px;
+    font-weight: 300;
+    top: 12px;
+    right: 4px;
+  }
+
+  &__levels {
+    display: flex;
+    padding: 80px 0 10px 80px;
+  }
+
+  &__level {
+    flex: 1;
+    padding: 0px 15px;
+
+    .level-name {
+      display: block;
+      position: relative;
+      font-size: 24px;
+      padding-bottom: 20px;
+
+      .bubble {
+        position: absolute;
+        left: -47px;
+        top: -32px;
+        transform: scale(.75);
+      }
+
+      .name {
+        position: relative;
+        z-index: 5;
+      }
+    }
+  }
+
+  &__rounds {
+    padding-left: 32px;
+  }
+  
+  &__round {
+    .round-name {
+      display: block;
+      position: relative;
+      font-size: 20px;
+      line-height: 1.2;
+      min-height: 62px;
+
+      .bubble {
+        position: absolute;
+        left: -55px;
+        top: -30px;
+        transform: scale(.45);
+      }
+
+      .jamos {
+        display: block;
+        opacity: 0.5;
+      }
+    }
+  }
+}

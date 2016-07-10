@@ -1,7 +1,7 @@
 module.exports = [
   {
     level: 1,
-    name: "Food",
+    name: "Let’s eat!",
     text: {
       intro: `
 # Level&nbsp;One: **Food**
@@ -132,7 +132,7 @@ Woo! Four letters and four words down. Let’s keep going!
 
   {
     level: 2,
-    name: "World Tour",
+    name: "World Tour!",
     text: {
       intro: `
 # Level&nbsp;Two: **World Tour**
@@ -315,7 +315,7 @@ fun words in Korean!
       },
       {
         round: 2,
-        name: "Yes",
+        name: "Yes!",
         headword: "네",
         text: {
           intro: `
@@ -343,6 +343,7 @@ fun words in Korean!
       },
       {
         round: 3,
+        name: "The Best!",
         headword: "짱",
         text: {
           intro: `
@@ -370,6 +371,7 @@ fun words in Korean!
       },
       {
         round: 4,
+        name: "Oppa!",
         headword: "오빠",
         text: {
           intro: `
@@ -415,11 +417,11 @@ fun words in Korean!
       },
       {
         round: 6,
-        name: "Hi!",
+        name: "Hi! ^^",
         headword: "안녕",
         text: {
           intro: `
-# Round&nbsp;Six: **Hi**
+# Round&nbsp;Six: **Hi! ^^**
           `,
           word: `
             **Hi** blah blah blah
@@ -433,6 +435,7 @@ fun words in Korean!
       },
       {
         round: 7,
+        name: "Hello.",
         headword: "안녕하세요",
         text: {
           intro: `
@@ -463,6 +466,7 @@ Last set of letters.
     rounds: [
       {
         round: 1,
+        name: 'Canada',
         headword: "캐나다",
         text: {
           intro: `
@@ -480,6 +484,7 @@ Last set of letters.
       },
       {
         round: 2,
+        name: 'TV',
         headword: "티비",
         text: {
           intro: `
@@ -497,6 +502,7 @@ Last set of letters.
       },
       {
         round: 3,
+        name: 'Coffee',
         headword: "커피",
         text: {
           intro: `
@@ -514,6 +520,7 @@ Last set of letters.
       },
       {
         round: 4,
+        name: 'Wow',
         headword: "와",
         text: {
           intro: `
@@ -531,6 +538,7 @@ Last set of letters.
       },
       {
         round: 5,
+        name: 'What?',
         headword: "뭐",
         text: {
           intro: `
@@ -548,10 +556,11 @@ Last set of letters.
       },
       {
         round: 6,
+        name: 'Danger!',
         headword: "위험",
         text: {
           intro: `
-# Round&nbsp;Six: **Danger**
+# Round&nbsp;Six: **Danger!**
           `,
           word: `
             **Danger** blah blah blah
@@ -565,6 +574,7 @@ Last set of letters.
       },
       {
         round: 7,
+        name: 'Doctor',
         headword: "의사",
         text: {
           intro: `
@@ -607,6 +617,7 @@ you'll be able to confidently and accurately read any Korean word.
     rounds: [
       {
         round: 1,
+        name: 'Breathless',
         headword: "깃",
         text: {
           intro: `
@@ -623,6 +634,7 @@ you'll be able to confidently and accurately read any Korean word.
       },
       {
         round: 2,
+        name: 'Gas Leak',
         headword: "같이",
         text: {
           intro: `
@@ -639,6 +651,7 @@ you'll be able to confidently and accurately read any Korean word.
       },
       {
         round: 3,
+        name: 'Ningname',
         headword: "닉네임",
         text: {
           intro: `
@@ -655,6 +668,7 @@ you'll be able to confidently and accurately read any Korean word.
       },
       {
         round: 4,
+        name: 'Hambone',
         headword: "입맛",
         text: {
           intro: `
@@ -671,6 +685,7 @@ you'll be able to confidently and accurately read any Korean word.
       },
       {
         round: 5,
+        name: 'Rolling',
         headword: "알람",
         text: {
           intro: `
@@ -687,6 +702,7 @@ you'll be able to confidently and accurately read any Korean word.
       },
       {
         round: 6,
+        name: 'Talking',
         headword: "읽다",
         text: {
           intro: `
