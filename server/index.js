@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import express from 'express';
+import basicauth from 'basicauth-middleware';
 import compression from 'compression';
 import courseData from '../app/data/course';
 import shapesData from '../app/data/shapes';
@@ -40,6 +41,11 @@ server.get('/data/shapes.json', (req, res) => res.json(shapesData));
 server.get('/data/jamos.json', (req, res) => res.json(jamosData));
 server.get('/data/geometric.json', (req, res) => res.json(geometricData));
 server.get('/data/words.json', (req, res) => res.json(wordsData));
+
+if (env === 'production') {
+  server.use('/', basicauth('hangul', 'hangul'));
+  server.use('/level/*', basicauth('hangul', 'hangul'));
+}
 
 // App Routes
 server.get(['/', '/level/*'], (req, res) => res.render('index', {env}));
