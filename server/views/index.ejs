@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Happily Hangul</title>
+  <title>Let’s Learn Hangul</title>
   <script src="https://use.typekit.net/xsl3pam.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.slim.min.js"></script>
@@ -10,25 +10,6 @@
 </head>
 <body>
   <div id='mount'></div>
-  <div class="floaties"></div>
   <script src='/js/<%= env === 'production' ? 'app.min.js' : 'app.js' %>'></script>
-  <style>
-  /*.landing { height: 1200px; }*/
-
-  .floaties {
-    position: absolute;
-    left: 50%;
-    top: 600px;
-  }
-
-  .floaty {
-    border-radius: 1000px;
-    position: absolute;
-    margin: -50px 0 0 -50px;
-    width: 100px;
-    height: 100px;
-    border: 1px red solid;
-  }
-  </style>
 </body>
 </html>

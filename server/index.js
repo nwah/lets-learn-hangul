@@ -17,8 +17,12 @@ server.set('port', (process.env.PORT || 4444));
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 server.use(compression());
-server.use(express.static(path.join(__dirname, '..', 'public')));
-console.log(path.join(__dirname, '..', 'public'));
+// server.use(express.static(path.join(__dirname, '..', 'public')));
+server.use('/js', express.static(path.join(__dirname, '..', 'public', 'js')));
+server.use('/css', express.static(path.join(__dirname, '..', 'public', 'css')));
+server.use('/images', express.static(path.join(__dirname, '..', 'public', 'images')));
+server.use('/audio', express.static(path.join(__dirname, '..', 'public', 'audio')));
+server.use('/sounds', express.static(path.join(__dirname, '..', 'public', 'sounds')));
 
 // TODO: Should probably handle this as part of build step
 // Data
