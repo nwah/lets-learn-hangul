@@ -17,7 +17,7 @@ server.set('port', (process.env.PORT || 4444));
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 server.use(compression());
-server.use(express.static('public'));
+server.use(express.static('../public'));
 
 // TODO: Should probably handle this as part of build step
 // Data
