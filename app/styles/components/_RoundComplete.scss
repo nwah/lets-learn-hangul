@@ -1,10 +1,40 @@
 .round__complete {
+  @extend .radial;
+
   width: 1000px;
   height: 600px;
   margin-left: -50px;
 
+  &__inner {
+    width: 500px;
+    transform: translateX(-104px) translateY(-57%);
+  }
+
+  h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 20px;
+  }
+
+  &__round {
+    transform: translateX(-193px) translateY(-200px);
+  }
+
+  &__round-label {
+    transform: translateX(-235px) translateY(-184px);
+  }
+
+  &__circle {
+    width: 460px;
+    height: 460px;
+  }
+
+  &__continue {
+    transform: translateX(110px) translateY(140px);
+  }
+
   .jamo-table {
-    margin-top: 120px;
+    margin-top: 20px;
   }
 
   &__top {
@@ -12,6 +42,7 @@
     top: 30px;
     left: 50%;
     margin-left: -465px;
+    transform: none;
 
     .circle {
       position: absolute;
@@ -33,9 +64,10 @@
     }
   }
 
-  .button {
+  &__continue-bottom {
     display: block;
     position: absolute;
+    transform: none;
     top: 550px;
     left: 50%;
     margin-left: 335px;

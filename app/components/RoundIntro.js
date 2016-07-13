@@ -8,9 +8,13 @@ const RoundIntro = ({round, params}) => {
   let text = slides[params.roundIntro] || slides[0];
   let next = (parseFloat(params.roundIntro) || 0) + 1;
   let hasMoreText = next < slides.length;
+  let hasLetters = round.jamo && round.jamo.length;
+  let hasHeadword = !!round.headword;
   let path = (
     hasMoreText ? `/level/${params.level}/round/${params.round}/intro/${next}`
-    : `/level/${params.level}/round/${params.round}/letters`
+    : hasLetters ? `/level/${params.level}/round/${params.round}/letters`
+    : hasHeadword ? `/level/${params.level}/round/${params.round}/headword`
+    : `/level/${params.level}/round/${params.round}/ready`
   );
 
   return (

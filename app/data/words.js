@@ -2364,6 +2364,26 @@
     }
   },
   {
+    "word": "페이스북",
+    "translation": "Facebook",
+    "image": {
+      "url": "",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    },
+    "audio": {
+      "url": "words/peiseubuk.mp3",
+      "source": {
+        "description": "",
+        "url": ""
+      }
+    }
+  },
+  
+
+  {
     "word": "스팸",
     "translation": "Spam",
     "image": {
@@ -3106,12 +3126,6 @@
       }
     }
   },
-
-
-
-
-
-
   {
     "word": "한복",
     "translation": "Hanbok (traditional Korean clothing)",
@@ -3345,5 +3359,625 @@
         "url": ""
       }
     }
+  },
+  {
+    "word": "깃",
+    "romanizations": [
+      "",
+    ],
+    "translation": "feather",
+    "audio": {
+      "url": "words/gis.mp3"
+    },
+  },
+  {
+    "word": "맛",
+    "romanizations": [
+      "",
+    ],
+    "translation": "taste",
+    "audio": {
+      "url": "words/mas.mp3"
+    },
+  },
+  {
+    "word": "옷",
+    "romanizations": [
+      "",
+    ],
+    "translation": "clothing",
+    "audio": {
+      "url": "words/os.mp3"
+    },
+  },
+  {
+    "word": "낮잠",
+    "romanizations": [
+      "",
+    ],
+    "translation": "nap",
+    "audio": {
+      "url": "words/najjam.mp3"
+    },
+  },
+  {
+    "word": "맞다",
+    "romanizations": [
+      "",
+    ],
+    "translation": "correct",
+    "audio": {
+      "url": "words/majda.mp3"
+    },
+  },
+  {
+    "word": "받침",
+    "romanizations": [
+      "",
+    ],
+    "translation": "final consonant",
+    "audio": {
+      "url": "words/badchim.mp3"
+    },
+  },
+  {
+    "word": "로봇",
+    "romanizations": [
+      "",
+    ],
+    "translation": "robot",
+    "audio": {
+      "url": "words/robos.mp3"
+    },
+  },
+  {
+    "word": "꽃",
+    "romanizations": [
+      "",
+    ],
+    "translation": "flower",
+    "audio": {
+      "url": "words/ggoch.mp3"
+    },
+  },
+  {
+    "word": "같다",
+    "romanizations": [
+      "",
+    ],
+    "translation": "same, like",
+    "audio": {
+      "url": "words/katda.mp3"
+    },
+  },
+  {
+    "word": "햇반", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "seashore",
+    "audio": {
+      "url": "words/.mp3"
+    },
+  },
+  {
+    "word": "이웃",
+    "romanizations": [
+      "",
+    ],
+    "translation": "neighbor",
+    "audio": {
+      "url": "words/ius.mp3"
+    },
+  },
+  {
+    "word": "같이",
+    "romanizations": [
+      "",
+    ],
+    "translation": "together",
+    "audio": {
+      "url": "words/gati.mp3"
+    },
+  },
+  {
+    "word": "맛있어요", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "It’s tasty",
+    "audio": {
+      "url": "words/.mp3"
+    },
+  },
+  {
+    "word": "맞아요",
+    "romanizations": [
+      "",
+    ],
+    "translation": "That's right",
+    "audio": {
+      "url": "words/majayo.mp3"
+    },
+  },
+  {
+    "word": "웃음",
+    "romanizations": [
+      "",
+    ],
+    "translation": "laughter",
+    "audio": {
+      "url": "words/useum.mp3"
+    },
+  },
+  {
+    "word": "로봇이 아니다", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "It's not a robot",
+    "audio": {
+      "url": ""
+    },
+  },
+  {
+    "word": "닉네임",
+    "romanizations": [
+      "",
+    ],
+    "translation": "nickname",
+    "audio": {
+      "url": "words/nikneim.mp3"
+    },
+  },
+  {
+    "word": "막내",
+    "romanizations": [
+      "",
+    ],
+    "translation": "youngest of the group/family",
+    "audio": {
+      "url": "words/maknae.mp3"
+    },
+  },
+  {
+    "word": "악마",
+    "romanizations": [
+      "",
+    ],
+    "translation": "demon",
+    "audio": {
+      "url": "words/akma.mp3"
+    },
+  },
+  {
+    "word": "박물관",
+    "romanizations": [
+      "",
+    ],
+    "translation": "museum",
+    "audio": {
+      "url": "words/bakmulgwan.mp3"
+    },
+  },
+  {
+    "word": "빅맥", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "Big Mac",
+    "audio": {
+      "url": "words/.mp3"
+    },
+  },
+  {
+    "word": "적립",
+    "romanizations": [
+      "",
+    ],
+    "translation": "saving",
+    "audio": {
+      "url": "words/jeokrib.mp3"
+    },
+  },
+  {
+    "word": "생리",
+    "romanizations": [
+      "",
+    ],
+    "translation": "physiology",
+    "audio": {
+      "url": "words/saengri.mp3"
+    },
+  },
+  {
+    "word": "속눈섭", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "eyelash",
+    "audio": {
+      "url": "words/.mp3"
+    },
+  },
+  {
+    "word": "식량",
+    "romanizations": [
+      "",
+    ],
+    "translation": "rations",
+    "audio": {
+      "url": "words/sikryang.mp3"
+    },
+  },
+  {
+    "word": "정리",
+    "romanizations": [
+      "",
+    ],
+    "translation": "organization",
+    "audio": {
+      "url": "words/jeongri.mp3"
+    },
+  },
+  {
+    "word": "석류",
+    "romanizations": [
+      "",
+    ],
+    "translation": "pomegranate",
+    "audio": {
+      "url": "words/seokryu.mp3"
+    },
+  },
+  {
+    "word": "식물",
+    "romanizations": [
+      "",
+    ],
+    "translation": "foodstuffs",
+    "audio": {
+      "url": "words/sikmul.mp3"
+    },
+  },
+  {
+    "word": "정력",
+    "romanizations": [
+      "",
+    ],
+    "translation": "vitality",
+    "audio": {
+      "url": "words/jeongryeok.mp3"
+    },
+  },
+  {
+    "word": "음료",
+    "romanizations": [
+      "",
+    ],
+    "translation": "beverage",
+    "audio": {
+      "url": "words/eumryo.mp3"
+    },
+  },
+  {
+    "word": "입맛",
+    "romanizations": [
+      "",
+    ],
+    "translation": "appetite",
+    "audio": {
+      "url": "words/ibmas.mp3"
+    },
+  },
+  {
+  "word": "업무",
+    "romanizations": [
+      "",
+    ],
+    "translation": "business",
+    "audio": {
+      "url": "words/eobmu.mp3"
+    },
+  },
+  {
+    "word": "입매", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "mouth shape",
+    "audio": {
+      "url": ""
+    },
+  },
+  {
+  "word": "감사합니다", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "Thank you (formal)",
+    "audio": {
+      "url": ""
+    },
+  },
+  {
+    "word": "반갑습니다", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "Nice to meet you (formal)",
+    "audio": {
+      "url": ""
+    },
+  },
+  {
+    "word": "앞니",
+    "romanizations": [
+      "",
+    ],
+    "translation": "front teeth",
+    "audio": {
+      "url": "words/apni.mp3"
+    },
+  },
+  {
+    "word": "옆문", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "next door",
+    "audio": {
+      "url": "words/yeopmun.mp3"
+    },
+  },
+  {
+    "word": "맞나?",
+    "romanizations": [
+      "",
+    ],
+    "translation": "Is that right?",
+    "audio": {
+      "url": "words/majna.mp3"
+    },
+  },
+  {
+    "word": "얻는다", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "carrying",
+    "audio": {
+      "url": ""
+    },
+  },
+  {
+    "word": "놓는다", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "placing",
+    "audio": {
+      "url": ""
+    },
+  },
+  {
+    "word": "붓는다", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "swelling",
+    "audio": {
+      "url": ""
+    },
+  },
+  {
+    "word": "윷놀이",
+    "romanizations": [
+      "",
+    ],
+    "translation": "Yutnori (game)",
+    "audio": {
+      "url": "words/yuchnoli.mp3"
+    },
+  },
+  {
+    "word": "알람",
+    "romanizations": [
+      "",
+    ],
+    "translation": "alarm",
+    "audio": {
+      "url": "words/alram.mp3"
+    },
+  },
+  {
+    "word": "올리브",
+    "romanizations": [
+      "",
+    ],
+    "translation": "olive",
+    "audio": {
+      "url": "words/olribeu.mp3"
+    },
+  },
+  {
+    "word": "원래",
+    "romanizations": [
+      "",
+    ],
+    "translation": "originally",
+    "audio": {
+      "url": "words/weonrae.mp3"
+    },
+  },
+  {
+    "word": "빨리",
+    "romanizations": [
+      "",
+    ],
+    "translation": "quickly",
+    "audio": {
+      "url": "words/bbalri.mp3"
+    },
+  },
+  {
+    "word": "빨래",
+    "romanizations": [
+      "",
+    ],
+    "translation": "laundry",
+    "audio": {
+      "url": "words/bbalrae.mp3"
+    },
+  },
+  {
+    "word": "온라인",
+    "romanizations": [
+      "",
+    ],
+    "translation": "online",
+    "audio": {
+      "url": "words/onrain.mp3"
+    },
+  },
+  {
+    "word": "설날",
+    "romanizations": [
+      "",
+    ],
+    "translation": "New Year's Day",
+    "audio": {
+      "url": "words/seolnal.mp3"
+    },
+  },
+  {
+    "word": "완료",
+    "romanizations": [
+      "",
+    ],
+    "translation": "completion",
+    "audio": {
+      "url": "words/wanryo.mp3"
+    },
+  },
+  {
+    "word": "신랑",
+    "romanizations": [
+      "",
+    ],
+    "translation": "[bride]groom",
+    "audio": {
+      "url": "words/sinrang.mp3"
+    },
+  },
+  {
+    "word": "읽다",
+    "romanizations": [
+      "",
+    ],
+    "translation": "to read",
+    "audio": {
+      "url": "words/ilgda.mp3"
+    },
+  },
+  {
+    "word": "읽은 책", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "A book I've read",
+    "audio": {
+      "url": "words/ilgeunchaek.mp3"
+    },
+  },
+  {
+    "word": "있다",
+    "romanizations": [
+      "",
+    ],
+    "translation": "to exist",
+    "audio": {
+      "url": "words/issda.mp3"
+    },
+  },
+  {
+    "word": "있어",
+    "romanizations": [
+      "",
+    ],
+    "translation": "exists",
+    "audio": {
+      "url": "words/isseo.mp3"
+    },
+  },
+  {
+    "word": "앉다",
+    "romanizations": [
+      "",
+    ],
+    "translation": "to sit",
+    "audio": {
+      "url": "words/anjda.mp3"
+    },
+  },
+  {
+    "word": "없다",
+    "romanizations": [
+      "",
+    ],
+    "translation": "to not exist",
+    "audio": {
+      "url": "words/eobsda.mp3"
+    },
+  },
+  {
+    "word": "없어요", // MACHINE
+    "romanizations": [
+      "",
+    ],
+    "translation": "It doesn't exist",
+    "audio": {
+      "url": "words/eobseoyo.mp3"
+    },
+  },
+  {
+    "word": "없는",
+    "romanizations": [
+      "",
+    ],
+    "translation": "non-existant",
+    "audio": {
+      "url": "words/eobsneun.mp3"
+    },
+  },
+  {
+    "word": "앉아!",
+    "romanizations": [
+      "",
+    ],
+    "translation": "Sit!",
+    "audio": {
+      "url": "words/anja.mp3"
+    },
+  },
+  {
+    "word": "괜찮아요",
+    "romanizations": [
+      "",
+    ],
+    "translation": "It's okay",
+    "audio": {
+      "url": "words/gwaenchanhayo.mp3"
+    },
+  },
+  {
+    "word": "닭",
+    "romanizations": [
+      "",
+    ],
+    "translation": "chicken",
+    "audio": {
+      "url": "words/dalk.mp3"
+    },
   },
 ];

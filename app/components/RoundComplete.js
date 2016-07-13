@@ -6,27 +6,56 @@ import JamoTable from './JamoTable';
 import Circle from './Circle';
 
 const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params}) => {
+  let showingLetters = params.roundComplete === 'letters';
+
   let path = `/level/${params.level}`;
-  path += nextRound ? `/round/${nextRound.round}` : `/complete`;
+  path += (
+    newJamos.length && !showingLetters ? `/round/${round.round}/complete/letters`
+    : nextRound ? `/round/${nextRound.round}`
+    : `/complete`
+  );
 
   let current = parseFloat(`${level.level}.${round.round}`);
   let completed = filter(rounds, (round, key) => parseFloat(key) <= current);
   let known = fromPairs(flatten(map(completed, ({jamo}) => map(jamo, j => [j, true]))));
 
   return (
-    <div className="round__complete">
-      <div className="round__complete__top">
-        <Circle />
-        <label>Round {round.round} Complete!</label>
-        <p>{'You’ve learned ' + (newJamos.length > 1 ? `${newJamos.length} new Hangul letters!` : 'a new Hangul letter!')}</p>
+    showingLetters ?
+      <div className="round__complete">
+        <div className="round__complete__top">
+          <Circle className="round__complete__top__halfcircle" />
+          <label>Round {round.round} Complete!</label>
+          <p>{'You’ve learned ' + (newJamos.length > 1 ? `${newJamos.length} new Hangul letters!` : 'a new Hangul letter!')}</p>
+        </div>
+
+        <Link to={path} className="button button--forward button--green round__complete__continue-bottom" autoFocus data-autofocus="true">
+          Continue
+        </Link>
+
+        <JamoTable newJamos={newJamos} known={known} />
       </div>
+    :
+      <div className="round__complete">
+        <Circle className="round__complete__circle" r="128" />
 
-      <Link to={path} className="button button--forward button--green" autoFocus data-autofocus="true">
-        Continue
-      </Link>
+        <div className="round__complete__inner">
+          <h1>
+            <b>Round&nbsp;Complete!</b><br />
+            “{round.name}”
+          </h1>
+        </div>
 
-      <JamoTable newJamos={newJamos} known={known} />
-    </div>
+        <div className="bubble bubble--blue round__complete__round">
+          {round.round}
+        </div>
+        <label className="round__complete__round-label">
+          Round
+        </label>
+
+        <Link to={path} className="button button--forward button--green round__complete__continue" autoFocus data-autofocus="true">
+          Continue
+        </Link>
+      </div>
   );
 }
 

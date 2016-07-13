@@ -52,7 +52,6 @@ export function continueSession(tree) {
   // TODO: Don't do this
   setTimeout(() => {
     let input = document.querySelector('.learn-response-form .fat-input');
-    console.log('input:', input);
     input.focus();
     input.select();
   }, 50);
@@ -71,7 +70,8 @@ export function submitResponse(tree) {
 
   let word = session.get('words')[session.get('current')];
   let response = session.get('response');
-  let result = checkRomanization(word, response);
+  let phonetic = session.get('level').level === 5; // TODO: Make this smarter
+  let result = checkRomanization(word, response, phonetic);
   let meta = tree.get('words', word);
 
   if (result.correct) handleCorrectResponse(session, result, meta);

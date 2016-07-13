@@ -237,7 +237,7 @@ between **e** in **met**, and **a** in **mat**.
     jamo: 'ㅔ',
     latin: 'e',
     description: `
-This letter sounds like **é** in **café**.
+This letter sounds sort of like **é** in **café**.
     `,
     memory: 'elephant',
     audio: {url: 'jamos/e.mp3'},
@@ -264,7 +264,7 @@ This letter sounds like **ya** in **yacht**.
     jamo: 'ㅕ',
     latin: 'yeo',
     description: `
-This letter sounds like **you-** in **young**.
+This letter sounds like **yuh**.
     `,
     memory: '',
     audio: {url: 'jamos/yeo.mp3'},
@@ -357,7 +357,7 @@ It sounds like ㄱ but stronger, with the vocal cords tensed.
     description: `
 This is the aspirated version of ㄱ.
 
-It sounds like ㄱ except a puff of air comes out when it's said.
+It sounds like ㄱ except a puff of air comes out when you say it.
     `,
     memory: '',
     audio: {url: 'jamos/k.mp3'},
@@ -368,7 +368,7 @@ It sounds like ㄱ except a puff of air comes out when it's said.
     description: `
 This is the aspirated version of ㄷ.
 
-It sounds like ㄷ except a puff of air comes out when it's said.
+It sounds like ㄷ except a puff of air comes out when you say it.
     `,
     memory: '',
     audio: {url: 'jamos/t.mp3'},
@@ -379,7 +379,7 @@ It sounds like ㄷ except a puff of air comes out when it's said.
     description: `
 This is the aspirated version of ㅂ.
 
-It sounds like ㅂ except a puff of air comes out when it's said.
+It sounds like ㅂ except a puff of air comes out when you say it.
     `,
     memory: '',
     audio: {url: 'jamos/p.mp3'},
@@ -401,7 +401,7 @@ It sounds like **wa** in **water**.
     description: `
 This letter is a combination of ㅗ and ㅐ.
 
-We don't have this sound in English, but it's between **we** in **wet** and **wa** in **wag**.
+We don't have this exact sound in English, but it's pretty close to the **we** in **wet**.
     `,
     memory: '',
     audio: {url: 'jamos/wae.mp3'},

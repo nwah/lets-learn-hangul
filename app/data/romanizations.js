@@ -4,28 +4,29 @@ module.exports = {
     final: 'k',
     alternateInitial: 'k',
     alternateFinal: 'g',
-    alternateBeforeNasal: 'ng',
-    alternateBeforeR: 'ng'
+    beforeNasal: 'ng',
+    beforeR: 'ng'
   },
   'ㄲ': {
     initial: 'gg',
     final: 'kk',
     alternateInitial: 'kk',
     alternateFinal: 'gg',
-    alternateBeforeNasal: 'ng',
-    alternateBeforeR: 'ng'
+    beforeNasal: 'ng',
+    beforeR: 'ng'
   },
   'ㄴ': {
     initial: 'n',
     final: 'n',
-    alternateBeforeR: 'l'
+    beforeR: 'l',
+    afterR: 'l',
   },
   'ㄷ': {
     initial: 'd',
     final: 't',
     alternateInitial: 't',
     alternateFinal: 'd',
-    alternateBeforeNasal: 'n',
+    beforeNasal: 'n',
   },
   'ㄸ': {
     initial: 'dd',
@@ -36,10 +37,10 @@ module.exports = {
     final: 'l',
     afterR: 'l',
     afterN: 'l',
-    alternateAfterG: 'n',
-    alternateAfterM: 'n',
-    alternateAfterNg: 'n',
-    alternateAfterB: 'n',
+    afterG: 'n',
+    afterM: 'n',
+    afterNg: 'n',
+    afterB: 'n',
     alternates: ['l', 'r']
   },
   'ㅁ': {
@@ -51,8 +52,8 @@ module.exports = {
     final: 'p',
     alternateInitial: 'p',
     alternateFinal: 'b',
-    alternateBeforeNasal: 'm',
-    alternateBeforeR: 'm',
+    beforeNasal: 'm',
+    beforeR: 'm',
     alernates: ['v']
   },
   'ㅃ': {
@@ -65,15 +66,17 @@ module.exports = {
     beforeVowel: 's',
     beforeIY: 'sh',
     final: 't',
+    stop: 't',
     alternates: ['s'],
     alternateFinal: 's',
-    alternateBeforeNasal: 'n'
+    beforeNasal: 'n'
   },
   'ㅆ': {
     beforeVowel: 'ss',
     final: 'tt',
+    stop: 't',
     alternateFinal: 'ss',
-    alternateBeforeNasal: 'n',
+    beforeNasal: 'n',
     alternates: ['ts']
   },
   'ㅇ': {
@@ -83,32 +86,36 @@ module.exports = {
   'ㅈ': {
     beforeVowel: 'j',
     final: 't',
+    stop: 't',
     alternateInitial: 'j',
-    alternateBeforeNasal: 'n',
+    beforeNasal: 'n',
     alternates: ['ch', 'z']
   },
   'ㅉ': {
     initial: 'jj',
-    alternateBeforeNasal: 'n',
+    stop: 't',
+    beforeNasal: 'n',
     alternates: ['zz']
   },
   'ㅊ': {
     beforeVowel: 'ch',
     final: 't',
+    stop: 't',
     alternateFinal: 'ch',
-    alternateBeforeNasal: 'n'
+    beforeNasal: 'n'
   },
   'ㅋ': {
     initial: 'k',
     final: 'k',
     alternates: ['kh'],
-    alternateBeforeNasal: 'ng',
-    alternateBeforeR: 'ng'
+    beforeNasal: 'ng',
+    beforeR: 'ng'
   },
   'ㅌ': {
     initial: 't',
     final: 't',
-    alternates: ['th'],
+    stop: 't',
+    // alternates: ['th'],
     finalBeforeIY: 'ch',
     alternateBeforeNasal: 'n'
   },
@@ -116,17 +123,18 @@ module.exports = {
     initial: 'p',
     final: 'p',
     alternates: ['ph', 'f'],
-    alternateBeforeNasal: 'm'
+    beforeNasal: 'm'
   },
   'ㅎ': {
     initial: 'h',
     final: 'h',
-    alternateBeforeNasal: 'n'
+    beforeNasal: 'n'
   },
   'ㅄ': {
     final: 'p',
     beforeVowel: 'ps',
     alternates: ['b', 'bs'],
+    beforeNasal: 'm'
   },
   'ㅀ': {
     final: 'l',
@@ -141,7 +149,7 @@ module.exports = {
   'ㄾ': {
     final: 'l',
     beforeVowel: 'lt',
-    alternates: ['rt', 'rth']
+    alternates: ['rt', /*'rth'*/]
   },
   'ㄽ': {
     final: 'l',
@@ -161,7 +169,8 @@ module.exports = {
   'ㄺ': {
     final: 'k',
     beforeVowel: 'lg',
-    alternates: ['lk', 'rk', 'rg']
+    alternates: ['lk', 'rk', 'rg'],
+    alternateBeforeNasal: 'ng',
   },
   'ㄶ': {
     final: 'nh',
@@ -170,10 +179,12 @@ module.exports = {
   'ㄵ': {
     final: 'n',
     beforeVowel: 'nj',
+    stop: 'n',
     alternates: ['r', 'rh']
   },
   'ㄳ': {
     final: 'k',
+    stop: 'k',
     beforeVowel: 'ks',
     alternates: ['gs', 'g']
   },

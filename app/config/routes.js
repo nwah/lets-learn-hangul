@@ -29,6 +29,10 @@ import RoundReady from '../components/RoundReady';
 import RoundLearn from '../components/RoundLearn';
 import RoundComplete from '../components/RoundComplete';
 
+// Special
+import LearnedEmAll from '../components/LearnedEmAll';
+import LearnedEverything from '../components/LearnedEverything';
+
 export function createRoutes(tree) {
 
   function onEnterApp({params}) {
@@ -77,6 +81,9 @@ export function createRoutes(tree) {
 
         <Route path="complete(/:levelComplete)" component={LevelComplete} />
       </Route>
+
+      <Route path="/learnedemall" component={LearnedEmAll} />
+      <Route path="/learnedeverything" component={LearnedEverything} />
     </Route>
   );
 }

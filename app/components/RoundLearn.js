@@ -19,8 +19,8 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
   let hasImage = image && image.url;
   let hasAudio = audio && audio.url;
 
-  let phonetics = word.split('')
-    .map(syllable => getRomanizations(syllable).ideal).join(' · ');
+  let phonetics = getRomanizations(word, true).syllables
+    .map(syllable => syllable.ideal).join(' · ');
 
   return (
     <div className={classNames('round__learn', {

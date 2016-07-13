@@ -350,7 +350,7 @@ fun words in Korean!
 # Round&nbsp;Three: **The Best!**
           `,
           word: `
-            **짱** means *the best* or *awesome*, as in *you’re the best!*.
+            **짱** means *the best* or *awesome*, as in *you’re the best!*
             ---
             There are stressed versions of most of the basic consonants.
             ---
@@ -408,7 +408,7 @@ fun words in Korean!
             All the vowels except **ㅡ** and **ㅣ** have **y** version,
             formed by doubling up the little notch.
             ---
-            Sof if there's a notch, you can double it up to make a **y** sound.
+            So if a vowel has a notch, you can double it up to create a **y** sound.
           `,
           start: ``
         },
@@ -421,10 +421,14 @@ fun words in Korean!
         headword: "안녕",
         text: {
           intro: `
-# Round&nbsp;Six: **Hi! ^^**
+# Round&nbsp;Six: **Hi!&nbsp;^^**
           `,
           word: `
-            **Hi** blah blah blah
+            **안녕** is an informal way to say *hi*.
+            ---
+            You can use this with close friends, or when talking to little kids.
+            ---
+            For everyone else, you should use the slightly more polite version that we’ll in the next round!
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -435,14 +439,14 @@ fun words in Korean!
       },
       {
         round: 7,
-        name: "Hello.",
+        name: "Hello",
         headword: "안녕하세요",
         text: {
           intro: `
 # Round&nbsp;Seven: **Hello**
           `,
           word: `
-            **Hello** blah blah blah
+            This is the normal, polite greeting that you can use in just about any social setting.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -460,7 +464,7 @@ fun words in Korean!
     text: {
       intro: `
 # Level&nbsp;Four: **Go west!**
-Last set of letters.
+Last set of letters!
       `
     },
     rounds: [
@@ -471,9 +475,37 @@ Last set of letters.
         text: {
           intro: `
 # Round&nbsp;One: **Canada**
+---
+All of the consonants we've learned so far—except for **ㅊ**—have been *non*-aspirated consonants.
+---
+*Aspirated* means that a little puff of air that comes out when you say the consonant.
+
+In English, pretty much every word that starts with a consontant starts with an aspirated consonant.
+---
+On the other hand, the majority of consonant sounds in Korean are unaspirated. No puffs of air.
+---
+You can easily experiment with aspiration yourself by holding a tissue (or your hand) right in front of your mouth, and saying *‘pat’*.
+
+The tissue will probably move a little bit when you say the *p*, and maybe again with the *t* as well.
+---
+Now try and pronounce *‘pat’* without making the tissue move.
+---
+In this level we’ll learn the rest of the *aspirated* consonants in Hangul.
+
+These will come in very handy for words borrowed from English and other European languages, as you’ll soon see.
           `,
           word: `
-            **Canada** blah blah blah
+            In English, the word *Canada* starts a puff of air, so we need the aspirated consonant **ㅋ**.
+            ---
+            Otherwise it’d sound more like *ganada*.
+            ---
+            Also, notice that **ㅋ** looks just like **ㄱ** with an extra line.
+            ---
+            Koreans use a bunch of **ㅋ**’s online or when texting to represent a laugh sound.
+            ---
+            If you try and say ㅋㅋㅋ it sounds kind of like snickering. 
+            ---
+            Try searching Twitter for ㅋㅋㅋ to see what I mean. **ㅎㅎㅎ** is also pretty common.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -491,7 +523,13 @@ Last set of letters.
 # Round&nbsp;Two: **TV**
           `,
           word: `
-            **TV** blah blah blah
+            In English, a *t* at the start of a word is always aspirated.
+            ---
+            So any borrowed English *t*-words will be spelled with **ㅌ** in Hangul.
+            ---
+            As for the **ㅂ**, Korean doesn’t have a **v** sound. They usually just use **ㅂ** instead, as it sounds pretty similar.
+            ---
+            Also notice again how **ㅌ** looks just like **ㄷ** with an extra line.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -509,14 +547,16 @@ Last set of letters.
 # Round&nbsp;Three: **Coffee**
           `,
           word: `
-            **Busan** blah blah blah
+            There’s no *f* sound in Korean either.
+            ---
+            The closest sound is **ㅍ**, so that’s what you’ll see in any borrowed words containing an *f* sound, like *coffee*.
           `,
           start: `
             Let’s see what we can read with our new letters!
           `
         },
         jamo: ["ㅍ"],
-        words: ["쇼핑", "실패", "서핑", "파", "파전", "포도", "피", "팔", "작품"]
+        words: [/*"페이스북",*/ "쇼핑", "실패", "서핑", "파", "파전", "포도", "피", "팔", "작품"]
       },
       {
         round: 4,
@@ -527,7 +567,11 @@ Last set of letters.
 # Round&nbsp;Four: **Wow**
           `,
           word: `
-            **Wow** blah blah blah
+            All we've got left now are a the *w* sounds.
+            ---
+            As you can see, to get a *w* sound, we just combine either **ㅜ** or **ㅗ** with a vertical vowel.
+            ---
+            The *w*-vowels wrap around the initial consontant, and any final consonants go at the very bottom like always.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -545,7 +589,13 @@ Last set of letters.
 # Round&nbsp;Five: **What?**
           `,
           word: `
-            **Busan** blah blah blah
+            Notice that ㅞ and ㅝ are made using ㅜ instead if ㅗ.
+            ---
+            This is partly just for aesthetic reasons, so that the notches aren't
+            bumping into each other.
+            ---
+            But it’s also related to ‘bright’ and ‘dark’ (yin and yang) vowels,
+            which you can read about [on Wikipedia](https://en.wikipedia.org/wiki/Origin_of_hangul#Iconic_design_of_vowel_letters) if you’re interested.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -563,7 +613,13 @@ Last set of letters.
 # Round&nbsp;Six: **Danger!**
           `,
           word: `
-            **Danger** blah blah blah
+            Although **ㅟ** is pronounced **wee** like you’d expect, be careful when reading **ㅚ**.
+            ---
+            In modern Korean **ㅚ** is always pronounced like **ㅞ**.
+            ---
+            Not sure why, but it is!
+            ---
+            Remember: ㅚ = ㅞ
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -581,7 +637,17 @@ Last set of letters.
 # Round&nbsp;Seven: **Doctor**
           `,
           word: `
-            **Doctor** blah blah blah
+            We’ve saved the weirdest for last.
+            ---
+            **의** is normally pronounced just like it looks, as ㅡ+ㅣ.
+            ---
+            But when combined with other consonants, it’s becomes just ㅣ.
+            ---
+            For example, 희 is very common in Korean girls’ names, and is pronounced **히**.
+            ---
+            Finally, the grammatical particle 의 is usually pronounced 에.
+            ---
+            But you probably don't need need to worry about that last one.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -598,19 +664,14 @@ Last set of letters.
     name: 'Say What!?',
     text: {
       intro: `
-# Level&nbsp;Five: **Say What!?**
-In this final level you'll learn a few pronunciation quirks.
+# Level&nbsp;Five: **Say&nbsp;What!?**
+You’ve learned all the letters. Now in this final level we’ll learn a few quirks of Korean pronunciation.
 ---
-In the 600 years since Hangul was invented, Korean pronunciation has changed
-a little bit.
+It’s been 600 years since Hangul was invented, so pronunciation has changed a bit.
 ---
-Just think how different American and British pronunciation is, and we've only
-been separated for half that time!
+And there are some sound combinations that are hard to pronounce, so over time people have come to pronounce them a little differently than they’re spelled. 
 ---
-This means there are a few situations where the actual pronunciation of a word
-is a little different than the spelling might make you think.
----
-The good news is that these rules are completely regular, so once you learn them
+The good news is that all of these rules are completely regular, so once you learn them
 you'll be able to confidently and accurately read any Korean word.
       `
     },
@@ -622,12 +683,48 @@ you'll be able to confidently and accurately read any Korean word.
         text: {
           intro: `
 # Round&nbsp;One: **Breathless**
+---
+In this first round we’ll look at the most common of these quirk: unreleased stops.
           `,
           word: `
-            **깃** blah blah blah
+            Remember from the previous level how most Korean consonants are unaspirated?
+            ---
+            Well in Korean, if a syllable’s final consonant comes before another consonant or at the end a word it’s always *unreleased*.
+            ---
+            This means there’s no puff of air released at the end of the syllable.
+            ---
+            This is pretty straightforward with **ㅂ** and **ㄷ** and **ㄱ**.
+            ---
+            They’re just pronounced as **p**, **t**, and **k**, but without the puff of air.
+            ---
+            The stressed and the aspirated consonants are also unreleased at the end of a phrase or before another consonant.
+            ---
+            This means **ㅌ** and **ㄸ** are pronounced **ㄷ**, **ㅋ** and **ㄲ** are pronounced **ㄱ**, and **ㅍ** and **ㅃ** are pronounced **ㅂ**.
+            ---
+            Now for the *real* quirk...
+            ---
+            **ㅅ** is *also* pronounced like ㄷ when it’s at the end of a phrase or comes right before another consonant.
+            ---
+            That means **깃** is actually pronounced **긷**.
+            ---
+            Why?
+            ---
+            Try saying *‘hit’* and then *‘hiss’* and notice what your tongue does.
+            ---
+            Your tongue should be in pretty much the same position for **s** and **t**.
+            ---
+            Now say *‘hiss’* again, but this time don’t let any air escape at the end.
+            ---
+            If you stop the air flow right after **i** sound, the result should sound a lot like *‘hit’*.
+            ---
+            This is what’s going on in Korean. You don’t release the **ㅅ**, so it’s effectively a **ㄷ**.
+            ---
+            The same is also true for a bunch of the other consonants.
+            ---
+            **ㅅ**, **ㅆ**, **ㅈ**, **ㅉ**, and, **ㅊ** are all pronounced as **ㄷ** at the end of a phrase or before another consonant.
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s practice some of these new rules.
           `
         },
         words: ["맛", "옷", "낮잠", "맞다", "받침", "로봇", "꽃", "같다", "햇반", "이웃"]
@@ -638,16 +735,37 @@ you'll be able to confidently and accurately read any Korean word.
         headword: "같이",
         text: {
           intro: `
-# Round&nbsp;Two: **Gas Leak**
+# Round&nbsp;Two: **Gas&nbsp;Leak**
+---
+Now we’ll look at when final consonants *are* released.
+---
+Whenever a syllable with a final consonant is immediately followed by a vowel sound,
+that final consonant “moves” to the start of the next syllable.
+---
+So for example **길이** is pronounced like **기리**, and **높이** is pronounced like **노피**, etc.
           `,
           word: `
-            **같이** blah blah blah
+            But, there *is* one case where the sound changes a little bit.
+            ---
+            Final **ㅌ** followed by **이** is pronounced **치**, and final **ㄷ** followed by **이** is pronounced **지**.
+            ---
+            So **같이** is pronounced **가치**. *Not* **가티**.
+            ---
+            Seems kinda weird, but it’s not so different than *-tion* in English.
+            ---
+            We say pronounce *nation* as *nay-shun*, not *nat-ee-un*.
+            ---
+            Similar situation as **같이**.
+            ---
+            This one word is by far the most common instance of this sound change.
+            ---
+            Generally, just remember that the final consonant “moves” to a following syllable if it starts with a vowel.
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s try out these new rules.
           `
         },
-        words: ["맛있어요", "맞아요", "꽃잎", "웃음", "로봇이 아니다"]
+        words: ["맛있어요", "맞아요", "웃음", "로봇이 아니다"]
       },
       {
         round: 3,
@@ -656,15 +774,54 @@ you'll be able to confidently and accurately read any Korean word.
         text: {
           intro: `
 # Round&nbsp;Three: **Ningname**
+---
+This round we’ll learn a very common Korean pronunciation phenomenon: nasalization.
+---
+Whenever a final **ㄱ** comes before an initial **ㄴ**, **ㅁ**, or **ㄹ**, the **ㄱ** is pronounced as **ng**.
+---
+“Big Mac” becomes “Bi*ng* Mac”.
+---
+This is very, very common. You’ll encounter this a lot, so let’s look at some samples.
           `,
           word: `
-            **Nickname** blah blah blah
+            I just mentioned *Big Mac*, but let’s look at another English word.
+            ---
+            Koreans often use the English word *nickname*, especially when talking about the digital world.
+            ---
+            But Koreans pronounce it *ningname*.
+            ---
+            This happens because you end the first syllable with your tongue in the ㄱ position.
+            ---
+            But because it’s unreleased, there’s no little puff of air.
+            ---
+            So when the next sound is a nasal consonant (**m** or **n**), the tongue hangs around for a bit…
+            ---
+            And when you go straight into pronouncing a nasal consonant, an **ng** sound comes out.
+            ---
+            You can try for yourself by putting your mouth in *k* position, and without moving your tongue or lips try to say *n*.
+            ---
+            A second, closely related phenomenon is that initial ㄹ following a final ㅇ turns into ㄴ.
+            ---
+            So 생리 becomes 생니.
+            ---
+            And finally, these two rules kind of combine with ㄱ + ㄹ, which becomes ㅇ + ㄴ.
+            ---
+So ㄱ&nbsp;ㄴ&nbsp;=&nbsp;ㅇ&nbsp;ㄴ and
+ㄱ&nbsp;ㅁ&nbsp;=&nbsp;ㅇ&nbsp;ㅁ and
+ㅇ&nbsp;ㄹ&nbsp;=&nbsp;ㅇ&nbsp;ㄴ and
+ㄱ&nbsp;ㄹ&nbsp;=&nbsp;ㅇ&nbsp;ㄹ
+            ---
+            The good news is most Koreans don’t even consciously register this sound change.
+            ---
+            They’re brains just turn the sound **bangminu** into the name *Park Minu*.
+            ---
+            So if you’re reading something out loud and forget the nasalization, they may not even notice!
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s see this phenomenon in action!
           `
         },
-        words: ["막내", "박민우", "악마", "박물관", "빅맥", "적립", "생리", "속눈섭", "식량", "정리", "석류", "식물", "정력"]
+        words: ["막내", "적립", "생리", "악마", "박물관", "빅맥", "속눈섭", "식량", "정리", "석류", "식물", "정력"]
       },
       {
         round: 4,
@@ -673,15 +830,25 @@ you'll be able to confidently and accurately read any Korean word.
         text: {
           intro: `
 # Round&nbsp;Four: **Hambone**
+---
+This round we’ll see two more pronunciation rules. Both of these are also the result of leaving your mouth the position at the end of one syllable when you start a the following syllable.
           `,
           word: `
-            **Appetite** blah blah blah
+            First, ㅂ/ㅍ become ㅁ before ㅁ/ㄴ/ㄹ.
+            ---
+            Second, ㅈ/ㅊ/ㅅ/ㅆ/ㄷ/ㅌ/ㅎ become ㄴ before ㅁ/ㄴ.
+            ---
+            Same phenomenon as last round.
+            ---
+            If your mouth is in unreleased ㅂ shape, then you go right into a nasal consonant, an **m** sound comes out.
+            ---
+            If your mouth is in unreleased ㅅ shape, then you go right into a nasal consonant, an **n** sound comes out.
           `,
           start: `
             Let’s see what we can read with our new letters!
           `
         },
-        words: ["업무", "입매", "앞니", "옆문", "맞나?", "얻는다", "놓는다", "붓는다", "윷놀이"]
+        words: ["업무", "감사합니다", "반갑습니다", "입매", "앞니", "옆문", "맞나?", "얻는다", "놓는다", "붓는다", "윷놀이"]
       },
       {
         round: 5,
@@ -690,12 +857,24 @@ you'll be able to confidently and accurately read any Korean word.
         text: {
           intro: `
 # Round&nbsp;Five: **Rolling**
+---
+This round we’ll look at double ㄹ. When you have two ㄹ’s in a row, the result is pretty close to an English *L* sound.
+---
+In fact, almost all English words that contain an L get a doubled-up ㄹ when written in Hangul.
           `,
           word: `
-            **Alarm** blah blah blah
+            Let’s look at **알람** which is the English word *alarm*.
+            ---
+            It sounds like *all-lahm*. The *L* sound is very close to English.
+            ---
+            So anytime you see ㄹ+ㄹ, it’s a long *L* sound, like in *always*.
+            ---
+            Also, ㄴ+ㄹ is pronounced like ㄹ+ㄹ
+            ---
+            The ㄴ sound gets contaminated by the ㄹ and becomes an ㄹ too.
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s try those out!
           `
         },
         words: ["올리브", "원래", "빨리", "빨래", "온라인", "설날", "완료", "신랑"]
@@ -707,12 +886,38 @@ you'll be able to confidently and accurately read any Korean word.
         text: {
           intro: `
 # Round&nbsp;Six: **Talking**
+---
+In this final round we’ll look at something crazy: double final consonants!
+---
+So far in every word we’ve looked at, there’s always been an initial consontant (or ㅇ),
+and an optional final consonant.
+---
+Well, sometimes there can be two consonants at the bottom, like in 닭.
+
+There can still only ever be one initial consonant however.
+---
+The total number of words with double final consonants is fairly small, but some of the most
+common words in Korean have double finals, so you’ll encounter it frequently.
           `,
           word: `
-            **to read** blah blah blah
+            When a double final is at the end of a statement or followed by a consonant, only one of the final consonants is actually pronounced.
+            ---
+            Usually you pronounce the first consonant in these cases.
+            ---
+            So 없 is pronounced 업, and 앉다 is pronounced 안다.
+            ---
+            However, in the case of ㄺ, the ㄱ wins. 닭 is pronounced like 닥.
+            ---
+            This is just like how most English speakers drop the L sound in “talk”.
+            ---
+            When a double final is followed by a vowel sound, the second consonant moves into the next syllable, just like we saw earlier.
+            ---
+            Example: 없어 is pronounced 업서
+            ---
+            All the other pronunciation rules still apply as well. For example 없는 is pronounced 엄는.
           `,
           start: `
-            Let’s see what we can read with our new letters!
+            Let’s put our last rule into practice!
           `
         },
         words: ["읽은 책", "있다", "있어", "앉다", "없다", "없어요", "없는", "앉아!", "괜찮아요", "닭", "없다"]

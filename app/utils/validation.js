@@ -1,12 +1,12 @@
 import { filter, map } from 'lodash';
 import { getRomanizations } from '.';
 
-export function checkRomanization(hangul, input) {
-  let romanization = getRomanizations(hangul);
-  console.log('hangul:', hangul, '\ninput:', input, '\nromanization:', romanization);
+export function checkRomanization(hangul, input, phonetic = false) {
+  let romanization = getRomanizations(hangul, phonetic);
   if (input === romanization) return {correct: true};
 
   let {ideal, regexp, possibilities} = romanization;
+  console.log(romanization);
   let correct = regexp.test(input);
   let result = {correct};
   if (correct) return result;

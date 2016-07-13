@@ -2,14 +2,36 @@ import React from 'react';
 import Markdown from 'react-remarkable';
 import { Link } from 'react-router';
 import { branch } from 'baobab-react/higher-order';
+import Circle from './Circle';
 
-const LevelComplete = ({nextLevel, params}) => {
-  let path = nextLevel ? `/level/${nextLevel.level}` : `/complete`;
+const LevelComplete = ({nextLevel, params, level}) => {
+  let path =  
+    nextLevel && nextLevel.level == 5 ? `/learnedemall`
+    : nextLevel ? `/level/${nextLevel.level}`
+    : `/learnedeverything`
+  ;
 
   return (
     <div className="level__complete">
-      <p>Level {params.level} Complete!</p>
-      <Link to={path} autoFocus data-autofocus="true">Continue</Link>
+      <Circle className="level__complete__circle" r="128" />
+
+      <div className="level__complete__inner">
+        <h1>
+          <b>Level&nbsp;Complete!</b><br />
+          <span style={{whiteSpace: 'nowrap'}}>“{level.name}”</span>
+        </h1>
+      </div>
+
+      <div className="bubble level__complete__level">
+        {params.level}
+      </div>
+      <label className="level__complete__level-label">
+        Level
+      </label>
+
+      <Link to={path} className="button button--forward level__complete__continue" autoFocus data-autofocus="true">
+        Continue
+      </Link>
     </div>
   );
 }

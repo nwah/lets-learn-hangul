@@ -1,0 +1,32 @@
+.level__complete {
+  @extend .radial;
+  margin-top: 1rem;
+
+  &__inner {
+    width: 500px;
+    transform: translateX(-104px) translateY(-57%);
+  }
+
+  h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 20px;
+  }
+
+  &__level {
+    transform: translateX(-193px) translateY(-200px);
+  }
+
+  &__level-label {
+    transform: translateX(-230px) translateY(-184px);
+  }
+
+  &__circle {
+    width: 460px;
+    height: 460px;
+  }
+
+  &__continue {
+    transform: translateX(110px) translateY(140px);
+  }
+}

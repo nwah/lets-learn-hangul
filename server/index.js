@@ -45,10 +45,11 @@ server.get('/data/words.json', (req, res) => res.json(wordsData));
 if (env === 'production') {
   server.use('/', basicauth('hangul', 'hangul'));
   server.use('/level/*', basicauth('hangul', 'hangul'));
+  server.use(['/learnedemall', '/learnedeverything'], basicauth('hangul', 'hangul'));
 }
 
 // App Routes
-server.get(['/', '/level/*'], (req, res) => res.render('index', {env}));
+server.get(['/', '/level/*', '/learnedemall', '/learnedeverything'], (req, res) => res.render('index', {env}));
 
 // Run server
 server.listen(server.get('port'));

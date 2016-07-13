@@ -16,7 +16,7 @@ const RoundHeadword = ({params, round, shapes}) => {
     hasMoreText ? `/level/${params.level}/round/${params.round}/headword/${next}`
     : `/level/${params.level}/round/${params.round}/ready`
   );
-
+  let phonetics = getRomanizations(round.headword, true);
   return (
     <div className={classNames("round__headword", {
       'one-syllable': syllables.length === 1,
@@ -25,11 +25,11 @@ const RoundHeadword = ({params, round, shapes}) => {
         <Circle />
         <label>Round Keyword</label>
         <div className="round__headword__syllables">
-          {syllables.map(syllable => 
+          {syllables.map((syllable, i) => 
             <div className="round__headword__syllable" key={syllable}>
               <BigSyllable syllable={syllable} shapes={shapes} />
               <p className="round__headword__syllable__phonetics">
-                {getRomanizations(syllable).ideal}
+                {phonetics.syllables[i].ideal}
               </p> 
             </div>
           )}
