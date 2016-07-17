@@ -7,6 +7,7 @@ const LevelIntro = ({level, params}) => {
   let slides = level.text.intro;
   let text = slides[params.levelIntro] || slides[0];
   let next = (parseFloat(params.levelIntro) || 0) + 1;
+  let prev = (parseFloat(params.levelIntro) || 0) - 1;
   let hasMoreText = next < slides.length;
 
   return (
@@ -25,6 +26,12 @@ const LevelIntro = ({level, params}) => {
       <div className="level__intro__inner">
         <Markdown source={text} />
       </div>
+
+      {prev >= 0 &&
+        <Link to={`/level/${params.level}${prev > 0 ? `/intro/${prev}` : ''}`} className="button button--link button--back">
+          Back
+        </Link>
+      }
 
       {hasMoreText ? (
         <Link to={`/level/${params.level}/intro/${next}`} className="button button--forward" autoFocus data-autofocus="true">

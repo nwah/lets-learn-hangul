@@ -29,4 +29,8 @@
   .button {
     transform: translateX(110px) translateY(140px);
   }
+
+  .button--back {
+    margin-left: -110px;
+  }
 }

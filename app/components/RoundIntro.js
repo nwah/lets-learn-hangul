@@ -7,6 +7,7 @@ const RoundIntro = ({round, params}) => {
   let slides = round.text.intro;
   let text = slides[params.roundIntro] || slides[0];
   let next = (parseFloat(params.roundIntro) || 0) + 1;
+  let prev = (parseFloat(params.roundIntro) || 0) - 1;
   let hasMoreText = next < slides.length;
   let hasLetters = round.jamo && round.jamo.length;
   let hasHeadword = !!round.headword;
@@ -31,6 +32,12 @@ const RoundIntro = ({round, params}) => {
       <div className="round__intro__inner">
         <Markdown source={text} />
       </div>
+
+      {prev >= 0 &&
+        <Link to={`/level/${params.level}/round/${params.round}${prev > 0 ? `/intro/${prev}` : ''}`} className="button button--link button--back">
+          Back
+        </Link>
+      }
 
       <Link
         className="button button--forward"

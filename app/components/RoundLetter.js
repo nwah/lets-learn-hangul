@@ -29,6 +29,7 @@ class RoundLetter extends React.Component {
     const {params, round, jamos, shapes} = this.props;
     let jamo = round.jamo[params.letter] || round.jamo[0];
     let next = (parseFloat(params.letter) || 0) + 1;
+    let prev = (parseFloat(params.letter) || 0) - 1;
     let hasAnother = next < round.jamo.length;
     let {description, latin, memory, audio} = jamos[jamo];
 
@@ -53,6 +54,22 @@ class RoundLetter extends React.Component {
         <div className="round__letter__description">
           <Markdown source={description} options={{breaks: false}}/>
         </div>
+
+        {prev < 0 &&
+          <Link
+            className="button button--link button--back"
+            to={`/level/${params.level}/round/${params.round}/letters`}>
+            Back
+          </Link>
+        }
+
+        {prev >= 0 &&
+          <Link
+            className="button button--link button--back"
+            to={`/level/${params.level}/round/${params.round}/letter${prev > 0 ? `/${prev}` : ''}`}>
+            Back
+          </Link>
+        }
 
         {hasAnother ? (
           <Link 

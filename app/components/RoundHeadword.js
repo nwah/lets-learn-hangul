@@ -11,10 +11,16 @@ const RoundHeadword = ({params, round, shapes}) => {
   let slides = round.text.word;
   let text = slides[params.headword] || slides[0];
   let next = (parseFloat(params.headword) || 0) + 1;
+  let prev = (parseFloat(params.headword) || 0) - 1;
+  let lastLetter = (round.jamo || []).length - 1;
   let hasMoreText = next < slides.length;
   let continuePath = (
     hasMoreText ? `/level/${params.level}/round/${params.round}/headword/${next}`
     : `/level/${params.level}/round/${params.round}/ready`
+  );
+  let backPath = (
+    prev >= 0 ? `/level/${params.level}/round/${params.round}/headword${prev > 0 ? `/${prev}` : ''}`
+    : `/level/${params.level}/round/${params.round}/letter${lastLetter > 0 ? `/${lastLetter}` : ''}`
   );
   let phonetics = getRomanizations(round.headword, true);
   return (
@@ -41,6 +47,9 @@ const RoundHeadword = ({params, round, shapes}) => {
         <div className="round__headword__content__inner">
           <Markdown source={text} />
         </div>
+        <Link className="button button--back button--link" to={backPath}>
+          Back
+        </Link>
         <Link className="button button--forward" to={continuePath} autoFocus data-autofocus="true">
           Continue
         </Link>

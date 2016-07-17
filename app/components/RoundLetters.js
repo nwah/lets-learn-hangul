@@ -11,6 +11,7 @@ const defaultText = 'New letters for this round…';
 const RoundLetters = ({params, round, shapes}) => {
   // let text = round.text.letters[0] || defaultText;
   let text = defaultText;
+  let slide = round.text.intro.length - 1;
 
   return (
     <div className="round__letters">
@@ -29,6 +30,12 @@ const RoundLetters = ({params, round, shapes}) => {
           </div>
         ))}
       </div>
+
+      <Link
+        className="button button--back button--link"
+        to={`/level/${params.level}/round/${params.round}${slide > 0 ? `/intro/${slide}` : ''}`}>
+        Back
+      </Link>
       
       <Link
         className="button button--forward"
