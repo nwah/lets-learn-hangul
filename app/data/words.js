@@ -19,7 +19,7 @@
   },
   {
     "word": "침",
-    "translation": "needle",
+    "translation": "spit",
     "image": {
       "url": "",
       "source": {
