@@ -117,8 +117,8 @@ Woo! Four letters and four words down. Let’s keep going!
             **Mandu** are Korean dumplings.
             ---
             Be careful not to confuse **ㄴ** with **ㄱ**.
-            --
-            **ㄱ** looks like a **g**un, while **ㄴ** looks like the **N**ike swoosh.
+            ---
+            **ㄱ** looks like a **g**un, while **ㄴ** looks more like the **N**ike swoosh.
           `,
           start: `
             Let’s see what we can read with our new letters!
@@ -727,7 +727,7 @@ In this first round we’ll look at the most common of these quirk: unreleased s
             Let’s practice some of these new rules.
           `
         },
-        words: ["맛", "옷", "낮잠", "맞다", "받침", "로봇", "꽃", "같다", "햇반", "이웃"]
+        words: ["맛", "옷", "낮잠", "맞다", "받침", "로봇", "꽃", "같다", "햇반", "이웃"] // 젓가락, 그릇
       },
       {
         round: 2,
