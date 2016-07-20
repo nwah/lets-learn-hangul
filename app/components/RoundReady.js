@@ -37,7 +37,7 @@ const RoundReady = ({params, actions, level, round}) => {
       <button
         className="button button--forward"
         onClick={() => actions.startSession(level, round)}
-        autoFocus data-autofocus="true">
+        data-autofocus="true">
         Start!
       </button>
     </div>

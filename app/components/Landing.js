@@ -13,7 +13,7 @@ const Landing = props => (
       <p><i>It only takes about 30 min. Really.</i> </p>
     </div>
 
-    <Link to="/level/1" className="button button--forward" autoFocus data-autofocus="true">
+    <Link to="/level/1" className="button button--forward" data-autofocus="true">
       Let’s go!
     </Link>
   </div>

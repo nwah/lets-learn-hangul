@@ -70,7 +70,7 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
           <button
             className="button--blue button--forward"
             onClick={actions.continueSession}
-            autoFocus data-autofocus="true">
+            data-autofocus="true">
             Next
           </button>
         }

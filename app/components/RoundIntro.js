@@ -42,7 +42,7 @@ const RoundIntro = ({round, params}) => {
       <Link
         className="button button--forward"
         to={path}
-        autoFocus data-autofocus="true">
+        data-autofocus="true">
         Continue
       </Link>
     </div>

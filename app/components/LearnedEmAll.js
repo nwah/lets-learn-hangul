@@ -10,7 +10,7 @@ const LearnedEmAll = ({params}) => {
       <h1>You learned all the letters!!!!</h1>
       <p><em>BUT WAIT! THERE'S MORE!</em> You’ve learned all the letters, but there’s some pronunciation stuff left blah blah blah</p>
 
-      <Link to={'/level/5'} className="button button--forward" autoFocus data-autofocus="true">
+      <Link to={'/level/5'} className="button button--forward" data-autofocus="true">
         Go to Level 5
       </Link>
     </div>

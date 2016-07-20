@@ -29,7 +29,7 @@ const LevelComplete = ({nextLevel, params, level}) => {
         Level
       </label>
 
-      <Link to={path} className="button button--forward level__complete__continue" autoFocus data-autofocus="true">
+      <Link to={path} className="button button--forward level__complete__continue" data-autofocus="true">
         Continue
       </Link>
     </div>

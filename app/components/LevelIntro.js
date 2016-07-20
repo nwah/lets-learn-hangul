@@ -34,11 +34,11 @@ const LevelIntro = ({level, params}) => {
       }
 
       {hasMoreText ? (
-        <Link to={`/level/${params.level}/intro/${next}`} className="button button--forward" autoFocus data-autofocus="true">
+        <Link to={`/level/${params.level}/intro/${next}`} className="button button--forward" data-autofocus="true">
           Continue
         </Link>
       ) : (
-        <Link to={`/level/${params.level}/round/1`} className="button button--forward" autoFocus data-autofocus="true">
+        <Link to={`/level/${params.level}/round/1`} className="button button--forward" data-autofocus="true">
           Start round one
         </Link>
       )}

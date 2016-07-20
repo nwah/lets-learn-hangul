@@ -50,7 +50,7 @@ const RoundHeadword = ({params, round, shapes}) => {
         <Link className="button button--back button--link" to={backPath}>
           Back
         </Link>
-        <Link className="button button--forward" to={continuePath} autoFocus data-autofocus="true">
+        <Link className="button button--forward" to={continuePath} data-autofocus="true">
           Continue
         </Link>
       </div>

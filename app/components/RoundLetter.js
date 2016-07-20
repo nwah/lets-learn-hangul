@@ -75,14 +75,14 @@ class RoundLetter extends React.Component {
           <Link 
             className="button button--forward"
             to={`/level/${params.level}/round/${params.round}/letter/${next}`}
-            autoFocus data-autofocus="true">
+            data-autofocus="true">
             Next letter
           </Link>
         ) : (
           <Link
             className="button button--forward"
             to={`/level/${params.level}/round/${params.round}/headword`}
-            autoFocus data-autofocus="true">
+            data-autofocus="true">
             Continue
           </Link>
         )}

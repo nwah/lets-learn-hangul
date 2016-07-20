@@ -24,9 +24,16 @@ ReactDOM.render(
 );
 
 // Temporary hack to make [Enter] work
+let down = false;
 window.addEventListener('keydown', ({keyCode, target}) => {
   if (keyCode !== 13) return;
+  if (down) return;
+  down = true;
   let elem = document.querySelector('[data-autofocus]');
   let hasActive = document.activeElement && document.activeElement.tagName !== 'BODY';
   if (!hasActive && elem) elem.click();
+});
+
+window.addEventListener('keyup', ({keyCode, target}) => {
+  down = false;
 });

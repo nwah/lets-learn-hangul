@@ -28,7 +28,7 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params})
           <p>{'You’ve learned ' + (newJamos.length > 1 ? `${newJamos.length} new Hangul letters!` : 'a new Hangul letter!')}</p>
         </div>
 
-        <Link to={path} className="button button--forward button--green round__complete__continue-bottom" autoFocus data-autofocus="true">
+        <Link to={path} className="button button--forward button--green round__complete__continue-bottom" data-autofocus="true">
           Continue
         </Link>
 
@@ -52,7 +52,7 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params})
           Round
         </label>
 
-        <Link to={path} className="button button--forward button--green round__complete__continue" autoFocus data-autofocus="true">
+        <Link to={path} className="button button--forward button--green round__complete__continue" data-autofocus="true">
           Continue
         </Link>
       </div>
