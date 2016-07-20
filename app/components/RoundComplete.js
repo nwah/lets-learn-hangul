@@ -2,15 +2,20 @@ import React from 'react';
 import { map, flatten, fromPairs, filter } from 'lodash';
 import { Link } from 'react-router';
 import { branch } from 'baobab-react/higher-order';
+import { isMedial } from '../utils/hangul';
+import { getJamoHint } from '../utils/display';
+import BigJamo from './BigJamo';
 import JamoTable from './JamoTable';
 import Circle from './Circle';
 
-const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params}) => {
+const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params, shapes}) => {
   let showingLetters = params.roundComplete === 'letters';
+  let showingReview = params.roundComplete === 'review';
 
   let path = `/level/${params.level}`;
   path += (
-    newJamos.length && !showingLetters ? `/round/${round.round}/complete/letters`
+    newJamos.length && !showingLetters && !showingReview ? `/round/${round.round}/complete/letters`
+    : newJamos.length && showingLetters ? `/round/${round.round}/complete/review`
     : nextRound ? `/round/${nextRound.round}`
     : `/complete`
   );
@@ -20,7 +25,7 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params})
   let known = fromPairs(flatten(map(completed, ({jamo}) => map(jamo, j => [j, true]))));
 
   return (
-    showingLetters ?
+    (showingLetters || showingReview) ?
       <div className="round__complete">
         <div className="round__complete__top">
           <Circle className="round__complete__top__halfcircle" />
@@ -32,7 +37,21 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params})
           Continue
         </Link>
 
-        <JamoTable newJamos={newJamos} known={known} />
+        {showingLetters ?
+          <JamoTable newJamos={newJamos} known={known} />
+        :
+          <div className="round__complete__review">
+            {round.jamo.map((jamo, i) => (
+              <div className="round__complete__review__jamo" key={jamo}>
+                <Circle r="137" />
+                <BigJamo jamo={jamo} shapes={shapes} />
+                <div className={`bubble ${isMedial(jamo) ? 'bubble--blue' : ''}`}>
+                  {getJamoHint(jamo)}
+                </div>
+              </div>
+            ))}
+          </div>
+        }
       </div>
     :
       <div className="round__complete">
