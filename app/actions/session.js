@@ -12,10 +12,12 @@ export function startSession(tree, level, round) {
     paused: false,
     complete: false,
     showCorrect: false,
+    showAnswer: false,
     level: level,
     round: round,
     words: words,
-    current: 0,
+    queue: words.slice(),
+    current: words[0],
     response: '',
     responseError: null,
     currentMisses: 0,
@@ -39,22 +41,28 @@ export function startSession(tree, level, round) {
 
 export function continueSession(tree) {
   const session = tree.select('session');
+  let queue = session.get('queue');
 
   session.set('response', '');
   session.set('showCorrect', false);
+  session.set('showAnswer', false);
+  session.set('currentMisses', 0);
 
-  let next = session.get('current') + 1;
-  if (next >= session.get('words').length) {
+  if (queue.length === 0) {
     return completeSession(tree);
   }
-  session.set('current', next);
+  session.set('current', queue[0]);
 
   // TODO: Don't do this
   setTimeout(() => {
     let input = document.querySelector('.learn-response-form .fat-input');
     input.focus();
     input.select();
-  }, 50);
+  }, 15);
+}
+
+export function skipWord(tree) {
+  const session = tree.select('session');
 }
 
 export function updateResponse(tree, response) {
@@ -68,7 +76,7 @@ export function submitResponse(tree) {
   let session = tree.select('session');
   session.set('responseError', null);
 
-  let word = session.get('words')[session.get('current')];
+  let word = session.get('current');
   let response = session.get('response');
   let phonetic = session.get('level').level === 5; // TODO: Make this smarter
   let result = checkRomanization(word, response, phonetic);
@@ -79,28 +87,39 @@ export function submitResponse(tree) {
 }
 
 function handleCorrectResponse(session, result, meta) {
-  session.set('currentMisses', 0);
 
   playEffect('correct');
   if (meta.audio && meta.audio.url) {
     setTimeout(() => play(meta.audio.url), 400);
   }
 
+  session.set('queue', session.get('queue').slice(1));
   session.set('showCorrect', true);
 }
 
 function handleIncorrectResponse(session, result, meta) {
   playEffect('wrong');
 
-  session.merge({
-    currentMisses: session.get('currentMisses') + 1,
-    responseError: result
-  });
+  let queue = session.get('queue');
+  let misses = session.get('currentMisses') + 1;
+
+  session.merge(
+    misses < 3
+    ? {
+        currentMisses: misses,
+        responseError: result,
+      }
+    : {
+        responseError: null,
+        showAnswer: true,
+        // Move current word to third (or last) in queue
+        queue: queue.slice(1,3).concat([queue[0]], queue.slice(3))
+      }
+  );
 }
 
 export function completeSession(tree) {
   let session = tree.select('session');
-  let progress = tree.select('progress', 'jamo');
   let level = session.get('level');
   let round = session.get('round');
 
@@ -108,15 +127,6 @@ export function completeSession(tree) {
     active: false,
     complete: true,
     paused: true
-  });
-
-  let newJamos = mapKeys(session.get('jamo'), jamo => jamo);
-  progress.merge({
-    known: {
-      ...progress.get('known'),
-      ...newJamos,
-    },
-    justLearned: newJamos
   });
 
   browserHistory.push(`/level/${level.level}/round/${round.round}/complete`);

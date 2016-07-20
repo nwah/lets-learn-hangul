@@ -12,9 +12,8 @@ import LearnResponseForm from './LearnResponseForm';
 import SoundButton from './SoundButton';
 
 const RoundLearn = ({params, session, shapes, words, actions}) => {
-  let {current, response, showCorrect, responseError} = session;
-  let word = session.words[current];
-  let {image, audio, translation, latin} = words[word];
+  let {current: word, response, showCorrect, responseError, showAnswer} = session;
+  let {image, audio, translation, latin} = word;
 
   let hasImage = image && image.url;
   let hasAudio = audio && audio.url;
@@ -61,12 +60,18 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
         <Circle />
         { showCorrect
           ? <label className="correct">Correct!</label>
+          : showAnswer ? <label>The Correct Answer is</label>
           : responseError ? <label className="error">Oops!</label>
           : <label>Romanization</label>
         }
-        <LearnResponseForm />
+        
+        { showAnswer
+          ? <div className="round__learn__entry__correct-answer">
+              {getRomanizations(word, true).ideal}
+            </div>
+          : <LearnResponseForm /> }
 
-        { showCorrect &&
+        { (showCorrect || showAnswer) &&
           <button
             className="button--blue button--forward"
             onClick={actions.continueSession}
