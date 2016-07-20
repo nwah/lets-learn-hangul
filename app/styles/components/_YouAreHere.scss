@@ -31,6 +31,17 @@
       top: 0;
     }
 
+    .english {
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      position: absolute;
+      top: 31px;
+      left: 19px;
+      opacity: 0;
+      color: $red;
+    }
+
     .small-word {
       display: block;
       position: absolute;
@@ -45,5 +56,13 @@
     .small-word {
       top: 11px;
     }
+
+    .english {
+      color: $blue;
+    }
+  }
+
+  &:hover .english {
+    opacity: 0.5;
   }
 }
