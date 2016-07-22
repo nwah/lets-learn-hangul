@@ -13,7 +13,7 @@ import SoundButton from './SoundButton';
 
 const RoundLearn = ({params, session, shapes, words, actions}) => {
   let {current: word, response, showCorrect, responseError, showAnswer} = session;
-  let {image, audio, translation, latin} = word;
+  let {image, audio, translation, latin} = words[word];
 
   let hasImage = image && image.url;
   let hasAudio = audio && audio.url;
