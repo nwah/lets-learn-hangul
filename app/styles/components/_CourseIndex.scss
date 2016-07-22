@@ -67,6 +67,7 @@
       font-size: 20px;
       line-height: 1.2;
       min-height: 62px;
+      font-weight: 600;
 
       .bubble {
         position: absolute;
@@ -78,6 +79,7 @@
       .jamos {
         display: block;
         opacity: 0.5;
+        font-weight: normal;
       }
     }
   }
