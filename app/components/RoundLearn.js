@@ -26,6 +26,7 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
       'has-image': hasImage,
       'has-audio': hasAudio,
       'show-correct': showCorrect,
+      'one-syllable': word.length === 1, 
       'medium-word': word.length > 3 && word.length < 5,
       'long-word': word.length >= 5,
     })}>

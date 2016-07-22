@@ -46,6 +46,12 @@
       width: 93px;
     }
 
+    .one-syllable & {
+      .big-word {
+        margin-left: 62px;
+      }
+    }
+
     .medium-word & {
       .big-syllable,
       .big-text {
