@@ -23,7 +23,7 @@
     top: 20px;
     left: -100px;
     width: 90px;
-    height: 40px;
+    height: 55px;
 
     .bubble {
       position: absolute;
@@ -32,14 +32,15 @@
     }
 
     .english {
-      font-size: 12px;
+      font-size: 21px;
       font-weight: 900;
       text-transform: uppercase;
       position: absolute;
-      top: 31px;
-      left: 19px;
+      top: 8px;
+      left: 40px;
+      color: $black;
       opacity: 0;
-      color: $red;
+      transform: translateY(16px);
     }
 
     .small-word {
@@ -47,22 +48,34 @@
       position: absolute;
       left: 30px;
       top: 6px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .english,
+    .small-word {
+      transition: transform 0.2s ease-out, opacity 0.1s ease-in;
+    }
+
+    &:hover {
+      .english {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .small-word {
+        opacity: 0;
+        transform: translateY(-16px);
+      }
     }
   }
 
   &__round {
+    width: 110px;
     left: 10px;
 
     .small-word {
       top: 11px;
     }
-
-    .english {
-      color: $blue;
-    }
-  }
-
-  &:hover .english {
-    opacity: 0.5;
   }
 }
