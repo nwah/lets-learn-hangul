@@ -30,7 +30,7 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params, 
         <div className="round__complete__top">
           <Circle className="round__complete__top__halfcircle" />
           <label>Round {round.round} Complete!</label>
-          <p>{'You’ve learned ' + (newJamos.length > 1 ? `${newJamos.length} new Hangul letters!` : 'a new Hangul letter!')}</p>
+          <p>You’ve learned&nbsp; {newJamos.length > 1 ? <span><b>{newJamos.length}</b> new Hangul letters!</span> : 'a new Hangul letter!'}</p>
         </div>
 
         <Link to={path} className="button button--forward button--green round__complete__continue-bottom" data-autofocus="true">
