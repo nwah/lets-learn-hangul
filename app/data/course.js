@@ -52,9 +52,7 @@ In **kim**, the ㄱ and ㅣ are stacked on top of the ㅁ, but in **chi** the �
 Any time the the vowel is tall and skinny like **ㅣ** we arrange the letters like this.
           `,
           start: `
-Alright, enough theory!
-
-Let’s try some reading!
+Enough theory. Let’s try some reading!
           `,
           outro: `
 Woo! Four letters and four words down. Let’s keep going!
