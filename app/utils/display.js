@@ -171,7 +171,6 @@ export function getShapeIDs(syllable) {
     let latin = '-' === jamo ? 'ng' : mapping[jamo];
     let id = type.toLowerCase().split('-');
     
-    console.log(type.substr(4), type);
     if (type.substr(4) === 'CC' && i < 2) {
       id = ['c', 'v', 'c'];
     }

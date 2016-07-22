@@ -6,7 +6,6 @@ export function checkRomanization(hangul, input, phonetic = false) {
   if (input === romanization) return {correct: true};
 
   let {ideal, regexp, possibilities} = romanization;
-  console.log(romanization);
   let correct = regexp.test(input);
   let result = {correct};
   if (correct) return result;
