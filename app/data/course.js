@@ -270,7 +270,7 @@ Let's go on a trip around the world!
           `
         },
         jamo: ["ㅡ"],
-        words: ["한글", "글자", "참기름", "가슴", "흠"]
+        words: ["한글", "글자", "참기름", "가슴"/*, "흠"*/]
       }
     ]
   },
