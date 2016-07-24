@@ -2494,7 +2494,7 @@
   },
   {
     "word": "작품",
-    "translation": "work (of art) / product",
+    "translation": "work (of art)",
     "image": {
       "url": "",
       "source": {
@@ -2619,7 +2619,7 @@
     }
   },
   {
-    "word": "와",
+    "word": "와!",
     "translation": "Wow!",
     "image": {
       "url": "",
@@ -2711,7 +2711,7 @@
     }
   },
   {
-    "word": "내놔",
+    "word": "내놔!",
     "translation": "gimme!",
     "latin": "",
     "image": {
@@ -2730,8 +2730,8 @@
     }
   },
   {
-    "word": "안돼",
-    "translation": "no way!",
+    "word": "안돼!",
+    "translation": "Nooooo!",
     "latin": "",
     "image": {
       "url": "",
@@ -2768,7 +2768,7 @@
     }
   },
   {
-    "word": "뭐",
+    "word": "뭐?",
     "translation": "what",
     "latin": "",
     "image": {

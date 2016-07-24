@@ -559,15 +559,15 @@ These will come in very handy for words borrowed from English and other European
       {
         round: 4,
         name: 'Wow',
-        headword: "와",
+        headword: "와!",
         text: {
           intro: `
 # Round&nbsp;Four: **Wow**
           `,
           word: `
-            All we've got left now are a the *w* sounds.
+            All we've got left now are the **w** sounds.
             ---
-            As you can see, to get a *w* sound, we just combine either **ㅜ** or **ㅗ** with a vertical vowel.
+            As you can see, to get a **w** sound, we just combine either **ㅜ** or **ㅗ** with a vertical vowel.
             ---
             The *w*-vowels wrap around the initial consontant, and any final consonants go at the very bottom like always.
           `,
@@ -576,12 +576,12 @@ These will come in very handy for words borrowed from English and other European
           `
         },
         jamo: ["ㅘ", "ㅙ"],
-        words: ["왜", "와인", "과일", "황소", "내놔", "안돼", "꽤"]
+        words: ["왜?", "와인", "과일", "황소", "내놔!", "안돼!", "꽤"]
       },
       {
         round: 5,
         name: 'What?',
-        headword: "뭐",
+        headword: "뭐?",
         text: {
           intro: `
 # Round&nbsp;Five: **What?**
