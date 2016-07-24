@@ -1,11 +1,12 @@
 import { reduce, get, mapKeys } from 'lodash';
 import { browserHistory } from 'react-router';
 import { checkRomanization } from '../utils/validation';
-import { setLatest } from './user';
+import { setLatest, recordEvent } from './user';
 import { playEffect, play, preload } from '../sound';
 
 export function startSession(tree, level, round) {
   let words = [round.headword].concat(round.words);
+  recordEvent(tree, 'session-start', {round: `${level.level}.${round.round}`});
 
   // TODO: Store defaults somewhere?
   tree.set('session', {
@@ -22,9 +23,10 @@ export function startSession(tree, level, round) {
     response: '',
     responseError: null,
     currentMisses: 0,
+    totalMisses: 0,
     peeks: [],
     started: Date.now(),
-    elapsed: 0
+    completed: 0,
   });
 
   // TODO: Should this live in the action?
@@ -83,40 +85,61 @@ export function submitResponse(tree) {
   let result = checkRomanization(word, response, phonetic);
   let meta = tree.get('words', word);
 
-  if (result.correct) handleCorrectResponse(session, result, meta);
-  else handleIncorrectResponse(session, result, meta);
+  if (result.correct) handleCorrectResponse(tree, result, meta);
+  else handleIncorrectResponse(tree, result, meta);
 }
 
-function handleCorrectResponse(session, result, meta) {
+function handleCorrectResponse(tree, result, {audio, word}) {
+  let session = tree.select('session');
+  let round = `${session.get('level').level}.${session.get('round').round}`;
 
   playEffect('correct');
-  if (meta.audio && meta.audio.url) {
-    setTimeout(() => play(meta.audio.url), 400);
+  recordEvent(tree, 'word-hit', {word, round});
+
+  if (audio && audio.url) {
+    setTimeout(() => play(audio.url), 400);
   }
 
   session.set('queue', session.get('queue').slice(1));
   session.set('showCorrect', true);
 }
 
-function handleIncorrectResponse(session, result, meta) {
+function handleIncorrectResponse(tree, result, {word}) {
+  let session = tree.select('session');
+  let round = `${session.get('level', 'level')}.${session.get('round', 'round')}`;
+
   playEffect('wrong');
+  recordEvent(tree, 'word-miss', {word, round});
 
   let queue = session.get('queue');
-  let misses = session.get('currentMisses') + 1;
+  let currentMisses = session.get('currentMisses') + 1;
+  let totalMisses = session.get('totalMisses') + 1;
 
   session.merge(
-    misses < 3
+    currentMisses < 3
     ? {
-        currentMisses: misses,
+        currentMisses: currentMisses,
+        totalMisses: totalMisses,
         responseError: result,
       }
     : {
+        totalMisses: totalMisses,
         responseError: null,
         showAnswer: true,
         // Move current word to third (or last) in queue
         queue: queue.slice(1,3).concat([queue[0]], queue.slice(3))
       }
   );
+}
+
+export function handlePeek(tree, jamo) {
+  let session = tree.select('session');
+  let word = session.get('current');
+  let round = `${session.get('level', 'level')}.${session.get('round', 'round')}`;
+
+  session.select('peeks').push(jamo);
+
+  recordEvent(tree, 'peek', {jamo, word, round});
 }
 
 export function completeSession(tree) {
@@ -127,9 +150,11 @@ export function completeSession(tree) {
   session.merge({
     active: false,
     complete: true,
-    paused: true
+    paused: true,
+    completed: Date.now(),
   });
 
   setLatest(tree, level.level, round.round);
+  recordEvent(tree, 'session-complete', {round: `${level.level}.${round.round}`});
   browserHistory.push(`/level/${level.level}/round/${round.round}/complete`);
 }

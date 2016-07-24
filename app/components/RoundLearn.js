@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { branch } from 'baobab-react/higher-order';
 import Markdown from 'react-remarkable';
 import { getRomanizations } from '../utils';
-import { continueSession } from '../actions/session';
+import { continueSession, handlePeek } from '../actions/session';
 import { play, isPlaying } from '../sound';
 import Image from './Image';
 import Circle from './Circle';
@@ -33,7 +33,7 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
       <div className='round__learn__new-word'>
         <Circle className="round__learn__new-word__circle" />
         <label>New word</label>
-        <BigWord word={word} shapes={shapes} />
+        <BigWord word={word} shapes={shapes} onPeek={actions.handlePeek} />
         <div className="round__learn__phonetics">{phonetics}</div>
 
         { hasImage && (
@@ -86,6 +86,6 @@ const RoundLearn = ({params, session, shapes, words, actions}) => {
 }
 
 export default branch(RoundLearn, {
-  actions: {continueSession, play},
+  actions: {continueSession, play, handlePeek},
   cursors: {session: ['session']}
 });

@@ -39,13 +39,13 @@ const tree = new Baobab({
     rounds: {complete: {}},
     latest: null, // '1.1'
     history: [/*
-      {event: 'round-start', time: 1468980423012},
+      {event: 'session-start', time: 1468980423012},
       {event: 'peek', time: 1468980862292, jamo: 'ㄱ', round: '1.1', word: '김치'},
       {event: 'word-hit', time: 1468980868001, word: '김치', round: '1.1'},
       {event: 'word-miss', time: 1468980810841, word: '침', round: '1.1'},
       {event: 'word-hit', time: 1468980820311, word: '침', round: '1.1'},
       {event: 'stop', time: 1468980423012},
-      {event: 'round-complete', time: 1468980423012},
+      {event: 'session-complete', time: 1468980423012},
     */],
     hinted: {
       romanization: false,
@@ -66,9 +66,10 @@ const tree = new Baobab({
     response: '',
     responseError: null,
     currentMisses: 0,
+    totalMisses: 0,
     peeks: [],
     started: 0,
-    elapsed: 0,
+    completed: 0,
   },
 
   indexShowing: false

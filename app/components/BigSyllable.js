@@ -20,6 +20,10 @@ class BigSyllable extends React.Component {
     hinted[i] = true;
     this.setState({hinted});
     setTimeout(() => this.hideHint(i), 1000);
+
+    if (this.props.onPeek) {
+      this.props.onPeek(decompose(this.props.syllable)[i]);
+    }
   }
 
   hideHint(i) {
@@ -91,7 +95,7 @@ class BigSyllable extends React.Component {
                 textAnchor="middle"
                 style={{
                   fontFamily: 'Helvetica, sans-serif',
-                  fontSize: '140',
+                  fontSize: '140px',
                   fill: 'white',
                 }}>
                 {getJamoHint(jamo, i === 0)}

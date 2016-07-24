@@ -218,3 +218,11 @@ export function getJamoHintWithAlternate(jamo, isInitial = false) {
   if (jamo === 'ㅇ' && isInitial) return '—';
   return alt ? `${main} (${alt})` : main;
 }
+
+export function formatSeconds(seconds) {
+  return (
+    seconds < 10 ? `:0${seconds}`
+    : seconds < 60 ? `:${seconds}`
+    : `${Math.floor(seconds / 60)}:${seconds % 60}`
+  );
+}
