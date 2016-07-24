@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import { Root } from 'baobab-react/wrappers';
 
+import { loadUser } from './actions/user';
 import { createRoutes } from './config/routes';
 import tree from './config/state';
 
@@ -13,6 +14,9 @@ const routes = createRoutes(tree);
 
 // For debugging
 global.tree = tree;
+
+// Load saved user data (if there is any)
+loadUser(tree);
 
 ReactDOM.render(
   <Root tree={tree}>

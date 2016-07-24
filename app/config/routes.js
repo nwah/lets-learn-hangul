@@ -13,6 +13,7 @@ import {
 // Top level
 import App from '../components/App';
 import Landing from '../components/Landing';
+import ReturnVisit from '../components/ReturnVisit';
 
 // Level
 import Level from '../components/Level';
@@ -65,6 +66,8 @@ export function createRoutes(tree) {
   return (
     <Route path="/" component={App} onEnter={onEnterApp}>      
       <IndexRoute component={Landing} />
+
+      <Route path="/return" component={ReturnVisit} />
 
       <Route path="/level/:level(/intro/:levelIntro)" component={Level} onEnter={onEnterLevel} >
         <IndexRoute component={LevelIntro} />

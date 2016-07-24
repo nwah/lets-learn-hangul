@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { branch } from 'baobab-react/higher-order';
+import { startHistory } from '../actions/user';
 import LandingBrushTitle from './LandingBrushTitle';
 
-const Landing = props => (
+const Landing = ({latest, actions}) => (
   <div className="landing">
     <div className="landing__circle" />
     <LandingBrushTitle className="landing__brush-title" />
@@ -13,10 +15,20 @@ const Landing = props => (
       <p><i>It only takes about 30 min. Really.</i> </p>
     </div>
 
-    <Link to="/level/1" className="button button--forward" data-autofocus="true">
+    <Link className="button button--forward"
+      to={latest ? '/return' : '/level/1'}
+      onMouseDown={actions.startHistory}
+      data-autofocus="true">
       Let’s go!
     </Link>
   </div>
 );
 
-export default Landing;
+export default branch(Landing, {
+  cursors: {
+    latest: ['user', 'latest'],
+  },
+  actions: {
+    startHistory,
+  }
+});

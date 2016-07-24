@@ -1,6 +1,7 @@
 import { reduce, get, mapKeys } from 'lodash';
 import { browserHistory } from 'react-router';
 import { checkRomanization } from '../utils/validation';
+import { setLatest } from './user';
 import { playEffect, play, preload } from '../sound';
 
 export function startSession(tree, level, round) {
@@ -129,5 +130,6 @@ export function completeSession(tree) {
     paused: true
   });
 
+  setLatest(tree, level.level, round.round);
   browserHistory.push(`/level/${level.level}/round/${round.round}/complete`);
 }

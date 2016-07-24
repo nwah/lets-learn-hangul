@@ -39,7 +39,7 @@ const tree = new Baobab({
     rounds: {complete: {}},
     latest: null, // '1.1'
     history: [/*
-      {event: 'start', time: 1468980423012},
+      {event: 'round-start', time: 1468980423012},
       {event: 'peek', time: 1468980862292, jamo: 'ㄱ', round: '1.1', word: '김치'},
       {event: 'word-hit', time: 1468980868001, word: '김치', round: '1.1'},
       {event: 'word-miss', time: 1468980810841, word: '침', round: '1.1'},
@@ -50,7 +50,7 @@ const tree = new Baobab({
     hinted: {
       romanization: false,
       peeking: false,
-    },
+    }
   },
 
   session: {
