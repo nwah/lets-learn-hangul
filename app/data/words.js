@@ -1910,7 +1910,7 @@
     }
   },
   {
-    "word": "아싸",
+    "word": "아싸!",
     "translation": "Yippee!",
     "image": {
       "url": "",
@@ -1928,7 +1928,7 @@
     }
   },
   {
-    "word": "쩔어",
+    "word": "쩔어!",
     "translation": "dope",
     "image": {
       "url": "",
