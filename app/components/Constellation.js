@@ -29,6 +29,10 @@ class Constellation extends React.Component {
     this.timer = setInterval(this.changeRandom, 200);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+
   render() {
     const {geometric} = this.props;
     const {jamos} = this.state;
