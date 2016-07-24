@@ -223,6 +223,6 @@ export function formatSeconds(seconds) {
   return (
     seconds < 10 ? `:0${seconds}`
     : seconds < 60 ? `:${seconds}`
-    : `${Math.floor(seconds / 60)}:${seconds % 60}`
+    : `${Math.floor(seconds / 60)}:${seconds % 60 < 10 ? '0' + seconds % 60 : seconds % 60}`
   );
 }
