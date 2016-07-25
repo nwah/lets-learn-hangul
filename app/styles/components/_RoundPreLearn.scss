@@ -1,0 +1,54 @@
+.round__prelearn {
+  @extend .radial;
+
+  &__jamo {
+    @extend .radial;
+    margin-left: -190px;
+    margin-top: -20px;
+  
+    .big-jamo {
+      width: 180px;
+      height: 180px;
+    }
+
+    label {
+      white-space: nowrap;
+      transform: translateX(-140px) translateY(-95px);
+    }
+  }
+
+  &__options {
+    transform: translateX(-40px) translateY(-115px);
+
+    p {
+      margin-left: -10px;
+    }
+  }
+
+  &__option {
+    font-size: 22px;
+    display: inline-block;
+    margin-right: 26px;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.1s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active,
+    &.correct {
+      transform: scale(1.1);
+    }
+
+    .show-correct & {
+      opacity: 0.1;
+    }
+
+    &.correct {
+      opacity: 1;
+    }
+  }
+}

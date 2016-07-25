@@ -28,6 +28,7 @@ import RoundLetters from '../components/RoundLetters';
 import RoundHeadword from '../components/RoundHeadword';
 import RoundReady from '../components/RoundReady';
 import RoundLearn from '../components/RoundLearn';
+import RoundPreLearn from '../components/RoundPreLearn';
 import RoundComplete from '../components/RoundComplete';
 
 // Special
@@ -77,6 +78,7 @@ export function createRoutes(tree) {
           <Route path="letters(/:letters)" component={RoundLetters} />
           <Route path="letter(/:letter)" component={RoundLetter} />
           <Route path="headword(/:headword)" component={RoundHeadword} />
+          <Route path="pre" component={RoundPreLearn} />
           <Route path="ready" component={RoundReady} />
           <Route path="learn" component={RoundLearn} onEnter={onEnterRoundLearn} />
           <Route path="complete(/:roundComplete)" component={RoundComplete} />

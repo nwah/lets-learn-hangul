@@ -72,6 +72,20 @@ const tree = new Baobab({
     completed: 0,
   },
 
+  presession: {
+    level: null,
+    round: null,
+    queue: [],
+    current: null,
+    options: [],
+    response: null,
+    showCorrect: false,
+    responseError: null,
+    misses: 0,
+    started: 0,
+    completed: 0,
+  },
+
   indexShowing: false
 });
 
