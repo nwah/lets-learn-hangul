@@ -8,7 +8,7 @@ export function startSession(tree, level, round) {
   let rounds = tree.get('rounds');
   let current = parseFloat(`${level.level}.${round.round}`);
   let completed = filter(rounds, (round, key) => parseFloat(key) <= current);
-  let knownJamos = fromPairs(flatten(map(completed, ({jamo}) => map(jamo, j => [j, true]))));
+  let knownJamos = flatten(map(completed, ({jamo}) => jamo));
 
   let queue = round.jamo.slice();
   while (queue.length < 4) {
