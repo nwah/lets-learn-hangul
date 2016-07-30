@@ -81,7 +81,7 @@ Woo! Four letters and four words down. Let’s keep going!
           `
         },
         jamo: ["ㅂ", "ㅏ"],
-        words: ["김밥", "박", "비", "밤", "가", "차", "감", "마"]
+        words: ["김밥", "박", "비", "밤", "가", "차", "감", "마"] // 치마 가마
       },
       {
         round: 3,

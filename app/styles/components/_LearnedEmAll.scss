@@ -1,0 +1,65 @@
+.learned-em-all {
+  min-height: 650px;
+
+  &__title {
+    position: absolute;
+    left: 50%;
+    top: 320px;
+    transform: translateX(-240px) translateY(-50px);
+    width: 480px;
+
+    h1 {
+      position: relative;
+      color: $red;
+      margin: 0;
+    }
+
+    p {
+      position: relative;
+    }
+
+    .circle,
+    &__calligraphy {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &__calligraphy {
+      transform: translateX(-66%) translateY(-92%);
+    }
+  }
+
+  &__more {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translateX(160px) translateY(50px);
+    width: 340px;
+
+    h3 {
+      position: relative;
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+
+    p {
+      position: relative;
+      font-size: 21px;
+      line-height: 26px;
+    }
+
+    .button {
+      position: relative;
+    }
+
+    .circle {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateX(-78px) translateY(-50%);
+    }
+  }
+
+}

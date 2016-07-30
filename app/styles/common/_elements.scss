@@ -19,6 +19,15 @@ p {
   }
 }
 
+a {
+  text-decoration: none;
+  color: darken($blue, 20%);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .fat-input {
   font-size: 36px;
   padding: 10px 0.5rem;

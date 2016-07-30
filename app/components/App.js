@@ -10,6 +10,10 @@ const App = ({children, location}) => (
       {children}
     </div>
     <CourseIndex location={location} />
+    <div className="app__footer">
+      Written, designed, and built by <a href="http://noahburney.com" target="_blank">Noah Burney</a>.
+      See <a href="/credits">audio and photo credits</a>.
+    </div>
   </div>
 );
 

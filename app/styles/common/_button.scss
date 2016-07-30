@@ -11,6 +11,10 @@ button {
   border: none;
   border-radius: 5px;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   &--red {
     color: $red;
     background-color: $redTranslucent;
