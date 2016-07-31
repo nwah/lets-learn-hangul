@@ -4,88 +4,110 @@ import { branch } from 'baobab-react/higher-order';
 import Markdown from 'react-remarkable';
 import { getRomanizations } from '../utils';
 import { continueSession, handlePeek } from '../actions/session';
+import { dismissHint } from '../actions/user';
 import { play, isPlaying } from '../sound';
 import Image from './Image';
 import Circle from './Circle';
 import BigWord from './BigWord';
 import LearnResponseForm from './LearnResponseForm';
 import SoundButton from './SoundButton';
+import Tooltip from './Tooltip';
 
-const RoundLearn = ({params, session, shapes, words, actions}) => {
-  let {current: word, response, showCorrect, responseError, showAnswer} = session;
-  let {image, audio, translation, latin} = words[word];
+class RoundLearn extends React.Component {
 
-  let hasImage = image && image.url;
-  let hasAudio = audio && audio.url;
+  render() {
+    let {params, session, shapes, words, actions, hinted} = this.props;
+    let {current: word, response, showCorrect, responseError, showAnswer, currentMisses} = session;
+    let {image, audio, translation, latin} = words[word];
 
-  let phonetics = getRomanizations(word, true).syllables
-    .map(syllable => syllable.ideal).join(' · ');
+    let hasImage = image && image.url;
+    let hasAudio = audio && audio.url;
 
-  return (
-    <div className={classNames('round__learn', {
-      'has-image': hasImage,
-      'has-audio': hasAudio,
-      'show-correct': showCorrect,
-      'one-syllable': word.length === 1, 
-      'medium-word': word.length > 3 && word.length < 5,
-      'long-word': word.length >= 5,
-    })}>
-      <div className='round__learn__new-word'>
-        <Circle className="round__learn__new-word__circle" />
-        <label>New word</label>
-        <BigWord word={word} shapes={shapes} onPeek={actions.handlePeek} />
-        <div className="round__learn__phonetics">{phonetics}</div>
+    let phonetics = getRomanizations(word, true).syllables
+      .map(syllable => syllable.ideal).join(' · ');
 
-        { hasImage && (
-          <div className="round__learn__image">
-            <Image src={image.url} width="420" height="420" />
-          </div>
-        )}
+    return (
+      <div className={classNames('round__learn', {
+        'has-image': hasImage,
+        'has-audio': hasAudio,
+        'show-correct': showCorrect,
+        'one-syllable': word.length === 1, 
+        'medium-word': word.length > 3 && word.length < 5,
+        'long-word': word.length >= 5,
+      })}>
+        <div className='round__learn__new-word'>
+          <Circle className="round__learn__new-word__circle" />
+          <label>New word</label>
+          
+          { (!hinted.peeking && currentMisses > 0) && 
+            <Tooltip
+              text="Click a letter to peek at its pronunciation"
+              onClick={() => actions.dismissHint('peeking')} />
+          }
 
-        { hasAudio && (
-          <div className="round__learn__audio">
-            <SoundButton url={audio.url} />
-          </div>
-        )}
-      </div>
+          <BigWord word={word} shapes={shapes} onPeek={actions.handlePeek} />
+          <div className="round__learn__phonetics">{phonetics}</div>
 
-      { showCorrect && (
-        <div className="round__learn__correct-word">
-          <Circle />
-          <label>Meaning</label>
-          <h3>{translation}</h3>
-        </div>
-      )}
-
-      <div className="round__learn__entry">
-        <Circle />
-        { showCorrect
-          ? <label className="correct">Correct!</label>
-          : showAnswer ? <label>The Correct Answer is</label>
-          : responseError ? <label className="error">Oops!</label>
-          : <label>Romanization</label>
-        }
-        
-        { showAnswer
-          ? <div className="round__learn__entry__correct-answer">
-              {getRomanizations(word, true).ideal}
+          { hasImage && (
+            <div className="round__learn__image">
+              <Image src={image.url} width="420" height="420" />
             </div>
-          : <LearnResponseForm /> }
+          )}
 
-        { (showCorrect || showAnswer) &&
-          <button
-            className="button--blue button--forward"
-            onClick={actions.continueSession}
-            data-autofocus="true">
-            Next
-          </button>
-        }
+          { hasAudio && (
+            <div className="round__learn__audio">
+              <SoundButton url={audio.url} />
+            </div>
+          )}
+        </div>
+
+        { showCorrect && (
+          <div className="round__learn__correct-word">
+            <Circle />
+            <label>Meaning</label>
+            <h3>{translation}</h3>
+          </div>
+        )}
+
+        <div className="round__learn__entry" ref="entry">
+          <Circle />
+          { showCorrect
+            ? <label className="correct">Correct!</label>
+            : showAnswer ? <label>The Correct Answer is</label>
+            : responseError ? <label className="error">Oops!</label>
+            : <label>Romanization</label>
+          }
+          
+          { showAnswer
+            ? <div className="round__learn__entry__correct-answer">
+                {getRomanizations(word, true).ideal}
+              </div>
+            : <LearnResponseForm /> }
+
+          { (showCorrect || showAnswer) &&
+            <button
+              className="button--blue button--forward"
+              onClick={actions.continueSession}
+              data-autofocus="true">
+              Next
+            </button>
+          }
+
+          { !hinted.romanization && 
+            <Tooltip
+              text="Type the pronunciation of the Korean word here"
+              onClick={() => actions.dismissHint('romanization')} />
+          }
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default branch(RoundLearn, {
-  actions: {continueSession, play, handlePeek},
-  cursors: {session: ['session']}
+  actions: {continueSession, play, handlePeek, dismissHint},
+  cursors: {
+    session: ['session'],
+    hinted: ['user', 'hinted'],
+  }
 });

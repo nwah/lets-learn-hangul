@@ -1,0 +1,36 @@
+.tooltip {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-66%);
+  transition: opacity .2s, transform .15s;
+  text-align: center;
+  width: 500px;
+
+  &.showing {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-100%);
+  }
+
+  &__body {
+    display: inline-block;
+    background: rgba(35, 35, 35, 0.95);
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    max-width: 360px;
+  }
+
+  &__point {
+    margin: 0 auto;
+    width: 0; 
+    height: 0; 
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #232323;
+    opacity: 0.95;
+  }
+}

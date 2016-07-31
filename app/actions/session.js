@@ -1,7 +1,7 @@
 import { reduce, get, mapKeys } from 'lodash';
 import { browserHistory } from 'react-router';
 import { checkRomanization } from '../utils/validation';
-import { setLatest, recordEvent } from './user';
+import { setLatest, recordEvent, dismissHint } from './user';
 import { playEffect, play, preload } from '../sound';
 
 export function startSession(tree, level, round) {
@@ -140,6 +140,7 @@ export function handlePeek(tree, jamo) {
   session.select('peeks').push(jamo);
 
   recordEvent(tree, 'peek', {jamo, word, round});
+  dismissHint(tree, 'peeking');
 }
 
 export function completeSession(tree) {

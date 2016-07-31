@@ -27,3 +27,8 @@ export function loadUser(tree) {
   let user = JSON.parse(localStorage.getItem('lets-learn-hangul') || 'null');
   if (user) tree.set('user', user);
 }
+
+export function dismissHint(tree, hint) {
+  const hinted = tree.select('user', 'hinted');
+  hinted.set(hint, true);
+}
