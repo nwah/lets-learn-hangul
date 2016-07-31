@@ -85,6 +85,8 @@ export function submitResponse(tree) {
   let result = checkRomanization(word, response, phonetic);
   let meta = tree.get('words', word);
 
+  dismissHint(tree, 'romanization');
+
   if (result.correct) handleCorrectResponse(tree, result, meta);
   else handleIncorrectResponse(tree, result, meta);
 }
