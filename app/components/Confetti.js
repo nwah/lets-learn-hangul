@@ -67,7 +67,7 @@ class Confetti extends React.Component {
     for (let i = 0; i < this.bits.length; i++) {
       this.ts[i]++;
       this.bits[i].style.transform =
-        `translate3D(${this.xs[i]}px, ${speed * this.ts[i] - 100}px, ${this.zs[i]}px)`
+        `translate3D(${this.xs[i]}px, ${speed * this.ts[i] - 100}px, ${this.zs[i]}px)`;
         // + ` rotateY(${rspeed * this.ts[i]}deg)`;
     }
 
