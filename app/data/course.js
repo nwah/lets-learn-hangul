@@ -782,9 +782,9 @@ Whenever a final **ㄱ** comes before an initial **ㄴ**, **ㅁ**, or **ㄹ**, t
 This is very, very common. You’ll encounter this a lot, so let’s look at some samples.
           `,
           word: `
-            I just mentioned *Big Mac*, but let’s look at another English word.
+            I just mentioned *Big Mac*, but let’s look at word borrowed from English.
             ---
-            Koreans often use the English word *nickname*, especially when talking about the digital world.
+            The word English word *nickname* is pretty common, for example on online games or forums.
             ---
             But Koreans pronounce it *ningname*.
             ---
@@ -798,11 +798,13 @@ This is very, very common. You’ll encounter this a lot, so let’s look at som
             ---
             You can try for yourself by putting your mouth in *k* position, and without moving your tongue or lips try to say *n*.
             ---
-            A second, closely related phenomenon is that initial ㄹ following a final ㅇ turns into ㄴ.
+            An *ng* sound should come out.
+            ---
+            Another closely related phenomenon is that an initial ㄹ following a final ㅇ turns into ㄴ.
             ---
             So 생리 becomes 생니.
             ---
-            And finally, these two rules kind of combine with ㄱ + ㄹ, which becomes ㅇ + ㄴ.
+            Finally, these two rules kind of combine with ㄱ + ㄹ, which becomes ㅇ + ㄴ.
             ---
 So ㄱ&nbsp;ㄴ&nbsp;=&nbsp;ㅇ&nbsp;ㄴ and
 ㄱ&nbsp;ㅁ&nbsp;=&nbsp;ㅇ&nbsp;ㅁ and
@@ -811,7 +813,7 @@ So ㄱ&nbsp;ㄴ&nbsp;=&nbsp;ㅇ&nbsp;ㄴ and
             ---
             The good news is most Koreans don’t even consciously register this sound change.
             ---
-            They’re brains just turn the sound **bangminu** into the name *Park Minu*.
+            Their brains just turn the sound **bangminu** into the name *Park Minu*.
             ---
             So if you’re reading something out loud and forget the nasalization, they may not even notice!
           `,

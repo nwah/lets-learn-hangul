@@ -12,7 +12,7 @@ const Landing = ({latest, actions}) => (
     <div className="landing__inner">
       <h1>Let’s Learn <b>Hangul!</b></h1>
       <p>Learn to read Hangul, the simple, beautiful Korean alphabet.</p>
-      <p><i>It only takes about 30 min. Really.</i> </p>
+      <p><i>It only takes about an hour. Really.</i> </p>
     </div>
 
     <Link className="button button--forward"
