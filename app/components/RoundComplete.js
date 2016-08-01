@@ -31,8 +31,8 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params, 
     (showingLetters || showingReview) ?
       <div className="round__complete">
         <div className="round__complete__top">
-          <Circle className="round__complete__top__halfcircle" />
-          <label>Round {round.round} Complete!</label>
+          {/*<Circle className="round__complete__top__halfcircle" />*/}
+          <label>Round Complete!</label>
           {showingReview ?
             <p>You’ve learned&nbsp; {newJamos.length > 1 ? <span><b>{newJamos.length}</b> new Hangul letters!</span> : 'a new Hangul letter!'}</p>
           :

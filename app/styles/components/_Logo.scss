@@ -1,0 +1,28 @@
+.logo {
+  @extend .radial;
+  position: absolute;
+  display: block;
+  left: 5px;
+  top: 10px;
+  width: 140px;
+  height: 140px;
+  min-height: 0;
+  color: inherit;
+  font-size: 22px;
+  line-height: 24px;
+  z-index: 10;
+
+  &__english {
+    display: none;
+    transform: translateX(-33%) translateY(-50%);
+  }
+
+  &__korean {
+    transform: translateX(-57%) translateY(-53%);
+  }
+
+  &:hover {
+    .logo__english { display: block; }
+    .logo__korean { display: none; }
+  }
+}

@@ -2,7 +2,6 @@ import React from 'react';
 import Markdown from 'react-remarkable';
 import { Link } from 'react-router';
 import { branch } from 'baobab-react/higher-order';
-import YouAreHere from './YouAreHere';
 import Circle from './Circle';
 import Confetti from './Confetti';
 import Congratulations from './Congratulations';
@@ -11,7 +10,6 @@ const LearnedEmAll = ({params}) => {
   return (
     <div className="learned-em-all">
       <Confetti />
-      <YouAreHere params={params} />
 
       <div className="learned-em-all__title">
         <Circle r="474" />
