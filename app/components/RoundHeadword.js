@@ -20,7 +20,8 @@ const RoundHeadword = ({params, round, shapes}) => {
   );
   let backPath = (
     prev >= 0 ? `/level/${params.level}/round/${params.round}/headword${prev > 0 ? `/${prev}` : ''}`
-    : `/level/${params.level}/round/${params.round}/letter${lastLetter > 0 ? `/${lastLetter}` : ''}`
+    : round.jamo ? `/level/${params.level}/round/${params.round}/letter${lastLetter > 0 ? `/${lastLetter}` : ''}`
+    : `/level/${params.level}/round/${params.round}/intro${round.text.intro.length ? `/${round.text.intro.length - 1}` : ''}`
   );
   let phonetics = getRomanizations(round.headword, true);
   return (
