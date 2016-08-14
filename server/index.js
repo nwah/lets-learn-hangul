@@ -19,11 +19,6 @@ server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 server.use(compression());
 server.use(express.static(path.join(__dirname, '..', 'public')));
-// server.use('/js', express.static(path.join(__dirname, '..', 'public', 'js')));
-// server.use('/css', express.static(path.join(__dirname, '..', 'public', 'css')));
-// server.use('/images', express.static(path.join(__dirname, '..', 'public', 'images')));
-// server.use('/audio', express.static(path.join(__dirname, '..', 'public', 'audio')));
-// server.use('/sounds', express.static(path.join(__dirname, '..', 'public', 'sounds')));
 
 // TODO: Should probably handle this as part of build step
 // Data
@@ -48,9 +43,15 @@ if (env === 'production') {
   server.use(['/learnedemall', '/learnedeverything', '/return', '/nowwhat'], basicauth('hangul', 'hangul'));
 }
 
+const indexHtml = fs.readFileSync(path.join(__dirname, 'cached-home.html'), 'utf8');
+
 // App Routes
+server.get('/', (req, res) => {
+  res.render('index', {env, html: indexHtml});
+});
+
 server.get(
-  ['/', '/level/*', '/learnedemall', '/learnedeverything', '/return', '/nowwhat'],
+  ['/level/*', '/learnedemall', '/learnedeverything', '/return', '/nowwhat'],
   (req, res) => res.render('index', {env})
 );
 

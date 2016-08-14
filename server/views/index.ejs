@@ -9,7 +9,11 @@
   <link rel='stylesheet' type='text/css' href='/css/<%= env === 'production' ? 'app.min.css' : 'app.css' %>'>
 </head>
 <body>
-  <div id='mount'></div>
+  <div id='mount'>
+    <% if (typeof html !== 'undefined') { %>
+      <%- html %>
+    <% } %>
+  </div>
 
   <script src='/js/<%= env === 'production' ? 'app.min.js' : 'app.js' %>'></script>
   <% if (env === 'production') { %>
