@@ -40,7 +40,7 @@ server.get('/data/words.json', (req, res) => res.json(wordsData));
 if (env === 'production') {
   server.use('/', basicauth('hangul', 'hangul'));
   server.use('/level/*', basicauth('hangul', 'hangul'));
-  server.use(['/learnedemall', '/learnedeverything', '/return', '/nowwhat'], basicauth('hangul', 'hangul'));
+  server.use(['/learnedemall', '/learnedeverything', '/return', '/nowwhat', '/credits'], basicauth('hangul', 'hangul'));
 }
 
 const indexHtml = fs.readFileSync(path.join(__dirname, 'cached-home.html'), 'utf8');
@@ -51,7 +51,7 @@ server.get('/', (req, res) => {
 });
 
 server.get(
-  ['/level/*', '/learnedemall', '/learnedeverything', '/return', '/nowwhat'],
+  ['/level/*', '/learnedemall', '/learnedeverything', '/return', '/nowwhat', '/credits'],
   (req, res) => res.render('index', {env})
 );
 

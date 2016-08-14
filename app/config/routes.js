@@ -35,6 +35,7 @@ import RoundComplete from '../components/RoundComplete';
 import LearnedEmAll from '../components/LearnedEmAll';
 import LearnedEverything from '../components/LearnedEverything';
 import NowWhat from '../components/NowWhat';
+import Credits from '../components/Credits';
 
 export function createRoutes(tree) {
 
@@ -101,6 +102,7 @@ export function createRoutes(tree) {
       <Route path="/learnedemall" component={LearnedEmAll} onEnter={onEnterCompleted} />
       <Route path="/learnedeverything" component={LearnedEverything} onEnter={onEnterCompleted} />
       <Route path="/nowwhat" component={NowWhat} />
+      <Route path="/credits" component={Credits} />
     </Route>
   );
 }
