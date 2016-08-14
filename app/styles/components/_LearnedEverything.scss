@@ -1,0 +1,76 @@
+.learned-everything {
+  @extend .radial;
+
+  &__intro,
+  &__outro,
+  &__letters,
+  &__words {
+    & > * {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+
+    .circle {
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  &__intro {
+    .learned-everything__calligraphy {
+      transform: translateX(-106%) translateY(-45%);
+    }
+
+    h1 {
+      color: $red;
+      font-size: 42px;
+      text-transform: uppercase;
+      transform: translateY(-135%);
+    }
+
+    p {
+      font-size: 29px;
+      white-space: nowrap;
+      transform: translateY(20px);
+    }
+
+    .button {
+      transform: translateY(86px);
+      white-space: nowrap;
+    }
+  }
+
+  &__letters,
+  &__words {
+    p {
+      white-space: nowrap;
+      transform: translateX(-50%) translateY(-240px);
+    }
+  }
+
+  &__letters {
+    .geometric-jamo {
+      width: 600px;
+      height: 600px;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  &__words {
+    .big-word {
+      white-space: nowrap;
+      transform: translateX(-50%) translateY(-45%);
+    }
+
+    .big-syllable {
+      width: 230px;
+      height: 230px;
+    }
+
+    .button {
+      transform: translateY(200px) translateX(100px);
+      white-space: nowrap;
+    }
+  }
+}

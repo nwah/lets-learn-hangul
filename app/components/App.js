@@ -5,7 +5,9 @@ import CourseIndex from './CourseIndex';
 
 const App = ({children, location}) => (
   <div className="app">
-    { location.pathname === '/' && <Constellation />}
+    { /^\/(?:nowwhat)?$/.test(location.pathname) &&
+      <Constellation location={location} />
+    }
     <div className="app__main">
       {children}
     </div>

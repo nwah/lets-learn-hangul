@@ -10,6 +10,7 @@ button {
   text-decoration: none;
   border: none;
   border-radius: 5px;
+  white-space: nowrap;
 
   &:hover {
     text-decoration: none;
@@ -23,6 +24,34 @@ button {
   &--green {
     color: $green;
     background-color: $greenTranslucent;
+  }
+
+  &--facebook,
+  &--twitter {
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: 0.5em;
+      vertical-align: -0.4em;
+      background-image: url($facebookLogo);
+      background-size: 100% 100%;
+    }
+  }
+
+  &--facebook {
+    color: $facebook;
+    background-color: rgba($facebook, 0.2);
+  }
+
+  &--twitter {
+    color: $twitter;
+    background-color: rgba($twitter, 0.2);
+
+    &:before {
+      background-image: url($twitterLogo);
+    }
   }
 
   &--link {

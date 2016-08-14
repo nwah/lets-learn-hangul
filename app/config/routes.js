@@ -34,6 +34,7 @@ import RoundComplete from '../components/RoundComplete';
 // Special
 import LearnedEmAll from '../components/LearnedEmAll';
 import LearnedEverything from '../components/LearnedEverything';
+import NowWhat from '../components/NowWhat';
 
 export function createRoutes(tree) {
 
@@ -64,6 +65,16 @@ export function createRoutes(tree) {
     }
   }
 
+  function onEnterCompleted({params}) {
+    if (isEmpty(tree.get('shapes'))) {
+      loadCourse(tree);
+      loadWords(tree);
+      loadShapes(tree);
+      loadJamos(tree);
+      loadGeometric(tree);
+    }
+  }
+
   return (
     <Route path="/" component={App} onEnter={onEnterApp}>      
       <IndexRoute component={Landing} />
@@ -87,8 +98,9 @@ export function createRoutes(tree) {
         <Route path="complete(/:levelComplete)" component={LevelComplete} />
       </Route>
 
-      <Route path="/learnedemall" component={LearnedEmAll} />
-      <Route path="/learnedeverything" component={LearnedEverything} />
+      <Route path="/learnedemall" component={LearnedEmAll} onEnter={onEnterCompleted} />
+      <Route path="/learnedeverything" component={LearnedEverything} onEnter={onEnterCompleted} />
+      <Route path="/nowwhat" component={NowWhat} />
     </Route>
   );
 }

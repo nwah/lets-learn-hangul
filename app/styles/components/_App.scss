@@ -7,13 +7,17 @@
   &__footer {
     position: fixed;
     text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 5px 10px 0;
-    background: $butter;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0.7;
     z-index: 10000;
     font-size: 14px;
+    line-height: 1em;
+    text-shadow:
+      $butter -1px -1px 0,
+      $butter -1px 1px 0,
+      $butter 1px 1px 0,
+      $butter 1px -1px 0;
   }
 }

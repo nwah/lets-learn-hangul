@@ -10,6 +10,7 @@
 </head>
 <body>
   <div id='mount'></div>
+
   <script src='/js/<%= env === 'production' ? 'app.min.js' : 'app.js' %>'></script>
   <% if (env === 'production') { %>
   <script src='/js/autotrack.js'></script>

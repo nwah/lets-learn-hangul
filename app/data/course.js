@@ -813,15 +813,13 @@ So ㄱ&nbsp;ㄴ&nbsp;=&nbsp;ㅇ&nbsp;ㄴ and
             ---
             The good news is most Koreans don’t even consciously register this sound change.
             ---
-            Their brains just turn the sound **bangminu** into the name *Park Minu*.
-            ---
             So if you’re reading something out loud and forget the nasalization, they may not even notice!
           `,
           start: `
             Let’s see this phenomenon in action!
           `
         },
-        words: ["막내", "적립", "생리", "악마", "박물관", "빅맥", "속눈섭", "식량", "정리", "석류", "식물", "정력"]
+        words: ["막내", "적립", "생리", "악마", "박물관", "빅맥", "속눈섭", "식량", "정리", "석류", "식물", "정력"] /* 색맹 */
       },
       {
         round: 4,

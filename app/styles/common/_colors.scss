@@ -2,13 +2,17 @@ $black: #2d2b29;
 $white: #ffffff;
 $butter: #f9f5ea;
 $red: #ee1a60;
-$redTranslucent: rgba(238, 26, 96, 0.2);
+$redTranslucent: rgba($red, 0.2);
 $darkRed: #b70d4e;
 $blue: #367add;
-$blueTranslucent: rgba(54, 122, 221, 0.2);
+$blueTranslucent: rgba($blue, 0.2);
 $green: #10c674;
-$greenTranslucent: rgba(16, 198, 116, 0.2);
+$greenTranslucent: rgba($green, 0.2);
 $purple: #715bc1;
 $fire: #e55555;
 $green: #5bd8ae;
 $orange: #ff871a;
+
+// 3rd party
+$twitter: #55acee;
+$facebook: #4267b2;

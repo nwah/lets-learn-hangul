@@ -35,6 +35,7 @@
     "baobab": "^2.3.3",
     "baobab-react": "~1.0.1",
     "basicauth-middleware": "^1.1.0",
+    "bezier-easing": "^2.0.3",
     "browserify": "^13.0.0",
     "classnames": "^2.2.3",
     "compression": "^1.6.2",

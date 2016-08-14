@@ -1,0 +1,101 @@
+.now-what {
+
+  &__social,
+  &__resources {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+  }
+
+  &__social {
+    transform: translateX(-160px) translateY(-100px);
+
+    & > * {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    .circle {
+      top: -88px;
+      left: -182px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .calligraphy {
+      left: -288px;
+      top: -110px;
+    }
+
+    .button--twitter,
+    .button--facebook {
+      &:before {
+        transition: margin-left 0.2s, margin-right 0.2s;
+      }
+
+      &:hover:before {
+        margin-left: 0.5em;
+        margin-right: 1em;
+      }
+    }
+
+    .button--twitter {
+      top: 100px;
+      left: -75px;
+    }
+
+    .button--facebook {
+      top: 160px;
+      left: -46px;
+    }
+
+
+  }
+
+  &__resources {
+    transform: translateX(185px) translateY(-4px);
+
+    .circle {
+      position: absolute;
+      top: -40px;
+      left: -70px;
+    }
+
+    &__text {
+      position: relative;
+      width: 340px;
+      font-size: 18px;
+      line-height: 24px;
+      z-index: 1;
+    }
+
+    h3 {
+      margin-bottom: 0.25rem;
+    }
+
+    p,
+    ul {
+      margin: 0.25rem 0;
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+
+    li {
+      list-style: none;
+
+      &:before {
+        content: '→';
+        margin-right: 10px;
+      }
+    }
+  }
+}

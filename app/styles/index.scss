@@ -16,7 +16,7 @@ html {
 body {
   background: $butter;
   color: $black;
-  font-family: "ff-enzo-web",sans-serif;
+  font-family: "ff-enzo-web", "나눔고딕", NanumGothic, NanumGothicOTF, "hiragino kaku gothic pro", Dotum, sans-serif;
   font-size: 24px;
   line-height: 36px;
   font-weight: 600;
@@ -55,3 +55,5 @@ body {
 @import "components/LearnResponseForm";
 @import "components/RoundComplete";
 @import "components/LearnedEmAll";
+@import "components/LearnedEverything";
+@import "components/NowWhat";

@@ -8,6 +8,10 @@ const hintRadius = 190;
 const colors = ['#ee1a60', '#367add', '#b70d4e'];
 
 class BigSyllable extends React.Component {
+  static defaultProps = {
+    clickable: true,
+  };
+
   state = {
     hinted: {},
     hovering: {},
@@ -109,18 +113,20 @@ class BigSyllable extends React.Component {
 
   render() {
     let {hinted, hovering} = this.state;
-    let {syllable} = this.props;
+    let {syllable, clickable} = this.props;
 
     return (
       isHangul(syllable) ?
         <svg viewBox="0 0 600 600" className="big-syllable">
           {this.renderJamos()}
-          {this.renderHints()}
-          <Hitareas
-            {...this.props}
-            onHit={this.showHint.bind(this)}
-            onMouseEnter={this.mouseEnter.bind(this)}
-            onMouseLeave={this.mouseLeave.bind(this)} />
+          {clickable && this.renderHints()}
+          {clickable &&
+            <Hitareas
+              {...this.props}
+              onHit={this.showHint.bind(this)}
+              onMouseEnter={this.mouseEnter.bind(this)}
+              onMouseLeave={this.mouseLeave.bind(this)} />
+          }
         </svg>
       :
         <BigText text={syllable} />
