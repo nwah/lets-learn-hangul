@@ -1,8 +1,12 @@
 import { extend } from 'lodash';
 import qs from 'qs';
 
-// TODO: Load per environment
-const env = 'local';
+// TODO: pull from server?
+const env = (
+  /localhost/.test(location.hostname) ? 'local'
+  : /staging/.test(location.hostname) ? 'staging'
+  : 'prod'
+);
 const fbAppId = ({
   prod: '145634995501895',
   staging: '1332120460131471',
@@ -27,7 +31,7 @@ export function getFacebookShareUrl(overrides = {}) {
     quote: 'I just learned to read Korean!',
     href: publicUri,
     hashtag: '#korean #hangul #hangeul',
-    redirect_uri: `${baseUri()}/whatnow`,
+    redirect_uri: `${baseUri()}/nowwhat`,
   }, overrides);
 
   return `https://www.facebook.com/dialog/share?${qs.stringify(post)}`;
