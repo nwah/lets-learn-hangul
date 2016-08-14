@@ -21,3 +21,7 @@
       $butter 1px -1px 0;
   }
 }
+
+html.wf-loading .app {
+  visibility: hidden;
+}
