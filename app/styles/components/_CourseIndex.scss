@@ -54,6 +54,11 @@
         z-index: 5;
       }
     }
+
+    &.incomplete .level-name {
+      opacity: 0.5;
+      cursor: default;
+    }
   }
 
   &__rounds {
@@ -81,6 +86,11 @@
         opacity: 0.5;
         font-weight: normal;
       }
+    }
+
+    &.incomplete .round-name {
+      opacity: 0.5;
+      cursor: default;
     }
   }
 }
