@@ -17,7 +17,7 @@ const NowWhat = () => (
         Share on Twitter
       </a>
 
-      <a className="button button--facebook" href={getFacebookShareUrl()}>
+      <a className="button button--facebook" href={getFacebookShareUrl()} target="_blank">
         Share on Facebook
       </a>
     </div>
