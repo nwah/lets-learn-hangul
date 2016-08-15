@@ -8,7 +8,7 @@ const env = (
   : 'prod'
 );
 const fbAppId = ({
-  prod: '145634995501895',
+  prod: '1332107326799451',
   staging: '1332120460131471',
   local: '1332119800131537',
 })[env];
