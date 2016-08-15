@@ -82,7 +82,7 @@ class RoundLearn extends React.Component {
             ? <div className="round__learn__entry__correct-answer">
                 {getRomanizations(word, true).ideal}
               </div>
-            : <LearnResponseForm /> }
+            : <LearnResponseForm word={word} /> }
 
           { (showCorrect || showAnswer) &&
             <button

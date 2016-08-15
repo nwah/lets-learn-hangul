@@ -1,8 +1,9 @@
 import React from 'react';
+import classNames from 'classnames';
 import { map } from 'lodash';
 import { branch } from 'baobab-react/higher-order';
 import { updateResponse, submitResponse } from '../actions/session';
-import classNames from 'classnames';
+import { getRomanizations } from '../utils';
 
 class LearnResponseForm extends React.Component {
   componentDidMount() {
@@ -10,7 +11,8 @@ class LearnResponseForm extends React.Component {
   }
 
   render() {
-    let {actions, response, responseError, showCorrect} = this.props;
+    let {actions, response, responseError, showCorrect, word} = this.props;
+    let romanization = getRomanizations(word).ideal;
 
     return (
       <form action="#"
@@ -25,6 +27,9 @@ class LearnResponseForm extends React.Component {
           className={classNames("fat-input", {
             correct: !!showCorrect,
           })}
+          style={{
+            width: Math.max(216, 36 + 22 * romanization.length) + 'px',
+          }}
           value={response}
           onChange={e => actions.updateResponse(e.target.value)}
           disabled={!!showCorrect}

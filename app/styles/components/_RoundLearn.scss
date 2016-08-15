@@ -131,8 +131,7 @@
   &__entry {
     position: absolute;
     z-index: 5;
-    left: 50%;
-    margin-left: -64px;
+    right: 32%;
     top: 336px;
     text-align: right;
 
@@ -174,7 +173,8 @@
     button {
       position: absolute;
       top: 90px;
-      left: 240px;
+      left: 100%;
+      margin-left: 25px;
       white-space: nowrap;
     }
   }
