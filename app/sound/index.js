@@ -6,13 +6,18 @@ const basePath = '/audio/';
 const cache = {};
 const sprite = new Howl({
   urls: [`${basePath}sprite.mp3`],
-  volume: 0.2,
+  volume: 0.4,
   sprite: {
-    wrong: [0, 600],
-    correct: [1000, 1150],
-    ready: [3000, 2000],
-    complete: [6000, 1850]
+    wrong: [50, 610],
+    correct: [1000, 500],
+    ready: [2000, 2000],
   }
+  // sprite: {
+  //   wrong: [0, 600],
+  //   correct: [1000, 1150],
+  //   ready: [3000, 2000],
+  //   complete: [6000, 1850]
+  // }
 });
 
 export function playEffect(name) {

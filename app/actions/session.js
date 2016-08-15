@@ -39,7 +39,7 @@ export function startSession(tree, level, round) {
   }, []);
   preload(sounds);
 
-  playEffect('ready');
+  // playEffect('ready');
 }
 
 export function continueSession(tree) {
