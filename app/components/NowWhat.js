@@ -29,12 +29,12 @@ const NowWhat = () => (
         <p>Here are a few of my favorite online resources to get started:</p>
         <ul>
           <li>
-            <a href="#">
+            <a href="http://www.talktomeinkorean.com">
               Talk To Me In Korean
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="http://www.howtostudykorean.com">
               How to Study Korean
             </a>
           </li>
