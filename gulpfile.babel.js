@@ -4,6 +4,7 @@ import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import rename from 'gulp-rename';
+import envify from 'gulp-envify';
 import uglify from 'gulp-uglify';
 import watch from 'gulp-watch';
 
@@ -38,6 +39,7 @@ gulp.task('prod-js', () =>
       transform: ['babelify'],
       debug: false
     }))
+    .pipe(envify({NODE_ENV: 'production'}))
     .pipe(uglify())
     .pipe(rename('app.min.js'))
     .pipe(gulp.dest('public/js'))
