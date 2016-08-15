@@ -55,8 +55,6 @@
       top: 160px;
       left: -46px;
     }
-
-
   }
 
   &__resources {
@@ -98,4 +96,10 @@
       }
     }
   }
+}
+
+// Override Adblocker
+#mount .app .app__main .now-what__social .button--twitter,
+#mount .app .app__main .now-what__social .button--facebook {
+  display: block !important;
 }
