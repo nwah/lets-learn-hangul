@@ -12,6 +12,7 @@ import { processText } from '../app/utils/text';
 
 // Setup
 const env = process.env.NODE_ENV || 'development';
+const authRequired = process.env.AUTH_REQUIRED === '1';
 const server = express();
 
 server.set('port', (process.env.PORT || 4444));
@@ -37,7 +38,7 @@ server.get('/data/jamos.json', (req, res) => res.json(jamosData));
 server.get('/data/geometric.json', (req, res) => res.json(geometricData));
 server.get('/data/words.json', (req, res) => res.json(wordsData));
 
-if (env === 'production') {
+if (authRequired) {
   server.use('/', basicauth('hangul', 'hangul'));
   server.use('/level/*', basicauth('hangul', 'hangul'));
   server.use(['/learnedemall', '/learnedeverything', '/return', '/nowwhat', '/credits'], basicauth('hangul', 'hangul'));
