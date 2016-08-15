@@ -6,12 +6,13 @@ import Circle from './Circle';
 const Logo = () => (
   <Link to="/" className="logo">
     <Circle r={109} className="logo__circle" />
+    <div className="logo__beta-tag">Beta</div>
     <LandingBrushTitle className="logo__korean" width="140" height="140" animate={false} />
     <div className="logo__english">
       Let’s<br />
       Learn<br />
       <b>Hangul!</b>
-    </div>    
+    </div>
   </Link>
 );
 

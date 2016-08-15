@@ -21,6 +21,21 @@
     transform: translateX(-57%) translateY(-53%);
   }
 
+  &__beta-tag {
+    position: absolute;
+    top: 34%;
+    left: 93%;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px 6px;
+    font-weight: 900;
+    border-radius: 3px;
+    color: $red;
+    background: $redTranslucent;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
   &:hover {
     .logo__english { display: block; }
     .logo__korean { display: none; }
