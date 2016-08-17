@@ -201,7 +201,7 @@ Let's go on a trip around the world!
           `
         },
         jamo: ["ㅇ"],
-        words: ["사랑", "성공", "PC방", "고추장", "멍멍"]
+        words: ["사랑", "성공", "PC방", "멍멍"]
       },
       {
         round: 4,
@@ -250,7 +250,7 @@ Let's go on a trip around the world!
           `
         },
         jamo: ["ㅈ"],
-        words: ["좀", "가자", "남자", "남자친구"]
+        words: ["좀", "고추장", "가자", "남자", "남자친구"]
       },
       {
         round: 6,
