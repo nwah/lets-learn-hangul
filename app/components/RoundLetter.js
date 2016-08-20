@@ -27,8 +27,8 @@ class RoundLetter extends React.Component {
 
   render() {
     const {params, round, jamos, shapes} = this.props;
-    if (!jamos || !shapes) return <noscript />;
-    
+    if (!jamos || !shapes || !round) return <noscript />;
+
     let jamo = round.jamo[params.letter] || round.jamo[0];
     let next = (parseFloat(params.letter) || 0) + 1;
     let prev = (parseFloat(params.letter) || 0) - 1;
