@@ -1,3 +1,5 @@
+@import "common/measurements";
+@import "common/media-queries";
 @import "common/colors";
 @import "common/data-uris";
 
@@ -11,6 +13,10 @@
 html {
   font-size: 36px;
   background: $butter;
+
+  @include phone {
+    font-size: 27px;
+  }
 }
 
 body {
@@ -20,6 +26,11 @@ body {
   font-size: 24px;
   line-height: 36px;
   font-weight: 600;
+
+  @include phone {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @import "common/elements";
