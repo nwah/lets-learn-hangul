@@ -2,21 +2,40 @@
   position: relative;
   margin-top: 130px;
 
+  @include phone {
+    margin-top: 100px;
+    padding-bottom: 80px;
+  }
+
   &__text {
     text-align: center;
     text-indent: -220px;
+
+    @include phone {
+      text-indent: 0;
+    }
   }
 
   &__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 80px;
+
+    @include phone {
+      margin-top: 30px;
+    }
   }
 
   &__jamo {
     width: 180px;
     height: 140px;
     position: relative;
+
+    @include phone {
+      width: 140px;
+      height: 125px;
+    }
 
     & > * {
       display: block;
@@ -25,20 +44,38 @@
       top: 0;
     }
 
+    .circle {
+      @include phone {
+        width: 91px;
+        height: 91px;
+        left: 25px;
+      }
+    }
+
     .big-jamo {
-      top: 20px;
-      left: 20px;
-      width: 100px;
-      height: 100px;
+      top: .5555rem;
+      left: .5555rem;
+      width: 2.7777rem;
+      height: 2.7777rem;
+
+      @include phone {
+        left: 34px;
+        top: 9px;
+      }
     }
 
     .bubble {
-      left: 100px;
-      top: 100px;
-      width: 54px;
-      height: 54px;
-      font-size: 18px;
-      line-height: 54px;
+      left: 2.7777rem;
+      top: 2.7777rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      font-size: .5rem;
+      line-height: 1.5rem;
+
+      @include phone {
+        left: 91px;
+        top: 66px;
+      }
     }
   }
 
@@ -47,9 +84,18 @@
     top: 345px;
     left: 50%;
     margin-left: 120px;
+
+    @include phone {
+      top: 325px;
+      margin-left: -10px;
+    }
   }
 
   .button--back {
     margin-left: 10px;
+
+    @include phone {
+      margin-left: -120px;
+    }
   }
 }
