@@ -1,6 +1,13 @@
 .radial {
   position: relative;
-  min-height: 600px;
+
+  @include phone {
+    min-height: 480px;
+  }
+
+  @include tablet-and-desktop {
+    min-height: 600px;
+  }
 
   & > * {
     display: block;

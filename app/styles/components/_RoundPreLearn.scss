@@ -5,23 +5,49 @@
     @extend .radial;
     margin-left: -190px;
     margin-top: -20px;
+
+    @include phone {
+      margin-left: 0;
+      margin-top: 0;
+      top: 7rem;
+    }
+
+    .circle {
+      width: 6.8rem;
+      height: 6.8rem;
+    }
   
     .big-jamo {
-      width: 180px;
-      height: 180px;
+      width: 5rem;
+      height: 5rem;
     }
 
     label {
       white-space: nowrap;
       transform: translateX(-140px) translateY(-95px);
+
+      @include phone {
+        transform: translateX(-140px) translateY(-70px);        
+      }
     }
   }
 
   &__options {
     transform: translateX(-40px) translateY(-115px);
 
+    @include phone {
+      position: relative;
+      left: 0;
+      top: 0;
+      transform: none;
+      padding: 11rem 1rem 1rem;
+      text-align: center;
+    }
+
     p {
-      margin-left: -10px;
+      @include tablet-and-desktop {
+        margin-left: -10px;
+      }
     }
   }
 
@@ -33,6 +59,18 @@
     cursor: pointer;
     outline: none;
     transition: transform 0.1s;
+
+    @include phone {
+      margin-right: .7rem;
+
+      &:first-of-kind {
+        margin-left: -10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
     &:hover {
       transform: scale(1.05);

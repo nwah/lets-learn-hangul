@@ -1,5 +1,11 @@
 .landing {
   @extend .radial;
+  
+  @include phone {
+    & > * {
+      top: 300px;
+    }
+  }
 
   &__brush-title {
     transform: translateX(-100%) translateY(-5%);

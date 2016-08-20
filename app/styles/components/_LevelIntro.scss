@@ -2,8 +2,10 @@
   @extend .radial;
   margin-top: 1rem;
 
-  & > * {
-    top: 48%;
+  @include phone {
+    & > * {
+      top: 265px;
+    }
   }
 
   &__inner {
