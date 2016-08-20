@@ -2,14 +2,37 @@
   @extend .radial;
   margin-top: 40px;
 
+  &__circle {
+    @include phone {
+      top: 160px;
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
   &__description {
     width: 410px;
+    padding-left: .5rem;
     transform: translateX(0px) translateY(-50%);
+
+    @include phone {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: auto;
+      padding: 11rem 1rem 1rem;
+      transform: none;
+    }
 
     p {
       font-size: 18px;
       line-height: 24px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
+
+      @include phone {
+        font-size: 15px;
+        line-height: 21px;
+      }
     }
 
     p:first-child {
@@ -29,105 +52,129 @@
   }
 
   .bubble {
-    width: 74px;
-    height: 74px;
-    font-size: 24px;
-    line-height: 74px;
+    width: 2rem;
+    height: 2rem;
+    font-size: .6666rem;
+    line-height: 2rem;
     transform: translateX(-95px) translateY(-166px);
-  }
 
-  .sound-button {
-    width: 42px;
-    height: 42px;
-    transform: translateX(-45px) translateY(-119px);
-    z-index: 1;
-  }
-
-  .big-jamo {
-    width: 350px;
-    height: 350px;
-    transform: translateX(-340px) translateY(-50%);
-
-    &--vertical {
-      transform: translateX(-310px) translateY(-50%);
+    @include phone {
+      top: 210px;
+      left: 310px;
     }
   }
 
-  .button {
+  .sound-button {
+    width: 1.1666rem;
+    height: 1.1666rem;
+    transform: translateX(-45px) translateY(-119px);
+    z-index: 1;
+
+    @include phone {
+      top: 195px;
+      left: 295px;
+    }
+  }
+
+  .big-jamo {
+    width: 9.7222rem;
+    height: 9.7222rem;
+    transform: translateX(-340px) translateY(-50%);
+
+    @include phone {
+      top: 165px;
+      width: 7rem;
+      height: 7rem;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &--vertical {
+      @include tablet-and-desktop {
+        transform: translateX(-310px) translateY(-50%);
+      }
+    }
+  }
+
+  &__buttons {
     transform: translateX(110px) translateY(140px);
-  }
 
-  .button--back {
-    margin-left: -110px;
+    .button--back {
+      position: absolute;
+      left: -20px;
+      top: 0;
+      transform: translateX(-100%);
+    }
   }
+  
+  @include tablet-and-desktop {
+    &[data-shape="jamo_V_a"] {
+      .big-jamo { margin-left: 27px; }
+    }
 
-  &[data-shape="jamo_V_a"] {
-    .big-jamo { margin-left: 27px; }
-  }
+    &[data-shape="jamo_V_eo"] {
+      .big-jamo { margin-left: -30px; }
+    }
 
-  &[data-shape="jamo_V_eo"] {
-    .big-jamo { margin-left: -30px; }
-  }
+    &[data-shape="jamo_H_eu"] {
+      .big-jamo { margin-left: -30px; }
+    }
 
-  &[data-shape="jamo_H_eu"] {
-    .big-jamo { margin-left: -30px; }
-  }
+    &[data-shape="jamo_V_ae"] {
+      .big-jamo { margin-left: 35px; }
+      .bubble { margin-left: 70px; }
+    }
 
-  &[data-shape="jamo_V_ae"] {
-    .big-jamo { margin-left: 35px; }
-    .bubble { margin-left: 70px; }
-  }
+    &[data-shape="jamo_V_e"] {
+      .big-jamo { margin-left: 7px; }
+      .bubble { margin-left: 70px; }
+    }
 
-  &[data-shape="jamo_V_e"] {
-    .big-jamo { margin-left: 7px; }
-    .bubble { margin-left: 70px; }
-  }
+    &[data-shape="jamo_V_ye"] {
+      .big-jamo { margin-left: 7px; }
+      .bubble { margin-left: 70px; }
+    }
 
-  &[data-shape="jamo_V_ye"] {
-    .big-jamo { margin-left: 7px; }
-    .bubble { margin-left: 70px; }
-  }
+    &[data-shape="jamo_V_ya"] {
+      .big-jamo { margin-left: 30px; }
+    }
 
-  &[data-shape="jamo_V_ya"] {
-    .big-jamo { margin-left: 30px; }
-  }
+    &[data-shape="jamo_V_yeo"] {
+      .big-jamo { margin-left: -35px; }
+    }
 
-  &[data-shape="jamo_V_yeo"] {
-    .big-jamo { margin-left: -35px; }
-  }
+    &[data-shape="jamo_V_yae"] {
+      .big-jamo { margin-left: 35px; }
+      .bubble { margin-left: 70px; }
+    }
 
-  &[data-shape="jamo_V_yae"] {
-    .big-jamo { margin-left: 35px; }
-    .bubble { margin-left: 70px; }
-  }
+    &[data-shape="jamo_W_wa"] {
+      .big-jamo { margin-left: -50px; }
+    }
 
-  &[data-shape="jamo_W_wa"] {
-    .big-jamo { margin-left: -50px; }
-  }
+    &[data-shape="jamo_W_wae"] {
+      .big-jamo { margin-left: -30px; }
+      .bubble { margin-left: 70px; }
+    }
 
-  &[data-shape="jamo_W_wae"] {
-    .big-jamo { margin-left: -30px; }
-    .bubble { margin-left: 70px; }
-  }
+    &[data-shape="jamo_W_weo"] {
+      .big-jamo { margin-left: -90px; }
+    }
 
-  &[data-shape="jamo_W_weo"] {
-    .big-jamo { margin-left: -90px; }
-  }
+    &[data-shape="jamo_W_we"] {
+      .big-jamo { margin-left: -35px; }
+      .bubble { margin-left: 70px; }
+    }
 
-  &[data-shape="jamo_W_we"] {
-    .big-jamo { margin-left: -35px; }
-    .bubble { margin-left: 70px; }
-  }
+    &[data-shape="jamo_W_wi"] {
+      .big-jamo { margin-left: -90px; }
+    }
 
-  &[data-shape="jamo_W_wi"] {
-    .big-jamo { margin-left: -90px; }
-  }
+    &[data-shape="jamo_W_oi"] {
+      .big-jamo { margin-left: -87px; }
+    }
 
-  &[data-shape="jamo_W_oi"] {
-    .big-jamo { margin-left: -87px; }
-  }
-
-  &[data-shape="jamo_W_eui"] {
-    .big-jamo { margin-left: -90px; }
+    &[data-shape="jamo_W_eui"] {
+      .big-jamo { margin-left: -90px; }
+    }
   }
 }

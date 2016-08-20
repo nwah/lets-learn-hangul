@@ -37,7 +37,7 @@ class RoundLetter extends React.Component {
 
     return (
       <div className="round__letter" data-shape={getShapeID(jamo)}>
-        <Circle r="464" />
+        <Circle r="464" className="round__letter__circle" />
 
         <label>New Letter</label>
         <BigJamo
@@ -57,37 +57,39 @@ class RoundLetter extends React.Component {
           <Markdown source={description} options={{breaks: false}}/>
         </div>
 
-        {prev < 0 &&
-          <Link
-            className="button button--link button--back"
-            to={`/level/${params.level}/round/${params.round}/letters`}>
-            Back
-          </Link>
-        }
+        <div className="round__letter__buttons back-forward-buttons">
+          {prev < 0 &&
+            <Link
+              className="button button--link button--back"
+              to={`/level/${params.level}/round/${params.round}/letters`}>
+              Back
+            </Link>
+          }
 
-        {prev >= 0 &&
-          <Link
-            className="button button--link button--back"
-            to={`/level/${params.level}/round/${params.round}/letter${prev > 0 ? `/${prev}` : ''}`}>
-            Back
-          </Link>
-        }
+          {prev >= 0 &&
+            <Link
+              className="button button--link button--back"
+              to={`/level/${params.level}/round/${params.round}/letter${prev > 0 ? `/${prev}` : ''}`}>
+              Back
+            </Link>
+          }
 
-        {hasAnother ? (
-          <Link 
-            className="button button--forward"
-            to={`/level/${params.level}/round/${params.round}/letter/${next}`}
-            data-autofocus="true">
-            Next letter
-          </Link>
-        ) : (
-          <Link
-            className="button button--forward"
-            to={`/level/${params.level}/round/${params.round}/pre`}
-            data-autofocus="true">
-            Continue
-          </Link>
-        )}
+          {hasAnother ? (
+            <Link 
+              className="button button--forward"
+              to={`/level/${params.level}/round/${params.round}/letter/${next}`}
+              data-autofocus="true">
+              Next letter
+            </Link>
+          ) : (
+            <Link
+              className="button button--forward"
+              to={`/level/${params.level}/round/${params.round}/pre`}
+              data-autofocus="true">
+              Continue
+            </Link>
+          )}
+        </div>
       </div>
     );
   }

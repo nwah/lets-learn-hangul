@@ -31,18 +31,20 @@ const RoundLetters = ({params, round, shapes}) => {
         ))}
       </div>
 
-      <Link
-        className="button button--back button--link"
-        to={`/level/${params.level}/round/${params.round}${slide > 0 ? `/intro/${slide}` : ''}`}>
-        Back
-      </Link>
-      
-      <Link
-        className="button button--forward"
-        to={`/level/${params.level}/round/${params.round}/letter`}
-        data-autofocus="true">
-        Continue
-      </Link>
+      <div className="round__letters__buttons back-forward-buttons">
+        <Link
+          className="button button--back button--link"
+          to={`/level/${params.level}/round/${params.round}${slide > 0 ? `/intro/${slide}` : ''}`}>
+          Back
+        </Link>
+        
+        <Link
+          className="button button--forward"
+          to={`/level/${params.level}/round/${params.round}/letter`}
+          data-autofocus="true">
+          Continue
+        </Link>
+      </div>
     </div>
   );
 };
