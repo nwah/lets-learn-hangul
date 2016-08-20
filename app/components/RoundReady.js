@@ -28,18 +28,20 @@ const RoundReady = ({params, actions, level, round}) => {
         )}
       </div>
 
-      <Link
-        className="button button--back button--link"
-        to={`/level/${params.level}/round/${params.round}/headword${headword > 0 ? `/${headword}` : ''}`}>
-        Back
-      </Link>
+      <div className="round__ready__buttons back-forward-buttons">
+        <Link
+          className="button button--back button--link"
+          to={`/level/${params.level}/round/${params.round}/headword${headword > 0 ? `/${headword}` : ''}`}>
+          Back
+        </Link>
 
-      <button
-        className="button button--forward"
-        onClick={() => actions.startSession(level, round)}
-        data-autofocus="true">
-        Start!
-      </button>
+        <button
+          className="button button--forward"
+          onClick={() => actions.startSession(level, round)}
+          data-autofocus="true">
+          Start!
+        </button>
+      </div>
     </div>
   );
 }
