@@ -2,9 +2,18 @@
   @extend .radial;
   margin-top: 1rem;
 
+  & > * {
+    top: 48%;
+  }
+
   &__inner {
     width: 500px;
     transform: translateX(-104px) translateY(-57%);
+
+    @include phone {
+      width: 90%;
+      transform: translateX(-140px) translateY(-57%);
+    }
   }
 
   h1 {
@@ -15,19 +24,37 @@
 
   &__level {
     transform: translateX(-193px) translateY(-200px);
+
+    @include phone {
+      transform: translateX(50%) translateY(-168px);
+    }
   }
 
   &__level-label {
     transform: translateX(-230px) translateY(-184px);
+
+    @include phone {
+      transform: translateX(0) translateY(-157px);
+    }
   }
 
   &__circle {
     width: 460px;
     height: 460px;
+
+    @include phone {
+      width: 400px;
+      height: 400px;
+      left: 20%;
+    }
   }
 
   .button {
     transform: translateX(110px) translateY(140px);
+
+    @include phone {
+      transform: translateX(-48px) translateY(140px);
+    }
   }
 
   .button--back {
