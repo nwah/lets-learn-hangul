@@ -2,8 +2,16 @@
   position: relative;
   margin-top: 40px;
   margin-left: 60px;
-  height: 600px;
   z-index: 5;
+
+  @include tablet-and-desktop {
+    height: 600px;
+  }
+
+  @include phone {
+    margin-left: 0;
+    min-height: 480px;
+  }
 
   &__word {
     position: absolute;
@@ -14,6 +22,12 @@
     transition: transform 0.3s;
     z-index: 5;
 
+    @include phone {
+      margin-left: 0;
+      left: 175px;
+      top: 1.5rem;
+    }
+
     label {
       margin-left: -36px;
     }
@@ -22,9 +36,15 @@
       position: absolute;
       top: -16px;
       left: -24px;
-      width: 240px;
-      height: 240px;
+      width: 6.6666rem;
+      height: 6.6666rem;
       z-index: -1;
+
+      @include phone {
+        top: -10px;
+        width: 5rem;
+        height: 5rem;
+      }
     }
   }
 
@@ -46,8 +66,13 @@
 
     .big-syllable,
     .big-text {
-      width: 110px;
-      height: 110px;
+      width: 3rem;
+      height: 3rem;
+
+      @include phone {
+        width: 2rem;
+        height: 2rem;
+      }
     }
 
     .big-text {
@@ -59,6 +84,10 @@
       font-size: 21px;
       text-align: center;
       font-style: italic;
+
+      @include phone {
+        font-size: 16px;
+      }
     }
   }
 
@@ -68,6 +97,12 @@
     top: 120px;
     width: 340px;
     height: 340px;
+
+    @include phone {
+      top: 90px;
+      left: 0;
+      width: auto;
+    }
   
     .circle {
       position: absolute;
@@ -76,6 +111,13 @@
       width: 340px;
       height: 340px;
       z-index: -1;
+
+      @include phone {
+        width: 390px;
+        height: 390px;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
     }
 
     &__inner {
@@ -84,17 +126,22 @@
       left: 42px;
       transform: translateY(-50%);
       width: 360px;
+
+      @include phone {
+        left: 1rem;
+        width: 9rem;
+      }
     }
 
-    .button {
-      position: absolute;
-      bottom: 42px;
-      left: 50%;
-      white-space: nowrap;
-    }
+    // .button {
+    //   position: absolute;
+    //   bottom: 42px;
+    //   left: 50%;
+    //   white-space: nowrap;
+    // }
 
-    .button--back {
-      margin-left: -110px;
-    }
+    // .button--back {
+    //   margin-left: -110px;
+    // }
   }
 }
