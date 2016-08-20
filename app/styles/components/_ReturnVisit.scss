@@ -3,6 +3,10 @@
   height: 100%;
   min-height: 600px;
 
+  @include phone {
+    min-height: 17rem;
+  }
+
   h4 {
     margin-bottom: 0.25rem;
   }
@@ -11,8 +15,17 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 600px;
+    width: 16rem;
     transform: translateX(-50%) translateY(-70%);
+
+    @include phone {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+
+  &__actions {
+    position: relative;
   }
 
   .button--link {
@@ -20,7 +33,17 @@
   }
 
   .button--forward {
-    position: relative;
-    left: 24%;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    left: 65%;
+    top: 0;
+
+    @include phone {
+      display: inline-block;
+      position: relative;
+      margin-bottom: .5rem;
+      left: 0;
+    }
   }
 }

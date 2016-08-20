@@ -2,12 +2,35 @@
   @extend .radial;
 
   &__brush-title {
-    transform: translateX(-100%) translateY(-62%);
+    transform: translateX(-100%) translateY(-5%);
+
+    @include phone {
+      width: 7rem;
+      height: 7rem;
+      transform: translateX(-103%) translateY(-8.25rem);
+    }
+  }
+
+  &__circle {
+    width: 11.6666rem; /* 420px */
+    height: 11.6666rem; /* 420px */
+    background: $white;
+    border-radius: 600px;
+
+    @include phone {
+      width: 8rem;
+      height: 8rem;
+      transform: translateX(-50%) translateY(-8rem);
+    }
   }
 
   &__inner {
-    width: 360px;
+    width: 10rem;
     transform: translateX(0) translateY(-60%);
+
+    @include phone {
+      transform: translateX(-50%) translateY(-6.25rem);
+    }
   }
 
   h1,
@@ -19,16 +42,23 @@
     font-weight: 600;
     text-transform: uppercase;
     width: 20px;
+
+    @include phone {
+      margin-left: 50%;
+      margin-bottom: 3rem;
+    }
   }
 
-  &__circle {
-    width: 420px;
-    height: 420px;
-    background: $white;
-    border-radius: 600px;
+  p {
+    @include phone {
+      transform: translateX(1rem);
+    }
   }
 
   .button {
-    transform: translateX(0px) translateY(140px);
+    transform: translateX(0) translateY(3.8888rem); /*140px*/
+    @include phone {
+      transform: translateX(0) translateY(5.3888rem);
+    }
   }
 }

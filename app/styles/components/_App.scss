@@ -19,6 +19,12 @@
       $butter -1px 1px 0,
       $butter 1px 1px 0,
       $butter 1px -1px 0;
+
+    @include phone-and-tablet {
+      position: relative;
+      margin-top: 1rem;
+      padding: 0 .5rem;
+    }
   }
 }
 

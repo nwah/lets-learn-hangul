@@ -19,12 +19,15 @@ const ReturnVisit = ({latest = '', levels = {}}) => {
       <div className="return-visit__inner">
         <h4>Welcome back!</h4>
         <p>Do you want to pick back up where you left off last time?</p>
-        <Link to="/level/1" className="button button--link">
-          No, start over from the beginning
-        </Link>
-        <Link to={next} className="button button--forward" data-autofocus="true">
-          Yes, keep going!
-        </Link>
+        
+        <div className="return-visit__actions">
+          <Link to={next} className="button button--forward" data-autofocus="true">
+            Yes, keep going!
+          </Link>
+          <Link to="/level/1" className="button button--link">
+            No, start over from the beginning
+          </Link>
+        </div>
       </div>
     </div>
   );
