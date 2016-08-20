@@ -79,23 +79,14 @@
     }
   }
 
-  .button {
+  &__buttons {
     position: absolute;
     top: 345px;
     left: 50%;
     margin-left: 120px;
 
-    @include phone {
-      top: 325px;
-      margin-left: -10px;
-    }
-  }
-
-  .button--back {
-    margin-left: 10px;
-
-    @include phone {
-      margin-left: -120px;
+    .button--back {
+      margin-right: 20px;
     }
   }
 }

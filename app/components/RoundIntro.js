@@ -33,18 +33,20 @@ const RoundIntro = ({round, params}) => {
         <Markdown source={text} />
       </div>
 
-      {prev >= 0 &&
-        <Link to={`/level/${params.level}/round/${params.round}${prev > 0 ? `/intro/${prev}` : ''}`} className="button button--link button--back">
-          Back
-        </Link>
-      }
+      <div className="round__intro__buttons back-forward-buttons">
+        {prev >= 0 &&
+          <Link to={`/level/${params.level}/round/${params.round}${prev > 0 ? `/intro/${prev}` : ''}`} className="button button--link button--back">
+            Back
+          </Link>
+        }
 
-      <Link
-        className="button button--forward"
-        to={path}
-        data-autofocus="true">
-        Continue
-      </Link>
+        <Link
+          className="button button--forward"
+          to={path}
+          data-autofocus="true">
+          Continue
+        </Link>
+      </div>
     </div>
   );
 }

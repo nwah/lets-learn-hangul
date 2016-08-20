@@ -110,3 +110,45 @@ button {
     }
   }
 }
+
+.back-forward-buttons {
+  @include phone {
+    position: fixed !important;
+    text-align: center !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    bottom: 0 !important;
+    background: rgba($butter, 0.9);
+    padding: 9px !important;
+    z-index: 200;
+    transform: none !important;
+    width: auto !important;
+    min-height: 54px;
+    margin: 0 !important;
+
+    .button {
+      &--forward,
+      &--back {
+        display: block !important;
+        position: absolute !important;
+        top: 9px !important;
+        transform: none !important;
+      }
+
+      &--forward {
+        right: 9px !important;
+        left: auto !important;
+      }
+
+      &--back {
+        left: 9px !important;
+        right: auto !important;
+      }
+
+      &:nth-child(2) {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

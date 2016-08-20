@@ -49,15 +49,14 @@
     }
   }
 
-  .button {
+  &__buttons {
     transform: translateX(110px) translateY(140px);
 
-    @include phone {
-      transform: translateX(-48px) translateY(140px);
+    .button--back {
+      position: absolute;
+      left: -20px;
+      top: 0;
+      transform: translateX(-100%);
     }
-  }
-
-  .button--back {
-    margin-left: -110px;
   }
 }

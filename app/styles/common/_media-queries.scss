@@ -40,6 +40,12 @@ $mq-desktop-above: screen and (min-width: $bp-desktop-min);
   }
 }
 
+@mixin tablet-and-desktop {
+  @media #{$mq-tablet-above} {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media #{$mq-desktop-only} {
     @content;

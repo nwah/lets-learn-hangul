@@ -27,21 +27,23 @@ const LevelIntro = ({level, params}) => {
         <Markdown source={text} />
       </div>
 
-      {prev >= 0 &&
-        <Link to={`/level/${params.level}${prev > 0 ? `/intro/${prev}` : ''}`} className="button button--link button--back">
-          Back
-        </Link>
-      }
+      <div className="level__intro__buttons back-forward-buttons">
+        {prev >= 0 &&
+          <Link to={`/level/${params.level}${prev > 0 ? `/intro/${prev}` : ''}`} className="button button--link button--back">
+            Back
+          </Link>
+        }
 
-      {hasMoreText ? (
-        <Link to={`/level/${params.level}/intro/${next}`} className="button button--forward" data-autofocus="true">
-          Continue
-        </Link>
-      ) : (
-        <Link to={`/level/${params.level}/round/1`} className="button button--forward" data-autofocus="true">
-          Start round one
-        </Link>
-      )}
+        {hasMoreText ? (
+          <Link to={`/level/${params.level}/intro/${next}`} className="button button--forward" data-autofocus="true">
+            Continue
+          </Link>
+        ) : (
+          <Link to={`/level/${params.level}/round/1`} className="button button--forward" data-autofocus="true">
+            Start round one
+          </Link>
+        )}
+      </div>
     </div>
   );
 }
