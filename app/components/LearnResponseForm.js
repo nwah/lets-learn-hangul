@@ -11,7 +11,7 @@ class LearnResponseForm extends React.Component {
   }
 
   render() {
-    let {actions, response, responseError, showCorrect, word} = this.props;
+    let {actions, response, responseError, showCorrect, word, onFocus} = this.props;
     let romanization = getRomanizations(word).ideal;
 
     return (
@@ -32,6 +32,7 @@ class LearnResponseForm extends React.Component {
           }}
           value={response}
           onChange={e => actions.updateResponse(e.target.value)}
+          onFocus={onFocus}
           disabled={!!showCorrect}
         />
 

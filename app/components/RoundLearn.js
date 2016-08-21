@@ -15,6 +15,21 @@ import Tooltip from './Tooltip';
 
 class RoundLearn extends React.Component {
 
+  preventScroll = (e) => {
+    e.preventDefault();
+    if (window.scrollY > 0) {
+      window.scrollTo(0, 0);
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.preventScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.preventScroll);
+  }
+
   render() {
     let {params, session, shapes, words, actions, hinted} = this.props;
     let {current: word, response, showCorrect, responseError, showAnswer, currentMisses} = session;
@@ -82,7 +97,7 @@ class RoundLearn extends React.Component {
             ? <div className="round__learn__entry__correct-answer">
                 {getRomanizations(word, true).ideal}
               </div>
-            : <LearnResponseForm word={word} /> }
+            : <LearnResponseForm word={word} onFocus={this.preventScroll} /> }
 
           { (showCorrect || showAnswer) &&
             <button
