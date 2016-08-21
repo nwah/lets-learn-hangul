@@ -5,6 +5,16 @@
   height: 600px;
   z-index: 5;
 
+  @include phone {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
   &__new-word {
     position: absolute;
     top: 120px;
@@ -14,65 +24,86 @@
     transition: transform 0.3s;
     z-index: 2;
 
+    @include phone {
+      top: 100px;
+      left: -30px;
+      margin-left: 0;
+    }
+
     .has-image.show-correct & {
       transform: translateX(-100px);
     }
 
     label {
       margin-bottom: 0;
+
+      @include phone {
+        transform: translateX(82px);
+      }
     }
 
     .circle {
       position: absolute;
       top: -36px;
-      width: 264px;
-      height: 264px;
+      width: 7.3333rem;
+      height: 7.3333rem;
       z-index: -1;
+
+      @include phone {
+        top: -21px;
+        width: 6rem;
+        height: 6rem;
+      }
     }
 
     .big-word {
       margin-left: 48px;
       position: relative;
       z-index: 10;
+      font-size: 3.88888rem;
+
+      @include phone {
+        font-size: 3rem;
+      }
     }
 
     .big-syllable,
     .big-text {
-      width: 140px;
-      height: 140px;
+      width: 1em;
+      height: 1em;
     }
 
     .big-text {
-      width: 93px;
+      width: .6666em;
     }
 
     .one-syllable & {
       .big-word {
-        margin-left: 62px;
+        margin-left: .44em;
       }
     }
 
     .medium-word & {
       .big-syllable,
       .big-text {
-        width: 105px;
-        height: 105px;
+        width: .75em;
+        height: .75em;
       }
 
       .big-text {
-        width: 70px;
+        width: .5em;
       }
     }
 
     .long-word & {
       .big-syllable,
       .big-text {
-        width: 70px;
-        height: 70px;
+        width: .5em;
+        height: .5em;
       }
 
       .big-text {
-        width: 47px;
+        width: .3333em;
       }
     }
   }
@@ -135,7 +166,20 @@
     top: 336px;
     text-align: right;
 
+    @include phone {
+      top: 240px;
+      right: 0;
+      left: 0;
+      padding-top: 1rem;
+    }
+
     label {
+      @include phone {
+        position: absolute;
+        top: -0.25rem;
+        right: .5rem;
+      }
+
       &.correct {
         color: $green;
       }
@@ -150,13 +194,28 @@
       top: -24px;
       left: auto;
       right: -84px;
-      width: 168px;
-      height: 168px;
+      width: 4.6666rem;
+      height: 4.6666rem;
       z-index: -1;
+
+      @include phone {
+        right: .5rem;
+      }
+    }
+
+    .learn-response-form {
+      @include phone {
+        margin: 0 .5rem;
+      }
     }
 
     .fat-input {
       width: 216px;
+
+      @include phone {
+        display: block;
+        width: 100% !important;
+      }
 
       &.correct {
         background-color: rgba(91, 216, 174, 0.6);
