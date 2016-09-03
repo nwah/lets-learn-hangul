@@ -1,14 +1,17 @@
 import React from 'react';
 import { branch } from 'baobab-react/higher-order';
+import classNames from 'classnames';
 import YouAreHere from './YouAreHere';
 import Logo from './Logo';
 
-const Level = ({children, params, level}) => {
+const Level = ({children, params, location, level}) => {
   if (!level) return <noscript />;
 
   return (
     <div className="level-container">
-      <div className="level">
+      <div className={classNames("level", {
+        'level--learning': /\/learn$/.test(location.pathname),
+      })}>
         <Logo />
         <YouAreHere params={params} />
         {React.cloneElement(children, {level, params})}

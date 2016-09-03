@@ -1,3 +1,9 @@
 .level {
   // @extend .radial;
+
+  &--learning .logo {
+    @include phone {
+      display: none !important;
+    }
+  }
 }
