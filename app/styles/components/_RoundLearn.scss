@@ -26,19 +26,21 @@
 
     @include phone {
       top: 100px;
-      left: -30px;
+      left: 0;
       margin-left: 0;
     }
 
     .has-image.show-correct & {
-      transform: translateX(-100px);
+      @include tablet-and-desktop {
+        transform: translateX(-100px);
+      }
     }
 
     label {
       margin-bottom: 0;
 
       @include phone {
-        transform: translateX(82px);
+        transform: translateY(-7px);
       }
     }
 
@@ -63,6 +65,7 @@
       font-size: 3.88888rem;
 
       @include phone {
+        margin-left: 10px;
         font-size: 3rem;
       }
     }
@@ -121,12 +124,22 @@
     .show-correct & {
       opacity: 1;
     }
+
+    @include phone {
+      top: 110px;
+      left: -70px;
+    }
   }
 
   &__audio {
     position: absolute;
     top: 180px;
     left: 200px;
+
+    @include phone {
+      top: 95px;
+      left: 7px;
+    }
   }
 
   &__image {
@@ -152,6 +165,16 @@
       pointer-events: all;
       opacity: 1;
       transform: scale(1, 1);
+
+      @include phone {
+        transform: scale(.5, .5);
+      }
+    }
+  }
+
+  &__image {
+    @include phone {
+      display: none;
     }
   }
 
@@ -167,7 +190,7 @@
     text-align: right;
 
     @include phone {
-      top: 240px;
+      top: 228px;
       right: 0;
       left: 0;
       padding-top: 1rem;
@@ -177,7 +200,7 @@
       @include phone {
         position: absolute;
         top: -0.25rem;
-        right: .5rem;
+        right: 20px;
       }
 
       &.correct {
@@ -199,13 +222,13 @@
       z-index: -1;
 
       @include phone {
-        right: .5rem;
+        right: -60px;
       }
     }
 
     .learn-response-form {
       @include phone {
-        margin: 0 .5rem;
+        margin: 0 20px;
       }
     }
 
@@ -235,6 +258,12 @@
       left: 100%;
       margin-left: 25px;
       white-space: nowrap;
+
+      @include phone {
+        left: auto;
+        right: 20px;
+        top: 93px;
+      }
     }
   }
 
@@ -246,6 +275,14 @@
     margin-left: 76px;
     padding-top: 38px;
 
+    @include phone {
+      margin-left: 0;
+      left: auto;
+      right: 20px;
+      top: 85px;
+      padding-top: 28px;
+    }
+
     .circle {
       position: absolute;
       top: -30px;
@@ -253,6 +290,13 @@
       width: 168px;
       height: 168px;
       z-index: -1;
+
+      @include phone {
+        width: 128px;
+        height: 128px;
+        left: auto;
+        right: -82px;
+      }
     }
 
     label {
@@ -260,6 +304,11 @@
       left: -40px;
       top: 0;
       text-align: right;
+
+      @include phone {
+        left: auto;
+        right: 0;
+      }
     }
 
     h3 {
@@ -268,9 +317,14 @@
       white-space: nowrap;
       text-align: center;
       min-width: 107px;
-      font-size: 36px;
+      font-size: 1rem;
       font-weight: 600;
       color: $blue;
+
+      @include phone {
+        display: block;
+        text-align: right;
+      }
     }
   }
 
@@ -279,7 +333,9 @@
     transition: transform 0.3s;
 
     .has-image.show-correct & {
-      transform: translateX(50px);
+      @include tablet-and-desktop {
+        transform: translateX(50px);
+      }
     }
   }
 }
