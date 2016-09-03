@@ -27,6 +27,12 @@ ReactDOM.render(
   document.getElementById('mount')
 );
 
+// Turn on hover for non-touch
+let hasTouch = 'ontouchstart' in window;
+if (!hasTouch) {
+  document.querySelector('html').classList.add('can-hover');
+}
+
 // Temporary hack to make [Enter] work
 let down = false;
 window.addEventListener('keydown', ({keyCode, target}) => {

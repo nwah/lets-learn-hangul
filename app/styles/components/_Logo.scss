@@ -61,7 +61,7 @@
     }
   }
 
-  &:hover {
+  .can-hover &:hover {
     .logo__english { display: block; }
     .logo__korean { display: none; }
   }

@@ -17,7 +17,11 @@ button {
     line-height: 16px;
   }
 
-  &:hover {
+  &:active {
+    opacity: 0.85;
+  }
+
+  .can-hover &:hover {
     text-decoration: none;
   }
 
@@ -89,7 +93,7 @@ button {
     background-image: url($greenArrow);
   }
 
-  &--forward:hover::after {
+  .can-hover &--forward:hover::after {
     width: 52px;
   }
 
