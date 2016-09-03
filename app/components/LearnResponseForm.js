@@ -10,6 +10,13 @@ class LearnResponseForm extends React.Component {
     setTimeout(() => this.refs.input.focus(), 10);
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.showCorrect && !this.props.showCorrect) {
+      this.refs.input.blur();
+      document.querySelector('.round__learn__entry .button--forward').focus();
+    }
+  }
+
   render() {
     let {actions, response, responseError, showCorrect, word, onFocus} = this.props;
     let romanization = getRomanizations(word).ideal;
@@ -33,6 +40,8 @@ class LearnResponseForm extends React.Component {
           value={response}
           onChange={e => actions.updateResponse(e.target.value)}
           onFocus={onFocus}
+          autoCorrect="off"
+          autoCapitalize="off"
           disabled={!!showCorrect}
         />
 
