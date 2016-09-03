@@ -25,9 +25,15 @@
     z-index: 2;
 
     @include phone {
-      top: 100px;
+      top: 55px;
       left: 0;
       margin-left: 0;
+    }
+
+    .show-correct & {
+      @include phone {
+        // top: 155px;
+      }
     }
 
     .has-image.show-correct & {
@@ -53,20 +59,23 @@
 
       @include phone {
         top: -21px;
-        width: 6rem;
-        height: 6rem;
+        width: 7rem;
+        height: 7rem;
       }
     }
 
     .big-word {
       margin-left: 48px;
       position: relative;
+      top: 65px;
+      transform: translateY(-50%);
       z-index: 10;
       font-size: 3.88888rem;
 
       @include phone {
         margin-left: 10px;
         font-size: 3rem;
+        top: 50px;
       }
     }
 
@@ -126,8 +135,10 @@
     }
 
     @include phone {
-      top: 110px;
-      left: -70px;
+      top: 128px;
+      // left: -70px;
+      left: 52px;
+      text-align: left;
     }
   }
 
@@ -137,8 +148,8 @@
     left: 200px;
 
     @include phone {
-      top: 95px;
-      left: 7px;
+      top: 113px;
+      left: 2px;
     }
   }
 
@@ -167,7 +178,7 @@
       transform: scale(1, 1);
 
       @include phone {
-        transform: scale(.5, .5);
+        transform: scale(.75, .75);
       }
     }
   }
@@ -194,6 +205,12 @@
       right: 0;
       left: 0;
       padding-top: 1rem;
+    }
+
+    &.correct {
+      @include phone {
+        // top: 295px; 
+      }
     }
 
     label {
@@ -276,11 +293,12 @@
     padding-top: 38px;
 
     @include phone {
-      margin-left: 0;
-      left: auto;
-      right: 20px;
-      top: 85px;
-      padding-top: 28px;
+      display: none;
+      // margin-left: 0;
+      // left: auto;
+      // right: 20px;
+      // top: 85px;
+      // padding-top: 28px;
     }
 
     .circle {
