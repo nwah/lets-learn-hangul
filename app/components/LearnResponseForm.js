@@ -10,11 +10,11 @@ class LearnResponseForm extends React.Component {
     setTimeout(() => this.refs.input.focus(), 10);
   }
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.showCorrect && !this.props.showCorrect) {
-      this.refs.input.blur();
+  blur() {
+    this.refs.input.blur();
+    setTimeout(() => {
       document.querySelector('.round__learn__entry .button--forward').focus();
-    }
+    }, 30);
   }
 
   render() {
@@ -26,7 +26,8 @@ class LearnResponseForm extends React.Component {
         className="learn-response-form"
         onSubmit={e => {
           e.preventDefault();
-          actions.submitResponse(response);
+          let result = actions.submitResponse(response);
+          if (result.correct) this.blur();
         }}
       >
         <input type="text"

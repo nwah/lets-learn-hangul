@@ -22,6 +22,13 @@ class RoundLearn extends React.Component {
     }
   };
 
+  continueSession = (e) => {
+    this.props.actions.continueSession();
+    let fatInput = document.querySelector('.round__learn__entry .fat-input');
+    fatInput.removeAttribute('disabled');
+    fatInput.focus();
+  };
+
   componentDidMount() {
     window.addEventListener('scroll', this.preventScroll);
   }
@@ -106,7 +113,7 @@ class RoundLearn extends React.Component {
           { (showCorrect || showAnswer) &&
             <button
               className="button--blue button--forward"
-              onClick={actions.continueSession}
+              onClick={this.continueSession}
               data-autofocus="true">
               Next
             </button>

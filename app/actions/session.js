@@ -89,6 +89,8 @@ export function submitResponse(tree) {
 
   if (result.correct) handleCorrectResponse(tree, result, meta);
   else handleIncorrectResponse(tree, result, meta);
+
+  return result;
 }
 
 function handleCorrectResponse(tree, result, {audio, word}) {
