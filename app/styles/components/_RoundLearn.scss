@@ -92,6 +92,10 @@
     .one-syllable & {
       .big-word {
         margin-left: .44em;
+
+        @include phone {
+          margin-left: 0.66em;
+        }
       }
     }
 
@@ -178,7 +182,7 @@
       transform: scale(1, 1);
 
       @include phone {
-        transform: scale(.75, .75);
+        transform: scale(.5, .5);
       }
     }
   }
