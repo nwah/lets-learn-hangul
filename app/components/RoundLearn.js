@@ -84,7 +84,11 @@ class RoundLearn extends React.Component {
           </div>
         )}
 
-        <div className="round__learn__entry" ref="entry">
+        <div
+          className={classNames("round__learn__entry", {
+            'correct': showCorrect,
+          })}
+          ref="entry">
           <Circle />
           { showCorrect
             ? <label className="correct">Correct!</label>
