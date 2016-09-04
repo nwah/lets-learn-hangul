@@ -1,12 +1,30 @@
 .learned-em-all {
   min-height: 650px;
 
+  @include phone {
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .logo {
+    @include phone {
+      display: none;
+    }
+  }
+
   &__title {
     position: absolute;
     left: 50%;
     top: 320px;
     transform: translateX(-240px) translateY(-50px);
     width: 480px;
+
+    @include phone {
+      top: 190px;
+      left: 20px;
+      width: auto;
+      transform: translateX(0) translateY(-50px);
+    }
 
     h1 {
       position: relative;
@@ -18,6 +36,13 @@
       position: relative;
     }
 
+    h1,
+    p {
+      @include phone {
+        // margin-left: -60px;
+      }
+    }
+
     .circle,
     &__calligraphy {
       position: absolute;
@@ -26,8 +51,22 @@
       transform: translateX(-50%) translateY(-50%);
     }
 
+    .circle {
+      @include phone {
+        width: 240px;
+        height: 240px;
+        transform: translateX(-30%) translateY(-55%);
+      }
+    }
+
     &__calligraphy {
       transform: translateX(-66%) translateY(-92%);
+
+      @include phone {
+        width: 220px;
+        height: 86px;
+        transform: translateX(-10%) translateY(-100%);
+      }
     }
   }
 
@@ -38,16 +77,24 @@
     transform: translateX(160px) translateY(50px);
     width: 340px;
 
+    @include phone {
+      left: auto;
+      right: 20px;
+      transform: translateX(0) translateY(-20px);
+      width: 300px;
+      text-align: right;
+    }
+
     h3 {
       position: relative;
-      font-size: 24px;
+      font-size: .6666rem;
       margin: 0 0 10px;
     }
 
     p {
       position: relative;
-      font-size: 21px;
-      line-height: 26px;
+      font-size: .5833rem;
+      line-height: 1.2;
     }
 
     .button {
@@ -59,6 +106,12 @@
       left: 0;
       top: 50%;
       transform: translateX(-78px) translateY(-50%);
+
+      @include phone {
+        width: 180px;
+        height: 180px;
+        transform: translateX(192px) translateY(-48%)
+      }
     }
   }
 
