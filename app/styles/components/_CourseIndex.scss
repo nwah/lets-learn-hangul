@@ -20,38 +20,64 @@
     position: absolute;
     background: transparent;
     color: $black;
-    font-size: 42px;
+    font-size: 1.1666rem;
     font-weight: 300;
     top: 12px;
     right: 4px;
     outline: none;
+
+    @include phone {
+      top: 0;
+      right: 8px;
+    }
   }
 
   &__levels {
-    display: flex;
-    padding: 80px 0 10px 80px;
+    @include phone {
+      padding-top: 40px;
+    }
+
+    @include tablet-and-desktop {
+      display: flex;
+      padding: 80px 0 10px 80px;
+    }
   }
 
   &__level {
-    flex: 1;
-    padding: 0px 15px;
+    @include phone {
+      padding-left: 60px;
+      padding-bottom: 20px;
+    }
+
+    @include tablet-and-desktop {
+      flex: 1;
+      padding: 0px 15px;
+    }
 
     .level-name {
       display: block;
       position: relative;
-      font-size: 24px;
-      padding-bottom: 20px;
+      font-size: .6666rem;
+      padding-bottom: .5555rem;
 
       .bubble {
         position: absolute;
-        left: -47px;
-        top: -32px;
+        left: -1.3rem;
+        top: -0.8888rem;
         transform: scale(.75);
+
+        @include phone {
+          top: -13px;
+        }
       }
 
       .name {
         position: relative;
         z-index: 5;
+
+        @include phone {
+          left: 20px;
+        }
       }
     }
 
@@ -62,16 +88,20 @@
   }
 
   &__rounds {
-    padding-left: 32px;
+    padding-left: .8888rem;
+
+    @include phone {
+      padding-left: 50px;
+    }
   }
   
   &__round {
     .round-name {
       display: block;
       position: relative;
-      font-size: 20px;
+      font-size: .5555rem;
       line-height: 1.2;
-      min-height: 62px;
+      min-height: 1.7222rem;
       font-weight: 600;
 
       .bubble {
@@ -79,6 +109,11 @@
         left: -55px;
         top: -30px;
         transform: scale(.45);
+
+        @include phone {
+          left: -43px;
+          top: -16px;
+        }
       }
 
       .jamos {
