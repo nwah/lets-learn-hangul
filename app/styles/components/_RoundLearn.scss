@@ -297,12 +297,11 @@
     padding-top: 38px;
 
     @include phone {
-      display: none;
-      // margin-left: 0;
-      // left: auto;
-      // right: 20px;
-      // top: 85px;
-      // padding-top: 28px;
+      left: 90px;
+      top: 390px;
+      margin-left: 0;
+      padding-top: 22px;
+      text-align: left;
     }
 
     .circle {
@@ -316,8 +315,6 @@
       @include phone {
         width: 128px;
         height: 128px;
-        left: auto;
-        right: -82px;
       }
     }
 
@@ -328,8 +325,8 @@
       text-align: right;
 
       @include phone {
-        left: auto;
-        right: 0;
+        left: -30px;
+        top: -20px;
       }
     }
 
@@ -345,7 +342,7 @@
 
       @include phone {
         display: block;
-        text-align: right;
+        text-align: left;
       }
     }
   }
