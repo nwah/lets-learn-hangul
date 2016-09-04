@@ -40,9 +40,11 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params, 
           }
         </div>
 
-        <Link to={path} className="button button--forward round__complete__continue-bottom" data-autofocus="true">
-          Continue
-        </Link>
+        <div className="back-forward-buttons">
+          <Link to={path} className="button button--forward round__complete__continue-bottom" data-autofocus="true">
+            Continue
+          </Link>
+        </div>
 
         {showingLetters ?
           <JamoTable newJamos={newJamos} known={known} />
@@ -103,10 +105,11 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params, 
           </div>
         </div>
 
-
-        <Link to={path} className="button button--forward round__complete__continue" data-autofocus="true">
-          Continue
-        </Link>
+        <div className="back-forward-buttons">
+          <Link to={path} className="button button--forward round__complete__continue" data-autofocus="true">
+            Continue
+          </Link>
+        </div>
       </div>
   );
 }

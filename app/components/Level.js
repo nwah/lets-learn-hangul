@@ -10,7 +10,8 @@ const Level = ({children, params, location, level}) => {
   return (
     <div className="level-container">
       <div className={classNames("level", {
-        'level--learning': /\/learn$/.test(location.pathname),
+        'level--learning': /\/learn/.test(location.pathname),
+        'level--round-complete': /\/round\/\d+\/complete/.test(location.pathname),
       })}>
         <Logo />
         <YouAreHere params={params} />

@@ -1,9 +1,20 @@
 .level {
   // @extend .radial;
 
-  &--learning .logo {
-    @include phone {
-      display: none !important;
+  &--learning,
+  &--round-complete {
+    .logo {
+      @include phone {
+        display: none !important;
+      }
+    }
+  }
+
+  &--round-complete {
+    .you-are-here {
+      @include phone {
+        display: none !important;
+      }
     }
   }
 }

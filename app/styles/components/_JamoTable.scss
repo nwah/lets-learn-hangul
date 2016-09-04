@@ -16,12 +16,21 @@
 .jamo-table {
   width: 1000px;
 
+  @include phone {
+    width: 100%;
+  }
+
   &__jamo {
     position: relative;
     float: left;
     width: 100px;
     height: 100px;
     cursor: pointer;
+
+    @include phone {
+      width: 20%;
+      height: 2rem;
+    }
 
     .geometric-jamo {
       position: relative;
@@ -30,6 +39,13 @@
       width: 60px;
       height: 60px;
       z-index: 5;
+
+      @include phone {
+        top: .4rem;
+        left: 20%;
+        width: 60%;
+        height: 1.2rem;
+      }
     }
 
     &__latin {
@@ -39,7 +55,7 @@
       transform: translateX(-50%) translateY(-50%);
       font-weight: 900;
       color: $red;
-      font-size: 32px;
+      font-size: .8888rem;
       pointer-events: none;
       opacity: 0;
 
@@ -48,7 +64,8 @@
       }
     }
 
-    .can-hover &:hover {
+    .can-hover &:hover,
+    &.touched {
       .jamo-table__jamo__latin {
         opacity: 1;
       }
@@ -76,6 +93,14 @@
       border-radius: 80px;
       animation: scale-in .72s both;
       animation-delay: inherit;
+
+      @include phone {
+        left: 10%;
+        top: .1rem;
+        width: 80%;
+        height: 0;
+        padding-bottom: 80%;
+      }
     }
   }
 }

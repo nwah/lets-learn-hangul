@@ -1,29 +1,53 @@
 .round__complete {
   @extend .radial;
-
   width: 1000px;
-  height: 600px;
-  margin-left: -50px;
+
+  @include tablet-and-desktop {
+    margin-left: -50px;
+    height: 600px;
+  }
+
+  @include phone {
+    width: auto;
+  }
 
   &__title {
     left: 54%;
     width: 298px;
     height: 298px;
-    transform: translateX(-140%) translateY(-75%);
+    transform: translateX(-73%) translateY(-155%);
+
+    @include phone {
+      left: 50%;
+      top: 280px;
+      width: 180px;
+      height: 180px;
+      transform: translateX(-65%) translateY(-140%);
+    }
+
+    @include small-desktop {
+      left: 50%;
+      transform: translateX(-85%) translateY(-85%);
+    }
 
     &__inner {
       position: relative;
       padding-left: 149px;
       padding-top: 98px;
       z-index: 1;
+
+      @include phone {
+        padding-left: 90px;
+        padding-top: 49px;
+      }
     }
 
     h1,
     h2 {
       margin: 0;
       text-transform: uppercase;
-      font-size: 36px;
-      line-height: 36px;
+      font-size: 1rem;
+      line-height: 1rem;
     }
 
     h1 {
@@ -31,7 +55,7 @@
     }
 
     h2 {
-      margin-left: -7px;
+      margin-left: -0.19rem;
       font-weight: 600;
       white-space: nowrap;
     }
@@ -40,6 +64,11 @@
       position: absolute;
       left: 0;
       top: 0;
+
+      @include phone {
+        width: 180px;
+        height: 180px;
+      }
     }
 
     .calligraphy {
@@ -47,6 +76,20 @@
       position: absolute;
       left: -90px;
       top: 10px;
+
+      @include phone {
+        width: 100px;
+        height: 100px;
+        left: -20px;
+        top: 37px;
+      }
+
+      @include small-desktop {
+        width: 180px;
+        height: 180px;
+        left: -50px;
+        top: 50px;
+      }
     }
   }
 
@@ -55,7 +98,12 @@
   &__misses,
   &__peeks {
     left: 54%;
-    font-size: 54px;
+    font-size: 1.5rem;
+
+    @include phone {
+      left: 50%;
+      top: 280px;
+    }
 
     label {
       position: absolute;
@@ -81,16 +129,55 @@
 
   &__words {
     transform: translateX(0%) translateY(-105%);
+
+    @include phone {
+      transform: translateX(-85%) translateY(-39%);
+    }
+
+    @include small-desktop {
+      transform: translateX(60%) translateY(-135%);
+    }
+
+    .circle {
+      width: 4.05rem;
+      height: 4.05rem;
+    }
   }
 
   &__time {
-    font-size: 40px;
+    font-size: 1.1111rem;
     transform: translateX(-80%) translateY(55%);
+
+    @include phone {
+      transform: translateX(54%) translateY(-95%);
+    }
+
+    @include small-desktop {
+      transform: translateX(12%) translateY(8%);
+    }
+
+    .circle {
+      width: 3.2222rem;
+      height: 3.2222rem;
+    }
   }
 
   &__misses {
-    font-size: 32px;
+    font-size: .8888rem;
     transform: translateX(320%) translateY(-105%);
+
+    @include phone {
+      transform: translateX(-52%) translateY(171%);
+    }
+
+    @include small-desktop {
+      transform: translateX(-390%) translateY(115%);
+    }
+
+    .circle {
+      width: 2.1111rem;
+      height: 2.1111rem;
+    }
 
     label {
       top: -2px;
@@ -99,8 +186,21 @@
   }
 
   &__peeks {
-    font-size: 40px;
+    font-size: 1.1111rem;
     transform: translateX(140%) translateY(67%);
+
+    @include phone {
+      transform: translateX(60%) translateY(53%);
+    }
+
+    @include small-desktop {
+      transform: translateX(-140%) translateY(110%);
+    }
+
+    .circle {
+      width: 2.6111rem;
+      height: 2.6111rem;
+    }
 
     label {
       top: 0;
@@ -113,6 +213,10 @@
 
   .jamo-table {
     margin-top: 20px;
+
+    @include phone {
+      margin-top: 65px;
+    }
   }
 
   &__top {
@@ -121,6 +225,12 @@
     left: 50%;
     margin-left: -465px;
     transform: none;
+
+    @include phone {
+      margin-left: 0;
+      left: 1rem;
+      top: 1rem;
+    }
 
     .circle {
       position: absolute;
@@ -151,6 +261,11 @@
       height: 140px;
       position: relative;
 
+      @include phone {
+        width: 140px;
+        height: 125px;
+      }
+
       & > * {
         display: block;
         position: absolute;
@@ -158,20 +273,38 @@
         top: 0;
       }
 
+      .circle {
+        @include phone {
+          width: 91px;
+          height: 91px;
+          left: 25px;
+        }
+      }
+
       .big-jamo {
-        top: 20px;
-        left: 20px;
-        width: 100px;
-        height: 100px;
+        top: .5555rem;
+        left: .5555rem;
+        width: 2.7777rem;
+        height: 2.7777rem;
+
+        @include phone {
+          left: 34px;
+          top: 9px;
+        }
       }
 
       .bubble {
-        left: 100px;
-        top: 100px;
-        width: 54px;
-        height: 54px;
-        font-size: 18px;
-        line-height: 54px;
+        left: 2.7777rem;
+        top: 2.7777rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: .5rem;
+        line-height: 1.5rem;
+
+        @include phone {
+          left: 91px;
+          top: 66px;
+        }
       }
     }
   }

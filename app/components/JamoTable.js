@@ -27,7 +27,13 @@ const JamoTable = ({known = {}, newJamos = {}, geometric, jamos = {}}) => (
         style={{
           animationDelay: `${Math.max(0, newJamos.indexOf(jamo)) * 120}ms`
         }}
+        data-jamo={jamo}
         onClick={() => jamos[jamo] && play(jamos[jamo].audio.url)}
+        onTouchStart={(e) => {
+          let el = document.querySelector(`[data-jamo="${jamo}"]`);
+          el.classList.add('touched');
+          setTimeout(() => el.classList.remove('touched'), 500);
+        }}
       >
         <div className={classNames("jamo-table__jamo__latin", {"vowel": isMedial(jamo)})}>
           {getJamoHint(jamo)}
