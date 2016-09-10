@@ -17,27 +17,63 @@
     }
   }
 
+  &__intro,
+  &__letters,
+  &__words {
+    .circle {
+      @include phone {
+        width: 260px;
+        height: 260px;
+      }
+    }
+  }
+
   &__intro {
     .learned-everything__calligraphy {
       transform: translateX(-106%) translateY(-45%);
+
+      @include phone {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    h1,
+    p {
+      @include phone {
+        margin-bottom: .5rem;
+      }
     }
 
     h1 {
       color: $red;
-      font-size: 42px;
+      font-size: 1.1666rem;
       text-transform: uppercase;
       transform: translateY(-135%);
+
+      @include phone {
+        font-size: 1rem;
+      }
     }
 
     p {
-      font-size: 29px;
+      font-size: .8rem;
       white-space: nowrap;
       transform: translateY(20px);
+
+      @include phone {
+        font-size: .6rem;
+        transform: none;
+      }
     }
 
     .button {
       transform: translateY(86px);
       white-space: nowrap;
+
+      @include phone {
+        transform: translateY(40px);
+      }
     }
   }
 
@@ -46,6 +82,10 @@
     p {
       white-space: nowrap;
       transform: translateX(-50%) translateY(-240px);
+
+      @include phone {
+        transform: translateX(-50%) translateY(-195px)
+      }
     }
   }
 
@@ -54,6 +94,11 @@
       width: 600px;
       height: 600px;
       transform: translateX(-50%) translateY(-50%);
+
+      @include phone {
+        width: 300px;
+        height: 300px;
+      }
     }
   }
 
@@ -66,11 +111,20 @@
     .big-syllable {
       width: 230px;
       height: 230px;
+
+      @include phone {
+        width: 115px;
+        height: 115px;
+      }
     }
 
     .button {
       transform: translateY(200px) translateX(100px);
       white-space: nowrap;
+
+      @include phone {
+        transform: translateY(75px) translateX(0px);
+      }
     }
   }
 }
