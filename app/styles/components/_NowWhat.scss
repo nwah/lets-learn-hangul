@@ -10,6 +10,10 @@
   &__social {
     transform: translateX(-160px) translateY(-100px);
 
+    @include phone {
+      transform: translateX(-50%) translateY(-190px);
+    }
+
     & > * {
       position: absolute;
       left: 0;
@@ -19,25 +23,60 @@
     .circle {
       top: -88px;
       left: -182px;
+
+      @include phone {
+        left: -100px;
+        top: -40px;
+        width: 220px;
+        height: 220px;
+      }
     }
 
     h1 {
       text-transform: uppercase;
-      font-size: 36px;
-      line-height: 36px;
+      font-size: 1rem;
+      line-height: 1rem;
       font-weight: 600;
       margin: 0;
+
+      @include phone {
+        font-size: .8rem;
+      }
     }
 
     .calligraphy {
       left: -288px;
       top: -110px;
+
+      @include phone {
+        width: 135px;
+        height: 110px;
+        left: -150px;
+        top: -20px;
+      }
+    }
+
+    &__buttons {
+
     }
 
     .button--twitter,
     .button--facebook {
       &:before {
         transition: margin-left 0.2s, margin-right 0.2s;
+      }
+
+      .short {
+        display: none;
+        @include phone {
+          display: inline;
+        }
+      }
+
+      .long {
+        @include phone {
+          display: none;
+        }
       }
 
       .can-hover &:hover:before {
@@ -49,11 +88,21 @@
     .button--twitter {
       top: 100px;
       left: -75px;
+
+      @include phone {
+        top: 61px;
+        left: 0;
+      }
     }
 
     .button--facebook {
       top: 160px;
       left: -46px;
+
+      @include phone {
+        top: 118px;
+        left: 0;
+      }
     }
   }
 
@@ -69,8 +118,8 @@
     &__text {
       position: relative;
       width: 340px;
-      font-size: 18px;
-      line-height: 24px;
+      font-size: .5rem;
+      line-height: .6666rem;
       z-index: 1;
     }
 

@@ -13,12 +13,16 @@ const NowWhat = () => (
       <Bragging className="calligraphy" />
       <h1>Brag&nbsp;to your&nbsp;friends!</h1>
 
-      <a className="button button--twitter" href={getTwitterShareUrl()} target="_blank">
-        Share on Twitter
-      </a>
+      <div className="now-what__social__buttons">
+        <a className="button button--twitter" href={getTwitterShareUrl()} target="_blank">
+          <span className="long">Share on Twitter</span>
+          <span className="short">Tweet</span>
+        </a>
+      </div>
 
       <a className="button button--facebook" href={getFacebookShareUrl()} target="_blank">
-        Share on Facebook
+        <span className="long">Share on Facebook</span>
+        <span className="short">Post</span>
       </a>
     </div>
 
