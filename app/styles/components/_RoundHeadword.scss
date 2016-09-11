@@ -133,15 +133,17 @@
       }
     }
 
-    // .button {
-    //   position: absolute;
-    //   bottom: 42px;
-    //   left: 50%;
-    //   white-space: nowrap;
-    // }
+    &__buttons {
+      position: absolute;
+      bottom: 42px;
+      left: 50%;
 
-    // .button--back {
-    //   margin-left: -110px;
-    // }
+      .button--back {
+        position: absolute;
+        left: -20px;
+        top: 0;
+        transform: translateX(-100%);
+      }
+    }
   }
 }
