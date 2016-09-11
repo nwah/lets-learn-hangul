@@ -1,4 +1,5 @@
 import React from 'react';
+import { findDOMNode } from 'react-dom';
 import Markdown from 'react-remarkable';
 import { Link } from 'react-router';
 import classNames from 'classnames';
@@ -6,7 +7,25 @@ import { getRomanizations } from '../utils';
 import Circle from './Circle';
 import BigSyllable from './BigSyllable';
 
+function animateIn(cb) {
+  const el = findDOMNode(this);
+  const wordCircle = el.querySelectorAll('.round__headword__word .circle');
+  const contentCircle = el.querySelectorAll('.round__headword__content .circle');
+  const tl = new TimelineLite({onComplete: cb});
+  tl.fromTo(wordCircle, 0.4, {scale: 0}, {scale: 1, ease: Back.easeOut});
+  tl.fromTo(contentCircle, 0.3, {scale: 0}, {scale: 1, ease: Back.easeOut}, 0.1);
+  tl.play();
+}
+
 class RoundHeadword extends React.Component {
+  componentWillEnter(cb) {
+    animateIn.call(this, cb);
+  }
+
+  componentWillAppear(cb) {
+    animateIn.call(this, cb);
+  }
+
   render() {
     let {params, round, shapes} = this.props;
     let syllables = round.headword.split('');
