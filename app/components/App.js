@@ -2,6 +2,7 @@ import React from 'react';
 import { IndexLink } from 'react-router';
 import Constellation from './Constellation';
 import CourseIndex from './CourseIndex';
+import TransitionGroup from 'react-addons-transition-group';
 
 const App = ({children, location}) => (
   <div className="app">
@@ -9,7 +10,11 @@ const App = ({children, location}) => (
       <Constellation location={location} />
     }
     <div className="app__main">
-      {children}
+      <TransitionGroup>
+        {React.cloneElement(children, {
+          key: /^(\/[^\/\?]*)/.exec(location.pathname || '/')[1]
+        })}
+      </TransitionGroup>
     </div>
     <CourseIndex location={location} />
     <div className="app__footer">

@@ -4,7 +4,8 @@ import { Link } from 'react-router';
 import { branch } from 'baobab-react/higher-order';
 import Circle from './Circle';
 
-const LevelComplete = ({nextLevel, params, level}) => {
+const LevelComplete = ({params, level, levels}) => {
+  let nextLevel = levels[parseFloat(params.level) + 1];
   let path =  
     nextLevel && nextLevel.level == 5 ? `/learnedemall`
     : nextLevel ? `/level/${nextLevel.level}`
@@ -38,10 +39,4 @@ const LevelComplete = ({nextLevel, params, level}) => {
   );
 }
 
-export default branch(LevelComplete, {
-  cursors({params}) {
-    return {
-      nextLevel: ['levels', parseFloat(params.level) + 1]
-    };
-  }
-});
+export default LevelComplete;

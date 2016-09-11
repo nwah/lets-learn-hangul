@@ -1,5 +1,6 @@
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
+require('./vendor/gsap');
 
 import React from 'react';
 import ReactDOM from 'react-dom';

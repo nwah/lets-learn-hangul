@@ -1,4 +1,5 @@
 import React from 'react';
+import { findDOMNode } from 'react-dom';
 import { Link } from 'react-router';
 import { isMedial } from '../utils/hangul';
 import { getJamoHint, getShapeID, isVertical } from '../utils/display';
@@ -9,6 +10,20 @@ import BigJamo from './BigJamo';
 import SoundButton from './SoundButton';
 
 class RoundLetter extends React.Component {
+  componentWillEnter(cb) {
+    const circle = findDOMNode(this).querySelector('.round__letter__circle');
+    TweenLite.from(circle, 0.45,
+      {width: '7rem', height: '7rem', onComplete: cb, ease: Back.easeOut},
+    );
+  }
+
+  componentWillAppear(cb) {
+    const circle = findDOMNode(this).querySelector('.round__letter__circle');
+    TweenLite.from(circle, 0.45,
+      {width: '7rem', height: '7rem', onComplete: cb, ease: Back.easeOut},
+    );
+  }
+
   componentDidMount() {
     this.playSound();
   }
@@ -30,6 +45,8 @@ class RoundLetter extends React.Component {
     if (!jamos || !shapes || !round) return <noscript />;
 
     let jamo = round.jamo[params.letter] || round.jamo[0];
+    if (!jamos[jamo]) return <noscript />;
+
     let next = (parseFloat(params.letter) || 0) + 1;
     let prev = (parseFloat(params.letter) || 0) - 1;
     let hasAnother = next < round.jamo.length;
