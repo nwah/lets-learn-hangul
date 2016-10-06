@@ -95,11 +95,11 @@
       animation-delay: inherit;
 
       @include phone {
-        left: 10%;
-        top: .1rem;
-        width: 80%;
+        left: 20%;
+        top: 10%;
+        width: 60%;
         height: 0;
-        padding-bottom: 80%;
+        padding-bottom: 60%;
       }
     }
   }
