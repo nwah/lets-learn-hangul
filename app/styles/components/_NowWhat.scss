@@ -1,17 +1,25 @@
 .now-what {
-
   &__social,
   &__resources {
     position: absolute;
     left: 50%;
     top: 300px;
+
+    @media screen and (max-width: 1160px) and (min-width: $bp-tablet-max + 1px) {
+      top: 340px;
+    }
   }
 
   &__social {
     transform: translateX(-160px) translateY(-100px);
 
+    @include tablet {
+      top: 240px;
+      transform: translateX(18px);
+    }
+
     @include phone {
-      transform: translateX(-50%) translateY(-190px);
+      transform: translateX(-12px) translateY(-140px);
     }
 
     & > * {
@@ -51,14 +59,19 @@
       @include phone {
         width: 135px;
         height: 110px;
-        left: -150px;
-        top: -20px;
+        left: -145px;
+        top: -3px;
       }
     }
 
     &__buttons {
       top: 100px;
       left: -75px;
+
+      @include phone {
+        top: 4px;
+        left: 0;
+      }
     }
 
     .button--twitter,
@@ -67,7 +80,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      
+
       &:before {
         transition: margin-left 0.2s, margin-right 0.2s;
       }
@@ -112,10 +125,27 @@
   &__resources {
     transform: translateX(185px) translateY(-4px);
 
+    @include tablet {
+      transform: translateX(-220px) translateY(260px);
+    }
+
+    @include phone {
+      top: 330px;
+      left: 0;
+      right: 0;
+      padding-left: .5rem;
+      padding-right: .5rem;
+      transform: none;
+    }
+
     .circle {
       position: absolute;
       top: -40px;
       left: -70px;
+
+      @include phone {
+        display: none;
+      }
     }
 
     &__text {
@@ -124,6 +154,11 @@
       font-size: .5rem;
       line-height: .6666rem;
       z-index: 1;
+
+      @include phone {
+        width: 270px;
+        margin: 0 auto;
+      }
     }
 
     h3 {
