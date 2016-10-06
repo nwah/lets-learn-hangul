@@ -33,23 +33,23 @@
   }
 
   &__levels {
-    @include phone {
+    @include phone-and-tablet {
       padding-top: 40px;
     }
 
-    @include tablet-and-desktop {
+    @include desktop {
       display: flex;
       padding: 80px 0 10px 80px;
     }
   }
 
   &__level {
-    @include phone {
+    @include phone-and-tablet {
       padding-left: 60px;
       padding-bottom: 20px;
     }
 
-    @include tablet-and-desktop {
+    @include desktop {
       flex: 1;
       padding: 0px 15px;
     }

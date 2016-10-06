@@ -53,7 +53,7 @@ $mq-desktop-above: screen and (min-width: $bp-desktop-min);
 }
 
 @mixin desktop {
-  @media #{$mq-desktop-only} {
+  @media #{$mq-desktop-above} {
     @content;
   }
 }
