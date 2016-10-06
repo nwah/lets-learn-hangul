@@ -2,9 +2,16 @@
   @extend .radial;
   width: 1000px;
 
-  @include tablet-and-desktop {
+  @include desktop {
     margin-left: -50px;
     height: 600px;
+  }
+
+  @include tablet {
+    margin-left: 40px;
+    top: 300px;
+    height: 600px;
+    width: auto;
   }
 
   @include phone {
@@ -139,6 +146,10 @@
       transform: translateX(-85%) translateY(-39%);
     }
 
+    @include tablet {
+      transform: translateX(-180%) translateY(-105%);
+    }
+
     @include small-desktop {
       transform: translateX(60%) translateY(-135%);
     }
@@ -157,6 +168,10 @@
       transform: translateX(54%) translateY(-95%);
     }
 
+    @include tablet {
+      transform: translateX(-50%) translateY(-112%);
+    }
+
     @include small-desktop {
       transform: translateX(12%) translateY(8%);
     }
@@ -173,6 +188,10 @@
 
     @include phone {
       transform: translateX(-52%) translateY(171%);
+    }
+
+    @include tablet {
+      transform: translateX(-147%) translateY(12%);
     }
 
     @include small-desktop {
@@ -198,6 +217,10 @@
       transform: translateX(60%) translateY(53%);
     }
 
+    @include tablet {
+      transform: translateX(20%) translateY(35%);
+    }
+
     @include small-desktop {
       transform: translateX(-140%) translateY(110%);
     }
@@ -219,6 +242,10 @@
   .jamo-table {
     margin-top: 20px;
 
+    @include tablet {
+      margin-top: -220px;
+    }
+
     @include phone {
       margin-top: 110px;
     }
@@ -230,6 +257,12 @@
     left: 50%;
     margin-left: -465px;
     transform: none;
+
+    @include tablet {
+      top: -130px;
+      left: 0;
+      margin-left: 0;
+    }
 
     @include phone {
       margin-left: 0;
@@ -258,6 +291,7 @@
   }
   
   &__review {
+    margin-top: -210px;
     display: flex;
     justify-content: center;
 
@@ -322,5 +356,10 @@
     top: 550px;
     left: 50%;
     margin-left: 335px;
+
+    @include tablet {
+      top: 160px;
+      margin-left: 20px;
+    }
   }
 }

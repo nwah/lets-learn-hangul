@@ -2,6 +2,10 @@
   position: relative;
   margin-top: 130px;
 
+  @include tablet {
+    margin-top: 160px;
+  }
+
   @include phone {
     margin-top: 100px;
     padding-bottom: 80px;
@@ -84,6 +88,12 @@
     top: 345px;
     left: 50%;
     margin-left: 120px;
+
+    @include tablet {
+      margin-left: 0;
+      top: 475px;
+      transform: translateX(-50%);
+    }
 
     .button--back {
       margin-right: 20px;

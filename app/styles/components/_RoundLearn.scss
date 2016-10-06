@@ -5,6 +5,10 @@
   height: 600px;
   z-index: 5;
 
+  @include tablet {
+    margin-top: 120px;
+  }
+
   @include phone {
     position: absolute;
     left: 0;

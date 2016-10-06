@@ -12,6 +12,11 @@
     width: 500px;
     transform: translateX(-104px) translateY(-57%);
 
+    @include tablet {
+      width: auto;
+      transform: translateX(-172px) translateY(-57%);      
+    }
+
     @include phone {
       width: 90%;
       transform: translateX(-140px) translateY(-57%);

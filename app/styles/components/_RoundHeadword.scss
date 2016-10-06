@@ -22,6 +22,10 @@
     transition: transform 0.3s;
     z-index: 5;
 
+    @include tablet {
+      top: 150px;
+    }
+
     @include phone {
       margin-left: 0;
       left: 175px;
@@ -97,6 +101,11 @@
     top: 120px;
     width: 340px;
     height: 340px;
+
+    @include tablet {
+      left: 36%;
+      top: 290px;
+    }
 
     @include phone {
       top: 90px;
