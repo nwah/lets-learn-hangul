@@ -1,9 +1,11 @@
 import React from 'react';
-import { map, flatten, fromPairs, filter } from 'lodash';
+import { findDOMNode } from 'react-dom';
+import { map, each, flatten, fromPairs, filter } from 'lodash';
 import { Link } from 'react-router';
 import { branch } from 'baobab-react/higher-order';
 import { isMedial } from '../utils/hangul';
 import { getJamoHint, formatSeconds } from '../utils/display';
+import TransitionGroup from 'react-addons-transition-group';
 import BigJamo from './BigJamo';
 import JamoTable from './JamoTable';
 import Circle from './Circle';
@@ -24,45 +26,69 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params, 
   let completed = filter(rounds, (round, key) => parseFloat(key) <= current);
   let known = fromPairs(flatten(map(completed, ({jamo}) => map(jamo, j => [j, true]))));
 
-  let {peeks, totalMisses, words} = session;
-  let elapsed = Math.round((session.completed - session.started) / 1000);
-
   return (
-    (showingLetters || showingReview) ?
-      <div className="round__complete">
-        <div className="round__complete__top">
-          {/*<Circle className="round__complete__top__halfcircle" />*/}
-          <label>Round Complete!</label>
-          {showingReview ?
-            <p>You’ve learned&nbsp; {newJamos.length > 1 ? <span><b>{newJamos.length}</b> new Hangul letters!</span> : 'a new Hangul letter!'}</p>
-          :
-            <p>You now know <b>{Object.keys(known).length}</b> Hangul letters!</p>
-          }
-        </div>
-
-        <div className="back-forward-buttons">
-          <Link to={path} className="button button--forward round__complete__continue-bottom" data-autofocus="true">
-            Continue
-          </Link>
-        </div>
-
-        {showingLetters ?
-          <JamoTable newJamos={newJamos} known={known} />
-        :
-          <div className="round__complete__review">
-            {round.jamo.map((jamo, i) => (
-              <div className="round__complete__review__jamo" key={jamo}>
-                <Circle r="137" />
-                <BigJamo jamo={jamo} shapes={shapes} />
-                <div className={`bubble ${isMedial(jamo) ? 'bubble--blue' : ''}`}>
-                  {getJamoHint(jamo)}
-                </div>
-              </div>
-            ))}
+    <TransitionGroup>
+      {(showingLetters || showingReview) ?
+        <div className="round__complete" key="letters">
+          <div className="round__complete__top">
+            {/*<Circle className="round__complete__top__halfcircle" />*/}
+            <label>Round Complete!</label>
+            {showingReview ?
+              <p>You’ve learned&nbsp; {newJamos.length > 1 ? <span><b>{newJamos.length}</b> new Hangul letters!</span> : 'a new Hangul letter!'}</p>
+            :
+              <p>You now know <b>{Object.keys(known).length}</b> Hangul letters!</p>
+            }
           </div>
-        }
-      </div>
-    :
+
+          <div className="back-forward-buttons">
+            <Link to={path} className="button button--forward round__complete__continue-bottom" data-autofocus="true">
+              Continue
+            </Link>
+          </div>
+
+          <TransitionGroup className="transition-group">
+            {showingLetters ?
+              <JamoTable newJamos={newJamos} known={known} key="jamo-table" />
+            :
+              <Review round={round} shapes={shapes} key="review" />
+            }
+          </TransitionGroup>
+        </div>
+      :
+        <Summary round={round} session={session} path={path} key="summary" />
+      }
+    </TransitionGroup>
+  );
+}
+
+function summaryAnimateIn(cb) {
+  const circles = findDOMNode(this).querySelectorAll('.round__complete .circle');
+  const tl = new TimelineLite({onComplete: cb});
+  each(circles, (circle, i) => {
+    tl.fromTo(circle, 0.4,
+      {scale: 0},
+      {scale: 1, ease: Back.easeOut},
+      i * 0.1
+    );
+  });
+  tl.play(0);
+}
+
+class Summary extends React.Component {
+  componentWillEnter(cb) {
+    return summaryAnimateIn.call(this, cb);
+  }
+
+  componentWillAppear(cb) {
+    return summaryAnimateIn.call(this, cb);
+  }
+
+  render() {
+    let {round, session, path} = this.props;
+    let {peeks, totalMisses, words} = session;
+    let elapsed = Math.round((session.completed - session.started) / 1000);
+
+    return (
       <div className="round__complete">
         <div className="round__complete__title">
           <Circle r="298" />
@@ -111,7 +137,55 @@ const RoundComplete = ({level, round, rounds, nextRound, newJamos = [], params, 
           </Link>
         </div>
       </div>
-  );
+    );
+  }
+}
+
+function reviewAnimateIn(cb) {
+  const letters = findDOMNode(this).querySelectorAll('.round__complete__review__jamo');
+  const tl = new TimelineLite({onComplete: cb});
+  each(letters, (letter, i) => {
+    const circle = letter.querySelector('.circle');
+    const jamo = letter.querySelector('.big-jamo');
+    tl.fromTo(circle, 0.4,
+      {scale: 0},
+      {scale: 1, ease: Back.easeOut},
+      i * 0.1
+    );
+    tl.fromTo(jamo, 0.4,
+      {scale: 0},
+      {scale: 1, ease: Back.easeOut},
+      i * 0.15
+    );
+  });
+  tl.play(0);
+}
+
+class Review extends React.Component {
+  componentWillEnter(cb) {
+    return reviewAnimateIn.call(this, cb);
+  }
+
+  componentDidMount(cb) {
+    return reviewAnimateIn.call(this, cb);
+  }
+
+  render() {
+    let {round, shapes} = this.props;
+    return (
+      <div className="round__complete__review">
+        {round.jamo.map((jamo, i) => (
+          <div className="round__complete__review__jamo" key={jamo}>
+            <Circle r="137" />
+            <BigJamo jamo={jamo} shapes={shapes} />
+            <div className={`bubble ${isMedial(jamo) ? 'bubble--blue' : ''}`}>
+              {getJamoHint(jamo)}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
 }
 
 export default branch(RoundComplete, {

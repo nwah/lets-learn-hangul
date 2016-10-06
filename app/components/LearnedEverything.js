@@ -1,4 +1,5 @@
 import React from 'react';
+import { findDOMNode } from 'react-dom';
 import { map, flatten, filter } from 'lodash';
 import BezierEasing from 'bezier-easing';
 import Markdown from 'react-remarkable';
@@ -10,6 +11,14 @@ import BigWord from './BigWord';
 import GeometricJamo from './GeometricJamo';
 
 const ease = BezierEasing(0.4, 0, 0.4, 1);
+
+function animateIn(cb = () => {}) {
+  const circle = findDOMNode(this).querySelector('.learned-everything__intro .circle');
+  TweenLite.fromTo(circle, 0.3,
+    {scale: .5},
+    {scale: 1, onComplete: cb, ease: Back.easeOut},
+  );
+}
 
 class LearnedEverything extends React.Component {
   t0 = 0;
@@ -87,7 +96,7 @@ class LearnedEverything extends React.Component {
   };
 
   componentDidMount() {
-    // setTimeout(this.showLetters, 200);
+    return animateIn.call(this);
   }
 
   render() {

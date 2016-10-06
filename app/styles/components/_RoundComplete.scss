@@ -11,6 +11,11 @@
     width: auto;
   }
 
+  .transition-group {
+    display: block;
+    width: 100%;
+  }
+
   &__title {
     left: 54%;
     width: 298px;
@@ -215,7 +220,7 @@
     margin-top: 20px;
 
     @include phone {
-      margin-top: 65px;
+      margin-top: 110px;
     }
   }
 
