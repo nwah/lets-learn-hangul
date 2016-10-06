@@ -57,11 +57,17 @@
     }
 
     &__buttons {
-
+      top: 100px;
+      left: -75px;
     }
 
     .button--twitter,
     .button--facebook {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      
       &:before {
         transition: margin-left 0.2s, margin-right 0.2s;
       }
@@ -86,9 +92,6 @@
     }
 
     .button--twitter {
-      top: 100px;
-      left: -75px;
-
       @include phone {
         top: 61px;
         left: 0;
@@ -96,8 +99,8 @@
     }
 
     .button--facebook {
-      top: 160px;
-      left: -46px;
+      top: 60px;
+      left: 29px;
 
       @include phone {
         top: 118px;
