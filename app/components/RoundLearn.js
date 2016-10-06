@@ -63,6 +63,7 @@ class RoundLearn extends React.Component {
           
           { (!hinted.peeking && currentMisses > 0) && 
             <Tooltip
+              name="peek-hint"
               text="Click a letter to peek at its pronunciation"
               onClick={() => actions.dismissHint('peeking')} />
           }
@@ -121,6 +122,7 @@ class RoundLearn extends React.Component {
 
           { !hinted.romanization && 
             <Tooltip
+              name="entry-hint"
               text="Type the pronunciation of the Korean word here"
               onClick={() => actions.dismissHint('romanization')} />
           }

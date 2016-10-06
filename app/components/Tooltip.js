@@ -10,12 +10,12 @@ class Tooltip extends React.Component {
   }
 
   render() {
-    let {text, onClick} = this.props;
+    let {text, onClick, name} = this.props;
     let {showing} = this.state;
 
     return (
       <div
-        className={classNames('tooltip', {showing})}
+        className={classNames('tooltip', (name || ''), {showing})}
         onClick={onClick || noop}>
         <div className="tooltip__body">
           {text}
