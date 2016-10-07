@@ -7,7 +7,13 @@
     height: 600px;
   }
 
-  @include tablet {
+  @media screen and (min-width: $bp-desktop-min) and (max-width: 1200px) {
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+
+  // @include tablet {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     margin-left: 40px;
     top: 300px;
     height: 600px;
@@ -27,7 +33,16 @@
     left: 54%;
     width: 298px;
     height: 298px;
-    transform: translateX(-73%) translateY(-155%);
+    transform: translateX(-140%) translateY(-75%);
+
+    @include small-desktop {
+      left: 50%;
+      transform: translateX(-85%) translateY(-85%);
+    }
+
+    @include tablet {
+      transform: translateX(-73%) translateY(-155%);
+    }
 
     @include phone {
       left: 50%;
@@ -35,11 +50,6 @@
       width: 180px;
       height: 180px;
       transform: translateX(-65%) translateY(-140%);
-    }
-
-    @include small-desktop {
-      left: 50%;
-      transform: translateX(-85%) translateY(-85%);
     }
 
     &__inner {
@@ -89,18 +99,18 @@
       left: -90px;
       top: 10px;
 
-      @include phone {
-        width: 100px;
-        height: 100px;
-        left: -20px;
-        top: 37px;
-      }
-
       @include small-desktop {
         width: 180px;
         height: 180px;
         left: -50px;
         top: 50px;
+      }
+
+      @include phone {
+        width: 100px;
+        height: 100px;
+        left: -20px;
+        top: 37px;
       }
     }
   }
@@ -142,16 +152,16 @@
   &__words {
     transform: translateX(0%) translateY(-105%);
 
-    @include phone {
-      transform: translateX(-85%) translateY(-39%);
+    @include small-desktop {
+      transform: translateX(60%) translateY(-135%);
     }
 
     @include tablet {
       transform: translateX(-180%) translateY(-105%);
     }
 
-    @include small-desktop {
-      transform: translateX(60%) translateY(-135%);
+    @include phone {
+      transform: translateX(-85%) translateY(-39%);
     }
 
     .circle {
@@ -164,16 +174,16 @@
     font-size: 1.1111rem;
     transform: translateX(-80%) translateY(55%);
 
-    @include phone {
-      transform: translateX(54%) translateY(-95%);
+    @include small-desktop {
+      transform: translateX(12%) translateY(8%);
     }
 
     @include tablet {
       transform: translateX(-50%) translateY(-112%);
     }
 
-    @include small-desktop {
-      transform: translateX(12%) translateY(8%);
+    @include phone {
+      transform: translateX(54%) translateY(-95%);
     }
 
     .circle {
@@ -186,16 +196,16 @@
     font-size: .8888rem;
     transform: translateX(320%) translateY(-105%);
 
-    @include phone {
-      transform: translateX(-52%) translateY(171%);
+    @include small-desktop {
+      transform: translateX(-390%) translateY(115%);
     }
 
     @include tablet {
       transform: translateX(-147%) translateY(12%);
     }
 
-    @include small-desktop {
-      transform: translateX(-390%) translateY(115%);
+    @include phone {
+      transform: translateX(-52%) translateY(171%);
     }
 
     .circle {
@@ -213,16 +223,16 @@
     font-size: 1.1111rem;
     transform: translateX(140%) translateY(67%);
 
-    @include phone {
-      transform: translateX(60%) translateY(53%);
+    @include small-desktop {
+      transform: translateX(-140%) translateY(110%);
     }
 
     @include tablet {
       transform: translateX(20%) translateY(35%);
     }
 
-    @include small-desktop {
-      transform: translateX(-140%) translateY(110%);
+    @include phone {
+      transform: translateX(60%) translateY(53%);
     }
 
     .circle {
@@ -255,8 +265,12 @@
     position: absolute;
     top: 40px;
     left: 50%;
-    margin-left: -465px;
+    margin-left: -463px;
     transform: none;
+
+    @media screen and (max-width: 1275px) {
+      margin-left: -355px;
+    }
 
     @include tablet {
       top: -130px;
@@ -291,9 +305,17 @@
   }
   
   &__review {
-    margin-top: -210px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+
+    @include tablet {
+      margin-top: -210px;
+    }
+
+    @include phone {
+      margin-top: 0;
+    }
 
     &__jamo {
       width: 180px;
@@ -353,9 +375,9 @@
     display: block;
     position: absolute;
     transform: none;
-    top: 550px;
+    top: 240px;
     left: 50%;
-    margin-left: 335px;
+    margin-left: 175px;
 
     @include tablet {
       top: 160px;
