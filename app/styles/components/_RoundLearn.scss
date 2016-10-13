@@ -136,9 +136,9 @@
     width: 240px;
     font-size: 21px;
     opacity: 0;
-    transition: opacity 0.2s;
 
     .show-correct & {
+      transition: opacity 0.2s;
       opacity: 1;
     }
 
