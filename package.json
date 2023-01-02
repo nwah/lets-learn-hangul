@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Interactive lessons to learn Hangul in 30 minutes",
   "main": "server.js",
+  "engines": {
+    "node": "6.16.0"
+  },
   "scripts": {
     "postinstall": "gulp build-prod",
     "start": "node_modules/.bin/babel-node server/index.js",
