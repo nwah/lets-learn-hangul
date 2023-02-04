@@ -49,7 +49,7 @@ Take a look at the arrangement of the letters within each block.
 ---
 In **kim**, the ㄱ and ㅣ are stacked on top of the ㅁ, but in **chi** the ㅊ and ㅣ are sitting side-by-side.
 ---
-Any time the the vowel is tall and skinny like **ㅣ** we arrange the letters like this.
+Any time the vowel is tall and skinny like **ㅣ** we arrange the letters like this.
           `,
           start: `
 Let’s try some reading!
