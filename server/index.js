@@ -39,9 +39,11 @@ server.get('/data/geometric.json', (req, res) => res.json(geometricData));
 server.get('/data/words.json', (req, res) => res.json(wordsData));
 
 if (authRequired) {
-  server.use('/', basicauth('hangul', 'hangul'));
-  server.use('/level/*', basicauth('hangul', 'hangul'));
-  server.use(['/learnedemall', '/learnedeverything', '/return', '/nowwhat', '/credits'], basicauth('hangul', 'hangul'));
+  const user = process.env.AUTH_USER
+  const pass = process.env.AUTH_PASS
+  server.use('/', basicauth(user, pass));
+  server.use('/level/*', basicauth(user, pass));
+  server.use(['/learnedemall', '/learnedeverything', '/return', '/nowwhat', '/credits'], basicauth(user, pass));
 }
 
 const indexHtml = fs.readFileSync(path.join(__dirname, 'cached-home.html'), 'utf8');
