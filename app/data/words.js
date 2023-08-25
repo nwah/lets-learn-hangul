@@ -1983,7 +1983,7 @@
   },
   {
     "word": "싸",
-    "translation": "expensive",
+    "translation": "cheap",
     "latin": "",
     "image": {
       "url": "",
@@ -2002,7 +2002,7 @@
   },
   {
     "word": "비싸",
-    "translation": "cheap",
+    "translation": "expensive",
     "latin": "",
     "image": {
       "url": "",
